@@ -1,0 +1,233 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Rubik;
+}
+
+::-webkit-scrollbar {
+    width:auto;
+    }
+    /*track*/
+    ::-webkit-scrollbar-track {
+    background:rgb(201, 200, 196);
+    border-width:2px;
+    border-style:solid;
+    border-color:black;
+    }
+    /*thumb*/
+    ::-webkit-scrollbar-thumb {
+    background:rgb(245, 243, 238);
+    border-width:2px;
+    border-style:solid;
+    border-color:black;
+    }
+
+p{
+    font-size: 16px;
+}
+
+.navbar {
+    background-color: #f5f3ee;
+    color: black;
+    border-bottom: 4px solid black;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: all 0.5s ease;
+}
+
+.nav-links a:hover {
+    color: #036147; /* Color on hover */
+    transform: scale(1.2); /* Grow on hover */
+}
+
+#LandingPage{
+    width: 100%;
+    height: 700px;
+    margin: 0;
+}
+
+#background{
+    position: absolute;
+    overflow:hidden;
+    width: 100%;
+    height: 700px;
+    background-image: url(Website\ Background\ V3.jpg) ;
+    z-index: 0;
+    margin-bottom: 16px;
+}
+
+#introductionblock{
+    position: absolute;
+    width: 35%;
+    background-color: #f5f3ee;
+    margin-top: 30vh;
+    margin-left: 20vh;
+    padding: 32px;
+    padding-top: 16px;
+    border: 4px dashed #036147;
+    display: flex;
+    z-index: 1;
+    box-shadow: 10px 10px 0px black;
+}
+
+#Hello{
+    font-size: 48px;
+    color:#036147;
+}
+
+#rushtext{
+    width: 60%;
+    font-size: 18px;
+    line-height: 2;
+}
+  
+#resume {
+    background-color: #ff6c26;
+    color: #f5f3ee;
+    border: 2px solid #ff6c26;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+  
+#resume:hover {
+    background-color: #f5f3ee; 
+    color: #ff6c26; 
+}
+
+#BrainSection{
+    display: flex;
+    padding: 16px;
+    background-color: #036147;
+    justify-content: center;
+}
+
+#BrainContents{
+    display: block;
+    justify-content: center;
+}
+
+#brainimagecontainer{
+    margin-top: -8vh;
+    display: flex;
+    justify-content: center;
+}
+
+#Combining{
+    color: #f3cce7;
+}
+
+#ProjectsSection{
+    margin:0;
+    display: flex;
+    padding: 16px;
+    background-color: #f5f3ee;
+    justify-content: center;
+}
+
+#ProjectContents{
+    display:block;
+    text-align: center;
+}
+
+.ProjectIcons{
+    display: flex;
+    justify-content: center;
+    background-color: #f5f3ee;
+}
+
+#ProjectTitle{
+    color:#036147;
+    font-size: 48px;
+    line-height: .5;
+}
+
+#ImageSectionDivider{
+    margin-bottom: -8px;
+    overflow: hidden;
+}
+
+#ArtSection{
+    margin:0;
+    display: flex;
+    padding: 16px;
+    background-color: #036147;
+    justify-content: center;
+}
+
+#ArtContents{
+    display:block;
+    text-align: center;
+}
+
+#ArtTitle{
+    color:#f3cce7;
+    font-size: 48px;
+    line-height: .5;
+}
+
+#ArtBody{
+    color: white;
+}
+
+#AboutMe{
+    background-color: #f5f3ee;
+    padding: 32px;
+    display:flex;
+}
+
+#AboutMeText{
+    padding: 8px 32px;
+}
+
+#AboutMeHeader{
+    text-align: center;
+    color:#ff6c26;
+    font-size: 32px;
+    line-height: .5;
+}
+
+#AboutMeBody{
+    line-height: 2;
+}
+
+#RyanHeadshot{
+    box-shadow: -10px 10px 0px #036147; /* Solid black shadow */
+}
+
+#ContactSection{
+    background-color: #1B1B1B;
+    padding: 8px;
+    padding-bottom: 16px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    color: white;
+}
+
+#ContactBlock{
+    text-align: center;
+}
+
