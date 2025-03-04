@@ -1,0 +1,154 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Rubik;
+}
+
+::-webkit-scrollbar {
+    width:auto;
+    }
+    /*track*/
+    ::-webkit-scrollbar-track {
+    background:rgb(201, 200, 196);
+    border-width:2px;
+    border-style:solid;
+    border-color:black;
+    }
+    /*thumb*/
+    ::-webkit-scrollbar-thumb {
+    background:rgb(245, 243, 238);
+    border-width:2px;
+    border-style:solid;
+    border-color:black;
+    }
+
+p{
+    font-size: 16px;
+}
+
+.navbar {
+    background-color: #f5f3ee;
+    color: black;
+    border-bottom: 4px solid black;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: all 0.5s ease;
+}
+
+.nav-links a:hover {
+    color: #036147; /* Color on hover */
+    transform: scale(1.2); /* Grow on hover */
+}
+
+#Introduction{
+    background-color: #036147;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Poster{
+    width: 50%;
+    margin: auto;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+#ProjectName{
+    background-color: #f5f3ee;
+    text-align: center;
+    padding: 24px;
+}
+
+#Retract{
+    color:#036147;
+    font-size: 48px;
+}
+
+#IntroText{
+    display: flex;
+    justify-content: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: justify;
+}
+
+#intro{
+    font-size: 15px;
+    line-height: 2;
+    margin-right: 20%;
+}
+
+#ResearchDiscovery{
+    background-color: #036147;
+    text-align: center;
+    padding: 24px;
+}
+
+#RDSectionTitle{
+    color:#f3cce7;
+    font-size: 48px;
+}
+
+.TextSection{
+    display: flex;
+    justify-content: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: justify;
+}
+
+#intro{
+    font-size: 15px;
+    line-height: 2;
+    margin-right: 20%;
+}
+
+#Interview{
+    color: white;
+    line-height: 2;
+    margin-right:20%
+}
+
+#BackgroundResearch{
+    color: white;
+    line-height: 2;
+}
+
+.whitetext{
+    color: white;
+}
+
+#ImageSectionDivider{
+    margin-bottom: -8px;
+    overflow: hidden;
+}
+
+#IdeationSection{
+    background-color: #f5f3ee;
+    text-align: center;
+    padding: 24px;
+}
+
+#Ideate{
+    color:#036147;
+    font-size: 48px;
+}

@@ -158,6 +158,17 @@ p{
     background-color: #f5f3ee;
 }
 
+.ProjectBlock{
+    text-align: center;
+    justify-content: center;
+}
+
+.ProjectNames{
+    color:black;
+    font-weight: 500;
+    margin-top: -5px;
+}
+
 #ProjectTitle{
     color:#036147;
     font-size: 48px;
