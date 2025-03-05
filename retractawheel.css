@@ -94,7 +94,7 @@ p{
 #intro{
     font-size: 15px;
     line-height: 2;
-    margin-right: 20%;
+    margin-right: 5%;
 }
 
 #ResearchDiscovery{
@@ -113,19 +113,13 @@ p{
     justify-content: center;
     margin-left: 20%;
     margin-right: 20%;
-    text-align: justify;
-}
-
-#intro{
-    font-size: 15px;
-    line-height: 2;
-    margin-right: 20%;
+    text-align: left;
 }
 
 #Interview{
     color: white;
     line-height: 2;
-    margin-right:20%
+    margin-right:10%
 }
 
 #BackgroundResearch{
@@ -151,4 +145,45 @@ p{
 #Ideate{
     color:#036147;
     font-size: 48px;
+}
+
+#ideageneration{
+    color:black;
+    line-height: 2;
+}
+
+#ranking{
+    color:black;
+    line-height: 2;
+    width: 80%;
+}
+
+#FinalDesign{
+    background-color: #036147;
+    text-align: center;
+    padding: 24px;
+}
+
+#designoverview{
+    color: white;
+    line-height: 2;
+}
+
+#MoreProjects{
+    margin:0;
+    display: flex;
+    padding: 16px;
+    background-color: #f5f3ee;
+    justify-content: center;
+}
+
+.ProjectIcons{
+    display: flex;
+    justify-content: center;
+    background-color: #f5f3ee;
+}
+
+.ProjectBlock{
+    text-align: center;
+    justify-content: center;
 }
