@@ -77,8 +77,8 @@ p{
     position: absolute;
     width: 35%;
     background-color: #f5f3ee;
-    margin-top: 30vh;
-    margin-left: 20vh;
+    margin-top: 15%;
+    margin-left: 10%;
     padding: 32px;
     padding-top: 16px;
     border: 4px dashed #036147;
@@ -147,6 +147,14 @@ p{
     justify-content: center;
 }
 
+.ArtIcons{
+    margin:0;
+    display: flex;
+    padding: 16px;
+    background-color: #036147;
+    justify-content: center;
+}
+
 #ProjectContents{
     display:block;
     text-align: center;
@@ -165,6 +173,11 @@ p{
 
 .ProjectNames{
     color:black;
+    font-weight: 500;
+    margin-top: -5px;
+}
+.ArtNames{
+    color: #f5f3ee;
     font-weight: 500;
     margin-top: -5px;
 }
