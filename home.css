@@ -26,6 +26,9 @@ p{
     font-size: 16px;
 }
 
+a{
+    text-decoration: none;
+}
 .navbar {
     background-color: #f5f3ee;
     color: black;
@@ -36,6 +39,13 @@ p{
     display: flex;
     justify-content: right;
     align-items: center;
+}
+
+@media (max-width: 720px){
+    .navbar{
+        justify-content: center;
+    }
+    
 }
 
 .nav-links {
@@ -117,6 +127,20 @@ p{
     color: #ff6c26; 
 }
 
+@media (max-width: 720px){
+    #introductionblock{
+        width: 60%;
+        margin-top: 15%;
+        text-align: center;
+    }
+
+    #rushtext{
+        width: 100%;
+        font-size: 18px;
+        line-height: 2;
+    }
+}
+
 #BrainSection{
     display: flex;
     padding: 16px;
@@ -137,6 +161,11 @@ p{
 
 #Combining{
     color: #f3cce7;
+}
+@media (max-width: 720px){
+    #Combining{
+        text-align: center;
+    }
 }
 
 #ProjectsSection{
@@ -222,6 +251,7 @@ p{
     display:flex;
 }
 
+
 #AboutMeText{
     padding: 8px 32px;
 }
@@ -238,7 +268,23 @@ p{
 }
 
 #RyanHeadshot{
-    box-shadow: -10px 10px 0px #036147; /* Solid black shadow */
+    width: 45%;
+    box-shadow: -10px 10px 0px #036147; 
+}
+
+@media (max-width: 720px){
+    #AboutMe{
+        display:block;
+    }
+    #AboutMeText{
+        padding: 8px 8px;
+        text-align: justify;
+    }
+    #RyanHeadshot{
+        width: 100%;
+        box-shadow: -10px 10px 0px #036147; 
+    }
+
 }
 
 #ContactSection{
