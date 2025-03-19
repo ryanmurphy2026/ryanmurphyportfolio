@@ -66,9 +66,8 @@ p{
     align-items: center;
 }
 
-#Poster{
-    width: 50%;
-    margin:auto;
+#VanPhoto{
+    margin: auto;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
 
@@ -115,19 +114,9 @@ p{
     overflow: hidden;
 }
 
-#redmond{
+#documenting{
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-}
-
-#lofi{
-    width: 100%;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-}
-
-#demonstration{
-    width: 100%;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }

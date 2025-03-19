@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="stepcity.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
+    <script src="main.js" defer></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#ProjectsSection">Projects</a>
+            <a href="index.html#ArtSection">Art</a>
+            <a href="index.html#AboutMe">About Me</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+    <div id="StartingImage">
+        <img id="VanPhoto" src="Step City Photos/Figma Prototypes/Pyramid.png">
+        
+    </div>
+
+    <div class="WhiteBackground" id="ProjectName">
+        <h1 class="GreenTitle" id="StepCityName">Step City: Transforming Physical Activity into Urban Adventure
+        </h1>
+        <div class="BlackText">
+            <p>
+                Step City is a mobile application designed to transform everyday physical activity into an engaging urban adventure. By combining real-world exploration with virtual city-building mechanics, the app encourages users to discover their surroundings while staying active. The concept evolved through multiple iterations based on user feedback and research, ultimately creating a solution that seamlessly integrates exercise into users' daily routines while providing clear progression and social interaction opportunities.
+            </p>  
+        </div>  
+    </div>
+
+    <div class="GreenBackground" id="Hills">
+        <h1 class="PinkTitle">Hills and Initial Inspiration</h1>
+        <div class="WhiteText">
+            <p>
+                Our team's journey began with a simple observation about urban life in San Francisco—hills were universally considered a miserable part of daily commutes. This sparked our initial question:
+            </p>
+            <p>
+                <strong>How might we make commuting on hills less like a chore and more like an adventure?</strong> 
+            </p>  
+            <p>
+                This led to our first concept, Hill Kill, a mobile game where users would climb real-world hills to defeat virtual hill-themed monsters. With excitement, we presented this early concept to potential users for feedback.
+            </p>
+        </div>  
+    </div>
+
+    <div class="WhiteBackground" id="Pivot">
+        <h1 class="GreenTitle">The Pivot</h1>
+        <div class="BlackText">
+            <p>
+                The response was sobering. Users didn't connect with our hill-slaying concept:
+            </p>  
+            <p>
+                <i>"I wouldn't go out of my way to kill a mountain on an app. I wouldn't go out of my way to download it. I wouldn't feel excited."</i>
+            </p>
+            <p>
+                This critical feedback forced us to reassess our approach entirely and return to square one.
+            </p>
+        </div>  
+    </div>
+
+    <div id= "ImageSectionDivider">
+        <img src="WebsiteDivider2.jpg" width="100%">
+    </div>
+
+    <div class="GreenBackground" id="Research">
+        <h1 class="PinkTitle">Research-Driven Redirection</h1>
+        <div class="WhiteText">
+            <p>
+                Rather than narrowly focusing on hills, we expanded our research to explore broader health and fitness motivations. Our interviews revealed three key insights:
+            </p>  
+            <ol>
+                <li>
+                    <strong>Time Constraints</strong>: Most people struggle with consistent exercise due to perceived lack of time
+                </li>
+                <li>
+                    <strong>Social Motivation</strong>: Exercise becomes more appealing when it includes social elements
+                </li>
+                <li>
+                    <strong>Engagement Factors</strong>: Users are motivated by fun activities and visible progress
+                </li>
+            </ol>
+            <p>
+                From these insights, we came up with the persona Fitness Phil—a young person who recently moved into a new city seeking both physical activity and urban exploration.
+            </p>
+        </div>  
+    </div>
+
+    <div class="WhiteBackground" id="Reframing">
+        <h1 class="GreenTitle">Reframing</h1>
+        <div class="BlackText">
+            <img id="ReframePhoto" src="Step City Photos/Ideation.jpg" width="100%">
+            <p>
+                With our deeper understanding, we reformulated our guiding question:
+            </p>
+            <p>
+                <strong>How might we transform physical activity for young people from a time burden into a seamless, delightful experience with clear progression milestones?</strong>
+            </p>
+        </div>  
+    </div>
+
+    <div id= "ImageSectionDivider">
+        <img src="Website Divider.jpg" width="100%">
+    </div>
+
+    <div class="GreenBackground" id="Solution">
+        <h1 class="PinkTitle">Step City</h1>
+        <div class="WhiteText">
+            <p>
+                Our answer was Step City—a mobile game where players build an imaginary city by physically exploring and exercising in their real-world environment. The tagline captures this perfectly: "Grow your city step by step, by stepping out into your city."
+            </p>
+            <p>
+                <strong>Key Features:</strong>
+            </p>
+            <ul>
+                <li>
+                    <strong>Step Stations</strong>: Visit real-world locations to unlock virtual blueprints of landmarks. Step stations are physically placed throughout the user’s city.
+                </li>
+                <div class="Figmas" id="StepStations">
+                    <img id="scanning" src="Step City Photos/Figma Prototypes/Collect Blueprint - Scanning.png">
+                    <img id="getblueprint" src="Step City Photos/Figma Prototypes/Collect Blueprint - Result.png">
+                </div>
+                <li>
+                    <strong>Quest-Based Rewards</strong>: Complete physical challenges to earn building materials, with more difficult quests yielding greater rewards.
+                </li>
+                <div class="Figmas" id="Quests">
+                    <img id="quest" src="Step City Photos/Figma Prototypes/Quest Page - Hard.png">
+                    <img id="progress" src="Step City Photos/Figma Prototypes/Quest Progress 2.png">
+                    <img id="questreward" src="Step City Photos/Figma Prototypes/Quest Reward Menu.png">
+                </div>
+                <li>
+                    <strong>City Building</strong>: Use collected materials and blueprints to construct a personalized virtual city.
+                </li>
+                <div class="Figmas" id="CityBuilding">
+                    <img id="blueprintmenu" src="Step City Photos/Figma Prototypes/Building Tower - Selection.png">
+                    <img id="buildingresult" src="Step City Photos/Figma Prototypes/Building Tower - Built.png">
+                </div>
+                <li>
+                    <strong>Progress Milestone</strong>: A central monument that visually represents the user's ongoing achievements.
+                </li>
+                <div class="Figmas" id="Milestone">
+                    <img id="milestonemenu"src="Step City Photos/Figma Prototypes/Click Milestone.png">
+                </div>
+                <li>
+                    <strong>Social Interaction</strong>: Visit friends' cities, trade materials, and collaborate on quests together.
+                </li>
+                <div class="Figmas" id="Friends">
+                    <img id="friendslist" src="Step City Photos/Figma Prototypes/Friends List.png">
+                    <img id="trading" src="Step City Photos/Figma Prototypes/Friends - Trading.png">
+                    <img id="visit" src="Step City Photos/Figma Prototypes/Friends - Visit.png">
+                </div>
+            </ul>
+        </div>  
+    </div>
+
+    <div class="WhiteBackground" id="Validation">
+        <h1 class="GreenTitle">Professional Validation</h1>
+        <div class="BlackText">
+            <img id="PresentationPhoto" src="Step City Photos/Presentaton.jpg" width="100%">
+            <p>
+                After completing our final prototype, we presented Step City to designers from Atlassian and New Computer (including an ex-Apple designer). This provided invaluable professional feedback that helped refine our concept further.
+            </p>  
+        </div> 
+    </div>
+
+    <div class="GreenBackground" id="Takeaways">
+        <h1 class="PinkTitle">Major Takeaways</h1>
+        <div class="WhiteText">
+            <p>
+                This project taught me a crucial design lesson: sometimes your initial ideas don't resonate, and you must be comfortable returning to first principles. By embracing this reset and following a more thorough, research-driven approach, we created a significantly stronger final product that genuinely addressed user needs while making physical activity both purposeful and enjoyable.
+            </p>  
+        </div>  
+    </div>
+    
+  </body>
+</html>

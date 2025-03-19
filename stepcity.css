@@ -66,9 +66,9 @@ p{
     align-items: center;
 }
 
-#Poster{
-    width: 50%;
-    margin:auto;
+#VanPhoto{
+    width: 15%;
+    margin: auto;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
 
@@ -115,19 +115,92 @@ p{
     overflow: hidden;
 }
 
-#redmond{
-    width: 90%;
+#ReframePhoto{
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+#PresentationPhoto{
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.Figmas{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#scanning{
+    width:30%;
+    margin-left: 15%;
+    margin-right:5%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+#getblueprint{
+    width: 30%;
     margin-left: 5%;
-    margin-right: 5%;
+    margin-right: 15%;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-#lofi{
-    width: 100%;
+#quest{
+    width:30%;
+    margin-left: 2%;
+    margin-right:1.5%;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-#demonstration{
-    width: 100%;
+#progress{
+    width:30%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#questreward{
+    width:30%;
+    margin-left: 1.5%;
+    margin-right: 2%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#blueprintmenu{
+    width:30%;
+    margin-left: 15%;
+    margin-right:5%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#buildingresult{
+    width: 30%;
+    margin-left: 5%;
+    margin-right: 15%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#milestonemenu{
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#friendslist{
+    width:30%;
+    margin-left: 2%;
+    margin-right:1.5%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#trading{
+    width:30%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#visit{
+    width:30%;
+    margin-left: 1.5%;
+    margin-right: 2%;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
