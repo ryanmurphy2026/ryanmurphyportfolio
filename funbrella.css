@@ -109,7 +109,23 @@ p{
     margin-right: 20%;
 }
 
+#Name{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 #ImageSectionDivider{
     margin-bottom: -8px;
     overflow: hidden;
+}
+
+#start{
+    width: 60%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+#testing{
+    width: 100%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }

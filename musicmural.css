@@ -25,6 +25,10 @@ body{
 p{
     font-size: 16px;
     color: white;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height: 2;
 }
 
 .navbar {

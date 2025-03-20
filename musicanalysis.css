@@ -24,11 +24,12 @@ body{
 
 p{
     font-size: 16px;
-    color: white;
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
     line-height: 2;
+    color: white;
+    
 }
 
 .navbar {
@@ -63,6 +64,7 @@ p{
 }
 
 #TechDream{
+    height: 330vh;
     padding-top: 16px;
     padding-bottom: 16px;
     background-color: #036147;
@@ -101,4 +103,31 @@ button {
 button:hover {
     background-color: #036147; 
     color: #ff6c26; 
+}
+
+iframe{
+    width: 50%;
+}
+
+.charts{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.left{
+    width: 32%;
+    margin-left: 1%;
+    margin-right:.5%;
+}
+
+.center{
+    width: 32%;
+    margin-left: .5%;
+    margin-right:.5%;
+}
+
+.right{
+    width: 32%;
+    margin-left: .5%;
+    margin-right: 1%;
 }

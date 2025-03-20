@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="musicanalysis.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
+    <script src="main.js" defer></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#ProjectsSection">Projects</a>
+            <a href="index.html#ArtSection">Art</a>
+            <a href="index.html#AboutMe">About Me</a>
+            <a href="index.html#ContactSection">Contact</a>
+        </div>
+    </nav>
+
+    <div id="TechDream">
+        <div id="Contents">
+            <img src="Music Taste Analysis Photos/Spreadsheet.jpg" width="80%">
+            <h1>Music Taste Analysis</h1>
+            <p>I listen to a lot of music. Like over 189,000 minutes of music over the past two years. I love music so much that every day since 2023, I choose one song to represent that day and put it on a playlist. As of writing, I have picked over 800 songs. This simple habit has become a huge part of me and these songs are very personal to me. After learning about data visualization techniques, I thought it would be cool to analyze my music taste and see how it has changed. Using tools like Exportify and the Last.fm API I turned my Spotify into a spreadsheet to analyze. </p>
+            <p>
+                First I analyzed how many artists I’ve listened to. Overall, there are 627 unique artists on this playlist. I then chose to analyze the top artists with the cut off being 6 songs.
+            </p>
+            <div class="charts">
+                <img class="left" src="Music Taste Analysis Photos/zZ2Y1-most-common-artists.png">
+                <img class="center" src="Music Taste Analysis Photos/zZ2Y1-total-plays-for-most-common-artists.png">
+                <img class="right" src="Music Taste Analysis Photos/zZ2Y1-average-plays-for-most-common-artists.png">
+            </div>
+            <p>
+                Similar to artists, I also analyzed how many genres I’ve listened to. Overall, there are 304 unique genres on this playlist. I then chose to analyze the top ten genres.
+            </p>
+            <div class="charts">
+                <img class="left" src="Music Taste Analysis Photos/glj1E-top-ten-most-common-genres.png">
+                <img class="center" src="Music Taste Analysis Photos/glj1E-total-plays-for-top-ten-most-common-genres.png">
+                <img class="right" src="Music Taste Analysis Photos/glj1E-average-plays-for-top-ten-most-common-genres.png">
+            </div>
+            <p>
+                Due to there being so many niche genres, I decided to categorize every song into one of 12 genre categories and then calculated the percentage of genres for each month.
+            </p>
+            <iframe src='https://flo.uri.sh/visualisation/22061138/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/22061138/?utm_source=embed&utm_campaign=visualisation/22061138' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
+        </div>
+    </div>
+
+    </body>
+</html>

@@ -120,3 +120,9 @@ p{
     margin-right: 5%;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
+
+#AllvanName{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
