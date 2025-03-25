@@ -84,6 +84,27 @@ a{
     
 }
 
+@media only screen and (max-width: 720px) {
+    .navbar {
+        /* Flexbox compatibility for Safari */
+        display: -webkit-box;      /* Safari specific */
+        display: -webkit-flex;     /* Safari specific */
+        display: -ms-flexbox;      /* IE/Edge */
+        display: flex;
+
+        /* Ensure justify-content works across browsers */
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+
+        /* Additional properties to ensure consistent layout */
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+}
+
 .nav-links {
     display: flex;
     gap: 20px;
