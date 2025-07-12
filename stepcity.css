@@ -214,3 +214,189 @@ p{
 .center{
     text-align: center;
 }
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+    /* Navigation adjustments */
+    .navbar {
+        padding: 16px;
+        justify-content: center;
+    }
+    
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .nav-links a {
+        font-size: 13px;
+        padding: 8px 12px;
+    }
+    
+    /* Typography adjustments */
+    .PinkTitle,
+    .GreenTitle {
+        font-size: 32px;
+    }
+    
+    p {
+        font-size: 15px;
+    }
+    
+    /* Text content adjustments */
+    .BlackText,
+    .WhiteText {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        line-height: 1.8;
+    }
+    
+    #Name {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    /* Background sections */
+    .WhiteBackground,
+    .GreenBackground {
+        padding: 16px;
+    }
+    
+    /* Main image adjustments */
+    #VanPhoto {
+        width: 40%;
+        min-width: 200px;
+    }
+    
+    #ReframePhoto,
+    #PresentationPhoto {
+        max-width: 100%;
+        height: auto;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    }
+    
+    /* Starting image section */
+    #StartingImage {
+        height: 80vh;
+        padding: 16px;
+    }
+    
+    /* Figma layout - stack vertically on mobile */
+    .Figmas {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+    /* Individual figma images - make them larger on mobile */
+    #scanning,
+    #getblueprint,
+    #quest,
+    #progress,
+    #questreward,
+    #blueprintmenu,
+    #buildingresult,
+    #friendslist,
+    #trading,
+    #visit {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+    }
+    
+    #milestonemenu {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Extra small screens */
+    .navbar {
+        padding: 12px;
+    }
+    
+    .nav-links {
+        gap: 10px;
+    }
+    
+    .nav-links a {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+    
+    .PinkTitle,
+    .GreenTitle {
+        font-size: 24px;
+    }
+    
+    p {
+        font-size: 14px;
+    }
+    
+    .BlackText,
+    .WhiteText {
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        line-height: 1.6;
+    }
+    
+    #Name {
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+    
+    .WhiteBackground,
+    .GreenBackground {
+        padding: 12px;
+    }
+    
+    #VanPhoto {
+        width: 60%;
+        min-width: 150px;
+    }
+    
+    #StartingImage {
+        height: 50vh;
+        padding: 12px;
+    }
+    
+    /* Make figma images even larger on very small screens */
+    #scanning,
+    #getblueprint,
+    #quest,
+    #progress,
+    #questreward,
+    #blueprintmenu,
+    #buildingresult,
+    #friendslist,
+    #trading,
+    #visit,
+    #milestonemenu {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    }
+    
+    .Figmas {
+        gap: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    /* Disable hover effects on touch devices */
+    .nav-links a:hover {
+        transform: none;
+    }
+}

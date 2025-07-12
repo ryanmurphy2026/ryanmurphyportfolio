@@ -1,9 +1,15 @@
+@font-face {
+  font-family: Sentient;
+  src: url(SENTIENT-VARIABLE.TTF);
+}
+
 body{
     margin: 0;
     padding: 0;
-    font-family: Rubik;
+    font-family: Sentient;
     background-color: #036147;
 }
+
 
 ::-webkit-scrollbar {
     width:auto;
@@ -103,4 +109,149 @@ button {
 button:hover {
     background-color: #036147; 
     color: #ff6c26; 
+}
+
+/* Mobile Responsive Styles */
+
+/* Tablet styles (768px and below) */
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding-left: 15px;
+        padding-right: 15px;
+        justify-content: center;
+    }
+    
+    .nav-links {
+        gap: 15px;
+    }
+    
+    .nav-links a {
+        font-size: 13px;
+        padding: 4px 8px;
+    }
+    
+    #Poster {
+        width: 90%;
+    }
+    
+    .PinkTitle, .GreenTitle {
+        font-size: 36px;
+    }
+    
+    .BlackText, .WhiteText {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    .WhiteBackground, .GreenBackground {
+        padding: 20px;
+    }
+}
+
+/* Mobile styles (480px and below) */
+@media screen and (max-width: 480px) {
+    .navbar {
+        padding-top: 16px;
+        padding-bottom: 16px;
+        padding-left: 10px;
+        padding-right: 10px;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .nav-links {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .nav-links a {
+        font-size: 12px;
+        padding: 3px 6px;
+    }
+    
+    .nav-links a:hover {
+        transform: scale(1.05); /* Reduced scale for mobile */
+    }
+    
+    #StartingImage {
+        height: 60vh;
+        padding: 10px;
+    }
+    
+    #Poster {
+        width: 95%;
+    }
+    
+    .PinkTitle, .GreenTitle {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    
+    .BlackText, .WhiteText {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        line-height: 1.6;
+    }
+    
+    p {
+        font-size: 14px;
+    }
+    
+    .WhiteBackground, .GreenBackground {
+        padding: 15px;
+    }
+    
+    #redmond {
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+    
+    #Name {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    /* Reduce box shadow for mobile */
+    #Poster, #redmond, #lofi, #demonstration {
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    }
+}
+
+/* Extra small mobile styles (320px and below) */
+@media screen and (max-width: 320px) {
+    .navbar {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    
+    .PinkTitle, .GreenTitle {
+        font-size: 24px;
+    }
+    
+    .BlackText, .WhiteText {
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+    
+    p {
+        font-size: 13px;
+    }
+    
+    .WhiteBackground, .GreenBackground {
+        padding: 12px;
+    }
+    
+    #StartingImage {
+        height: 50vh;
+    }
+    
+    #Poster {
+        width: 90%;
+    }
 }
