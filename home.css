@@ -241,6 +241,13 @@ a{
     justify-content: center;
 }
 
+@media (max-width: 720px){
+    .ArtIcons{
+        display: block;
+    }
+}
+
+
 #ProjectContents{
     display:block;
     text-align: center;
@@ -250,6 +257,12 @@ a{
     display: flex;
     justify-content: center;
     background-color: #f5f3ee;
+}
+
+@media (max-width: 720px){
+    .ProjectIcons{
+        display: block;
+    }
 }
 
 .ProjectBlock{
@@ -339,6 +352,7 @@ a{
     #AboutMeText{
         padding: 8px 8px;
         text-align: justify;
+        width: 100%;
     }
     #RyanHeadshot{
         width: 100%;
