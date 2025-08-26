@@ -385,13 +385,20 @@ a{
     color: white;
 }
 
+
 .fade-in {
-  opacity: 0;
-  animation: fadeIn .6s ease-in forwards;
+  opacity: 0; /* Start completely transparent */
+  transform: translateY(20px); /* Start slightly below its final position */
+  animation: fadeInMoveUp .8s ease-out forwards; /* Apply the animation */
 }
 
-@keyframes fadeIn {
-  to {
+@keyframes fadeInMoveUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Initial state */
+  }
+  100% {
     opacity: 1;
+    transform: translateY(0); /* Final state, in place */
   }
 }
