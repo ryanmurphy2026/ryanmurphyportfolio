@@ -1,0 +1,321 @@
+@font-face {
+  font-family: Sentient;
+  src: url(SENTIENT-VARIABLE.TTF);
+}
+
+body{
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f3ee;
+    font-family: Sentient;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+/* Page exit animation */
+body.exiting {
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+
+::-webkit-scrollbar {
+    width:auto;
+    }
+    /*track*/
+    ::-webkit-scrollbar-track {
+    background:rgb(201, 200, 196);
+    border-width:2px;
+    border-style:solid;
+    border-color:black;
+    }
+    /*thumb*/
+    ::-webkit-scrollbar-thumb {
+    background:rgb(245, 243, 238);
+    border-width:2px;
+    border-style:solid;
+    border-color:black;
+    }
+
+p{
+    font-size: 16px;
+}
+
+
+.navbar {
+    background-color: #f5f3ee;
+    color: black;
+    border-bottom: 4px solid black;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: all 0.5s ease;
+}
+
+.nav-links a:hover {
+    color: #036147; /* Color on hover */
+    transform: scale(1.2); /* Grow on hover */
+}
+
+#StartingImage{
+    background-color: #036147;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#VanPhoto{
+    margin: auto;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.WhiteBackground{
+    background-color: #f5f3ee;
+    padding: 24px;
+}
+
+.GreenBackground{
+    background-color: #036147;
+    padding: 24px;
+}
+
+.PinkTitle{
+    color:#f3cce7;
+    font-size: 48px;
+    text-align: center;
+}
+
+.GreenTitle{
+    color:#036147;
+    font-size: 48px;
+    text-align: center;
+}
+
+.BlackText{
+    color: black;
+    line-height: 2;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.WhiteText{
+    color: #f5f3ee;
+    line-height: 2;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#Name{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#ImageSectionDivider{
+    margin-bottom: -8px;
+    overflow: hidden;
+}
+
+#start{
+    width: 60%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+#testing{
+    width: 100%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.center{
+    text-align: center;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Sentient;
+}
+
+::-webkit-scrollbar {
+    width:auto;
+    }
+    /*track*/
+    ::-webkit-scrollbar-track {
+    background:rgb(201, 200, 196);
+    border-width:2px;
+    border-style:solid;
+    border-color:black;
+    }
+    /*thumb*/
+    ::-webkit-scrollbar-thumb {
+    background:rgb(245, 243, 238);
+    border-width:2px;
+    border-style:solid;
+    border-color:black;
+    }
+
+p{
+    font-size: 16px;
+}
+
+.navbar {
+    background-color: #f5f3ee;
+    color: black;
+    border-bottom: 4px solid black;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: all 0.5s ease;
+}
+
+.nav-links a:hover {
+    color: #036147; /* Color on hover */
+    transform: scale(1.2); /* Grow on hover */
+}
+
+#StartingImage{
+    background-color: #036147;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#VanPhoto{
+    margin: auto;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.WhiteBackground{
+    background-color: #f5f3ee;
+    padding: 24px;
+}
+
+.GreenBackground{
+    background-color: #036147;
+    padding: 24px;
+}
+
+.PinkTitle{
+    color:#f3cce7;
+    font-size: 48px;
+    text-align: center;
+}
+
+.GreenTitle{
+    color:#036147;
+    font-size: 48px;
+    text-align: center;
+}
+
+.BlackText{
+    color: black;
+    line-height: 2;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.WhiteText{
+    color: #f5f3ee;
+    line-height: 2;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#Name{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#ImageSectionDivider{
+    margin-bottom: -8px;
+    overflow: hidden;
+}
+
+#start{
+    width: 60%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+#testing{
+    width: 100%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.center{
+    text-align: center;
+}
+
+#primarycolors {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+#secondarycolors{
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+#logocomparison{
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.Figmas{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#homepageold{
+    width: 30%;
+    margin-left: 15%;
+    margin-right: 5%;
+}
+
+#homepagenew{
+    width: 30%;
+    margin-left: 5%;
+    margin-right: 15%;
+}

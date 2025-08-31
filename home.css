@@ -4,9 +4,16 @@
 }
 
 body{
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
     margin: 0;
     padding: 0;
+    background-color: #f5f3ee;
     font-family: Sentient;
+}
+
+body.loaded {
+    opacity: 1;
 }
 
 
@@ -265,6 +272,10 @@ a{
     background-color: #f5f3ee;
 }
 
+.IconBuffers{
+    width: 44.05px;
+}
+
 @media (max-width: 720px){
     .ProjectIcons{
         display: block;
@@ -386,19 +397,13 @@ a{
 }
 
 
-.fade-in {
-  opacity: 0; /* Start completely transparent */
-  transform: translateY(20px); /* Start slightly below its final position */
-  animation: fadeInMoveUp .8s ease-out forwards; /* Apply the animation */
+.slide-up {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
-@keyframes fadeInMoveUp {
-  0% {
-    opacity: 0;
-    transform: translateY(20px); /* Initial state */
-  }
-  100% {
+.slide-up.animate {
     opacity: 1;
-    transform: translateY(0); /* Final state, in place */
-  }
+    transform: translateY(0);
 }

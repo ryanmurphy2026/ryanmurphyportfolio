@@ -4,9 +4,22 @@
 }
 
 body{
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
     margin: 0;
     padding: 0;
+    background-color: #f5f3ee;
     font-family: Sentient;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+/* Page exit animation */
+body.exiting {
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
 }
 
 ::-webkit-scrollbar {
@@ -142,7 +155,7 @@ p{
 body{
     margin: 0;
     padding: 0;
-    font-family: Rubik;
+    font-family: Sentient;
 }
 
 ::-webkit-scrollbar {
