@@ -175,6 +175,7 @@ a{
 #rushtext{
     width: 80%;
     font-size: 18px;
+    font-family: Sentient;
     line-height: 2;
 }
   
@@ -188,7 +189,7 @@ a{
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
-    transition-duration: 0.4s;
+    transition-duration: 0.3s;
     cursor: pointer;
 }
   

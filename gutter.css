@@ -138,6 +138,10 @@ p{
     overflow: hidden;
 }
 
+#Footer{
+    overflow: hidden;
+}
+
 #start{
     width: 60%;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
