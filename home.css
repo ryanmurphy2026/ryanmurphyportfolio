@@ -225,13 +225,14 @@ a{
 }
 
 #brainimagecontainer{
-    margin-top: -8vh;
+    margin-top: -16vh;
     display: flex;
     justify-content: center;
 }
 
 #Combining{
     color: #f3cce7;
+    font-size: 40px;
 }
 @media (max-width: 720px){
     #Combining{
@@ -350,7 +351,7 @@ a{
 #AboutMeHeader{
     text-align: center;
     color:#ff6c26;
-    font-size: 32px;
+    font-size: 40px;
     line-height: .5;
 }
 
