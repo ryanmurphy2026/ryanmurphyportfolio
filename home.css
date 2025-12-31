@@ -3,6 +3,11 @@
   src: url(SENTIENT-VARIABLE.TTF);
 }
 
+/* Lock horizontal scroll */
+html, body {
+  overflow-x: hidden;
+}
+
 body{
     opacity: 0;
     transition: opacity 0.8s ease-in-out;
@@ -229,10 +234,16 @@ a{
     display: flex;
     justify-content: center;
 }
+@media (max-width: 720px){
+
+    #brainimagecontainer{
+    margin-top: -8vh;
+    }
+}
 
 #Combining{
     color: #f3cce7;
-    font-size: 40px;
+    font-size: 48px;
 }
 @media (max-width: 720px){
     #Combining{
@@ -319,6 +330,7 @@ a{
     padding: 16px;
     background-color: #036147;
     justify-content: center;
+
 }
 
 #ArtContents{
@@ -331,6 +343,11 @@ a{
     font-size: 48px;
     line-height: .5;
 }
+@media (max-width: 720px){
+    #ArtTitle{
+    line-height: 1;
+}
+}
 
 #ArtBody{
     color: white;
@@ -340,6 +357,7 @@ a{
     background-color: #f5f3ee;
     padding: 32px;
     display:flex;
+    width: 100%;
 }
 
 
@@ -408,4 +426,218 @@ a{
 .slide-up.animate {
     opacity: 1;
     transform: translateY(0);
+}
+/* ==========================================
+   MOBILE ONLY OVERRIDES (DESKTOP UNCHANGED)
+   ========================================== */
+@media (max-width: 720px) {
+
+  /* Prevent sideways scroll */
+  html, body { overflow-x: hidden; }
+
+  /* Navbar wraps instead of spilling */
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 12px;
+  }
+
+  /* ---- HERO BACKGROUND: fill the section ---- */
+  #LandingPage {
+    height: auto;                 /* override fixed 700px for mobile */
+    min-height: calc(100vh - 88px);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #background {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+  }
+
+  /* ---- HERO CARD: centered + wider + taller ---- */
+  #introductionblock {
+    position: relative;           /* overrides absolute */
+    z-index: 1;
+    width: 92vw;
+    max-width: 720px;
+    margin: 0 auto;
+    min-height: 320px;            /* taller card */
+    padding: 32px 24px;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;          /* center content in taller card */
+    text-align: center;
+  }
+
+  #rushtext { width: 100%; }
+
+  #resume {
+    width: 100%;
+    max-width: 280px;
+  }
+
+    /* Design in Action */
+  #ProjectsSection {
+    display: flex;
+    justify-content: center;
+  }
+
+  #ProjectContents {
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0 16px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  #ProjectTitle {
+    line-height: 1;
+  }
+
+  #ProjectContents p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Creative Explorations */
+  #ArtSection {
+    display: flex;
+    justify-content: center;
+  }
+
+  #ArtContents {
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0 16px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  #ArtBody {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ---- SECTION TEXT: stop right-side spill ---- */
+  #ProjectContents,
+  #ArtContents {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0 16px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  #ProjectContents p,
+  #ArtBody {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ---- ICONS: full width on mobile ---- */
+  .ProjectIcons,
+  .ArtIcons {
+    display: block;
+    padding: 0;
+  }
+
+  .ProjectBlock {
+    width: 100vw;
+    max-width: 100vw;
+    padding: 32px 0;
+    margin: 0;
+  }
+
+  .ProjectBlock a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .icons {
+    width: 90vw;
+    max-width: 420px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .ProjectNames,
+  .ArtNames {
+    font-size: 22px;
+    margin-top: 16px;
+    text-align: center;
+  }
+
+  .Blank { display: none; }
+
+  /* About section stacks */
+  #AboutMe { display: block; padding: 20px; box-sizing: border-box; }
+  #AboutMeText { width: 100%; padding: 12px 0 0 0; text-align: left; }
+  #RyanHeadshot { width: 100%; }
+}
+/* =====================================
+   MOBILE FIX: CENTER SECTION TEXT BLOCKS
+   ===================================== */
+@media (max-width: 720px) {
+
+  /* Design in Action */
+  #ProjectsSection {
+    display: flex;
+    justify-content: center;
+  }
+
+  #ProjectContents {
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0 16px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  #ProjectContents p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Creative Explorations */
+  #ArtSection {
+    display: flex;
+    justify-content: center;
+  }
+
+  #ArtContents {
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0 16px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  #ArtBody {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 720px) {
+  #ImageSectionDivider img {
+    width: 200%;
+    margin-left: -15%;
+  }
 }

@@ -337,6 +337,7 @@ p{
     #StartingImage {
         height: 70vh;
         padding: 16px;
+        width: auto;
     }
 
     #GroupPhoto{
@@ -473,4 +474,313 @@ p{
     .nav-links a:hover {
         transform: none;
     }
+}
+
+/* =========================
+   Mobile Responsiveness Additions
+   Put this at the VERY bottom of amazonmusic.css
+========================= */
+
+/* Global safety: prevent horizontal scrolling + make media scale */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Make your divider images never cause overflow */
+#ImageSectionDivider img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Slightly nicer spacing on small screens */
+@media (max-width: 768px) {
+
+  /* NAV: wrap and center */
+  .navbar {
+    justify-content: center;
+    padding: 14px 12px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 14px;
+    padding: 0 8px;
+  }
+
+  /* Text blocks: full width with comfy margins */
+  .BlackText,
+  .WhiteText {
+    width: min(92%, 680px);
+    margin: 0 auto;
+  }
+
+  /* Titles scale down */
+  .PinkTitle,
+  .GreenTitle {
+    font-size: 32px;
+    line-height: 1.15;
+  }
+
+  /* Starting section image: keep it centered and not oversized */
+  #StartingImage {
+    height: auto;          /* avoid awkward cropping */
+    min-height: 60vh;
+    padding: 18px 12px;
+  }
+
+  #GroupPhoto {
+    width: min(92%, 520px);
+    margin: 0 auto;
+  }
+
+  /* Big images */
+  #brainstorming,
+  #team {
+    width: min(92%, 680px);
+    margin: 0 auto;
+  }
+
+  /* FIGMAS: stack cleanly and center without relying on all the ID margins */
+  .Figmas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin: 14px 0;
+  }
+
+  .Figmas img {
+    width: min(92%, 520px);
+    margin: 0 auto;        /* overrides your left/right margins on mobile */
+  }
+
+  /* Project title width */
+  #Name {
+    width: 92%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .PinkTitle,
+  .GreenTitle {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  #StartingImage {
+    min-height: 55vh;
+    padding: 14px 10px;
+  }
+
+  .Figmas img {
+    width: 95%;
+  }
+
+  /* Hover scale can feel weird on phones */
+  .nav-links a:hover {
+    transform: none;
+  }
+}
+/* =========================
+   Remove scrollbar on mobile
+========================= */
+
+@media (max-width: 768px) {
+  html,
+  body {
+    overflow: hidden;      /* removes all scrollbars */
+    height: 100%;
+  }
+
+  /* Hide scrollbar visuals (mobile browsers) */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  body {
+    -ms-overflow-style: none;  /* IE/Edge */
+    scrollbar-width: none;     /* Firefox */
+  }
+}
+
+/* =========================================================
+   MOBILE PATCH (put at the very bottom of your CSS)
+   Aligns with your existing styles + avoids desktop changes
+========================================================= */
+
+@media (max-width: 768px) {
+
+  /* Allow scrolling but hide scrollbar */
+  html, body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Hide scrollbar visuals */
+  body {
+    -ms-overflow-style: none;   /* IE/Edge */
+    scrollbar-width: none;      /* Firefox */
+  }
+  body::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+
+  /* Global image safety */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Navbar: centered + wraps cleanly */
+  .navbar {
+    justify-content: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 10px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+    padding: 6px 8px;
+  }
+
+  /* Sections: a bit tighter */
+  .WhiteBackground,
+  .GreenBackground {
+    padding: 18px;
+  }
+
+  /* Headings scale down */
+  .PinkTitle,
+  .GreenTitle {
+    font-size: 32px;
+    line-height: 1.15;
+  }
+
+  /* Text blocks: remove the 60% width + 20% margins on mobile */
+  .BlackText,
+  .WhiteText {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  /* Hero section */
+  #StartingImage {
+    height: auto;
+    padding: 28px 16px;
+  }
+
+  /* Your hero image (you use #VanPhoto in this CSS) */
+  #VanPhoto {
+    width: 92%;
+    max-width: 520px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  /* Your other main image IDs */
+  #start {
+    width: 92%;
+    max-width: 520px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  #testing {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Divider cropping you already started */
+  #ImageSectionDivider {
+    height: 100px;  /* tweak if you want */
+    overflow: hidden;
+  }
+  #ImageSectionDivider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* Image sections that had side margins */
+  #primarycolors,
+  #secondarycolors,
+  #fontshowcase,
+  #logocomparison {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* Figma comparisons: stack and center */
+  .Figmas {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  #homepageold,
+  #homepagenew {
+    width: 92%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/* Smaller phones */
+@media (max-width: 420px) {
+  .PinkTitle,
+  .GreenTitle {
+    font-size: 28px;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+  }
+
+  #ImageSectionDivider {
+    height: 80px;
+  }
 }

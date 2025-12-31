@@ -330,3 +330,155 @@ p{
     margin-left: 5%;
     margin-right: 15%;
 }
+
+@media only screen and (max-width: 720px) {
+    .navbar {
+        /* Flexbox compatibility for Safari */
+        display: -webkit-box;      /* Safari specific */
+        display: -webkit-flex;     /* Safari specific */
+        display: -ms-flexbox;      /* IE/Edge */
+        display: flex;
+
+        /* Ensure justify-content works across browsers */
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+
+        /* Additional properties to ensure consistent layout */
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+
+  /* Make spacing feel better on small screens */
+  .WhiteBackground,
+  .GreenBackground {
+    padding: 18px;
+  }
+
+  /* Headings scale down */
+  .PinkTitle,
+  .GreenTitle {
+    font-size: 32px;
+    line-height: 1.15;
+  }
+
+  /* Main text containers: stop using the 60% + 20% margins on mobile */
+  .BlackText,
+  .WhiteText {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  /* Nav wraps nicely */
+  .navbar {
+    justify-content: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 10px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+    padding: 6px 8px;
+  }
+
+  /* Starting hero image: make it bigger and avoid overflow */
+  #StartingImage {
+    height: auto;
+    padding: 28px 16px;
+    width: auto;
+  }
+
+  #start {
+    width: 92%;
+    max-width: 520px;
+    height: auto;
+  }
+
+  /* Make your content images fit cleanly */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Your in-section images that had side margins */
+  #primarycolors,
+  #secondarycolors,
+  #fontshowcase,
+  #logocomparison {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  /* Before/After figma comparisons: stack instead of side-by-side */
+  .Figmas {
+    flex-direction: column;
+    gap: 14px;
+    align-items: center;
+    width: 75%;
+  }
+
+  /* IDs are reused in your HTML, but CSS still applies */
+  #homepageold,
+  #homepagenew {
+    width: 92%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/* Smaller phones */
+@media (max-width: 420px) {
+  .PinkTitle,
+  .GreenTitle {
+    font-size: 28px;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .BlackText,
+  .WhiteText {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+}
+
+@media (max-width: 768px) {
+
+  #ImageSectionDivider {
+    height: 100px;          /* adjust this to make it taller */
+    overflow: hidden;
+  }
+
+  #ImageSectionDivider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;      /* allows image to be cropped */
+    display: block;
+  }
+
+}
