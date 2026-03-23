@@ -418,3 +418,193 @@ p{
         transform: none;
     }
 }
+
+/* =============== Mobile responsiveness (add at bottom of CSS) =============== */
+
+/* Make images behave on all screen sizes */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Prevent random horizontal scrolling on mobile */
+html, body {
+  overflow-x: hidden;
+}
+
+/* --- Tablet + Mobile --- */
+@media (max-width: 768px) {
+  /* NAV */
+  .navbar {
+    justify-content: center;
+    padding: 14px 12px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 12px;
+    padding: 0 6px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+    padding: 8px 10px;
+  }
+
+  /* TITLES / TYPE */
+  .PinkTitle,
+  .GreenTitle {
+    font-size: 32px;
+    line-height: 1.15;
+  }
+
+  p, li {
+    font-size: 15px;
+  }
+
+  /* SECTIONS */
+  .WhiteBackground,
+  .GreenBackground {
+    padding: 16px;
+  }
+
+  /* TEXT BLOCKS: stop hard 60% + 20% margins */
+  .BlackText,
+  .WhiteText {
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto;
+    line-height: 1.75;
+  }
+
+  #Name {
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  /* HERO */
+  #StartingImage {
+    height: 60vh; /* a bit shorter so it doesn't eat the whole screen */
+    padding: 16px;
+  }
+
+  #VanPhoto {
+    width: clamp(180px, 55vw, 320px); /* scales nicely */
+  }
+
+  /* FIGMA ROWS -> STACK */
+  .Figmas {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  /* Override ALL the per-image margins and widths on mobile */
+  .Figmas img,
+  #milestonemenu {
+    width: 60%;
+    margin: 0 !important;
+  }
+
+  /* Lists often cause overflow when nested weirdly */
+  ul, ol {
+    padding-left: 20px;
+  }
+
+  /* Touch devices: kill hover scale */
+  .nav-links a:hover {
+    transform: none;
+  }
+}
+
+/* --- Small phones --- */
+@media (max-width: 480px) {
+  .PinkTitle,
+  .GreenTitle {
+    font-size: 26px;
+  }
+
+  p, li {
+    font-size: 14px;
+  }
+
+  .WhiteBackground,
+  .GreenBackground {
+    padding: 12px;
+  }
+
+  #StartingImage {
+    height: 50vh;
+  }
+
+  #VanPhoto {
+    width: clamp(160px, 70vw, 280px);
+  }
+
+  .Figmas img,
+  #milestonemenu {
+    width: 60%;
+  }
+}
+/* ===== Oversized section dividers ===== */
+
+#ImageSectionDivider {
+  width: 100%;
+  overflow: hidden;      /* crops the sides */
+  margin-bottom: -8px;   /* keep your existing overlap look */
+}
+
+#ImageSectionDivider img {
+  width: 150%;           /* make image 150% wider */
+  max-width: none;       /* prevent browser from clamping */
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%); /* center the oversized image */
+  display: block;
+}
+
+@media (max-width: 768px) {
+  #StartingImage {
+    height: 60vh;
+    min-height: 360px;
+    padding: 16px;
+  }
+
+  #VanPhoto {
+    width: clamp(200px, 65vw, 360px);
+  }
+}
+
+@media (max-width: 480px) {
+  #StartingImage {
+    height: 60vh;
+    min-height: 300px;
+  }
+
+  #VanPhoto {
+    width: 50vw;
+  }
+}
+/* ===== HARD STOP: horizontal scroll fix ===== */
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  .Figmas img,
+  #milestonemenu {
+    width: min(420px, 80%);
+    max-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .Figmas img {
+    width: 40%;
+  }
+}
