@@ -1,274 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="home.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ryan Murphy Portfolio</title>
+    <link rel="stylesheet" href="home.css" />
+    <link rel="icon" href="portfoliofavicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="portfoliofavicon.png" type="image/x-icon" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
     <script src="main.js" defer></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="icon" href="portfoliofavicon.png" type="image/x-icon">
-  <link rel="shortcut icon" href="portfoliofavicon.png" type="image/x-icon">
-
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-
-
   </head>
   <body>
-
     <nav class="navbar">
       <div class="nav-links">
-          <a href="#LandingPage">Home</a>
-          <a href="#ProjectsSection">Design in Action</a>
-          <a href="#ArtSection">Creative Explorations</a>
-          <a href="#AboutMe">About Me</a>
-          <a href="#ContactSection">Contact</a>
+        <a href="#LandingPage">Home</a>
+        <a href="#ProjectsSection">Design in Action</a>
+        <a href="#ArtSection">Creative Explorations</a>
+        <a href="#AboutMe">About Me</a>
+        <a href="#ContactSection">Contact</a>
       </div>
-  </nav>
+    </nav>
 
-
-    <div id="LandingPage">
-      <div id="background"></div>
-      <div class="slide-up">
-        <div id="introductionblock">
-        
+    <main>
+      <section id="LandingPage">
+        <div id="background"></div>
+        <div class="slide-up" id="introductionblock">
           <div id="introtext">
             <h1 id="Hello">Hello, I'm Ryan!</h1>
-            <p id="rushtext">If you're in a rush, you can download my resume below. Otherwise, enjoy your visit!</p>
-            <a href="RJM Master Resume 9_25.pdf" download><button id="resume"> My Resume</button></a>
-          </div>
-
-        
-        </div>
-      </div>
-    </div>
-
-    <div id="BrainSection">
-      <div id="BrainContents">
-        <h1 id="Combining">Combining Left & Right Brain Thinking</h1><br>
-        <div class="slide-up">
-          <div id="brainimagecontainer">
-            <img id="brainimage" src="brain.png" width="60%">
-          </div>
+            <p id="rushtext">
+              If you're in a rush, you can download my resume below. Otherwise, enjoy your
+              visit!
+            </p>
+            <a class="resume-link" href="RJM Master Resume 9_25.pdf" download>My Resume</a>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
 
-    
-    <div id="ProjectsSection">
-      <div>
+      <section id="BrainSection">
+        <div id="BrainContents">
+          <h2 id="Combining">Combining Left &amp; Right Brain Thinking</h2>
+          <div class="slide-up" id="brainimagecontainer">
+            <img id="brainimage" src="brain.png" alt="Split brain concept illustration" />
+          </div>
+        </div>
+      </section>
+
+      <section id="ProjectsSection">
         <div id="ProjectContents">
-          <h1 id="ProjectTitle">Design in Action</h1>
-          <p>These are the projects where I put design thinking into practice, from research and ideation to prototyping and testing.</p>
-          <p> Click on any icon to explore the full project.</p>
+          <h2 id="ProjectTitle">Design in Action</h2>
+          <p>
+            These are the projects where I put design thinking into practice, from research
+            and ideation to prototyping and testing.
+          </p>
+          <p>Click on any icon to explore the full project.</p>
         </div>
-      </div>  
-    </div>
+      </section>
 
-    <div class="ProjectIcons">
-      <div class ="ProjectBlock">
-        <div class ="slide-up">
-        <a href="livetime.html">
-          <img src="Icons/flamingo for portfolio.png" class="icons" width="90%">
-          <h2 class="ProjectNames">Live Time</h2>
-        </a>
+      <section class="cards-section cards-section-light" aria-label="Design in Action Projects">
+        <div class="cards-grid">
+          <article class="ProjectBlock slide-up">
+            <a href="livetime.html">
+              <img src="Icons/flamingo for portfolio.png" class="icons" alt="Live Time project icon" />
+              <h3 class="ProjectNames">Live Time</h3>
+            </a>
+          </article>
+          <article class="ProjectBlock slide-up">
+            <a href="amazonmusic.html">
+              <img src="Icons/walkmanforwebsite.png" class="icons" alt="Amazon Music project icon" />
+              <h3 class="ProjectNames">Amazon Music</h3>
+            </a>
+          </article>
+          <article class="ProjectBlock slide-up">
+            <a href="stepcity.html">
+              <img src="Icons/stepcityforportfolio.png" class="icons" alt="Step City project icon" />
+              <h3 class="ProjectNames">Step City</h3>
+            </a>
+          </article>
+          <article class="ProjectBlock slide-up">
+            <a href="gutter.html">
+              <img src="Icons/gutter for portfolio.png" class="icons" alt="Gutter Defender project icon" />
+              <h3 class="ProjectNames">Gutter Defender</h3>
+            </a>
+          </article>
+          <article class="ProjectBlock slide-up">
+            <a href="fleetclean.html">
+              <img src="Icons/truck for portfolio.png" class="icons" alt="Fleet Clean project icon" />
+              <h3 class="ProjectNames">Fleet Clean</h3>
+            </a>
+          </article>
+          <article class="ProjectBlock slide-up">
+            <a href="funbrella.html">
+              <img src="Icons/Umbrella icon for portfolio.png" class="icons" alt="Funbrella project icon" />
+              <h3 class="ProjectNames">Funbrella</h3>
+            </a>
+          </article>
+          <article class="ProjectBlock slide-up">
+            <a href="retractawheel.html">
+              <img src="Icons/bicycle for portfolio.png" class="icons" alt="Retract-A-Wheels project icon" />
+              <h3 class="ProjectNames">Retract-A-Wheels</h3>
+            </a>
+          </article>
         </div>
-      </div>
-      
-      <div class ="ProjectBlock">
-        <div class ="slide-up">
-        <a href="amazonmusic.html">
-          <img src="Icons/walkmanforwebsite.png" class="icons" width="90%">
-          <h2 class="ProjectNames">Amazon Music</h2>
-        </a>
-        </div>
-      </div>
-      <div class ="ProjectBlock">
-        <div class ="slide-up">
-        <a href="stepcity.html">
-          <img src="Icons/stepcityforportfolio.png" class="icons" width="90%">
-          <h2 class="ProjectNames">Step City</h2>
-        </a>
-        </div>
-      </div>
-      <div class ="ProjectBlock">
-        <div class ="slide-up">
-        <a href="gutter.html">
-          <img src="Icons/gutter for portfolio.png" class="icons" width="90%">
-          <h2 class="ProjectNames">Gutter Defender</h2>
-        </a>
-        </div> 
-      </div>
-    </div>
+      </section>
 
-    <div class="ProjectIcons">
-      <div class ="ProjectBlock">
-        <div class ="slide-up">
-        <a href="fleetclean.html">
-          <img src="Icons/truck for portfolio.png" class="icons" width="90%">
-          <h2 class="ProjectNames">Fleet Clean</h2>
-        </a>
-        </div>
+      <div id="ImageSectionDivider">
+        <img src="Website Divider.jpg" alt="Section divider" />
       </div>
-      <div class ="ProjectBlock">
-        <div class ="slide-up">
-        <a href="funbrella.html">
-          <img src="Icons/Umbrella icon for portfolio.png" class="icons" width="90%">
-          <h2 class="ProjectNames">Funbrella</h2>
-        </a>
-        </div>
-      </div>
-      <div class ="ProjectBlock">
-        <div class ="slide-up">
-        <a href="retractawheel.html">
-          <img src="Icons/bicycle for portfolio.png" class="icons" width="90%">
-          <h2 class="ProjectNames">Retract-A-Wheels</h2>
-        </a>
-        </div>
-      </div>
-      <div class ="Blank">
-          <img src="Icons/blank for projects.png" class="icons" width="90%">
-      </div>
-      
-    </div>
 
-
-
-    <div id= "ImageSectionDivider">
-      <img src="Website Divider.jpg" width="100%">
-    </div>
-
-    <div id="ArtSection">
-      <div>
+      <section id="ArtSection">
         <div id="ArtContents">
-          <h1 id="ArtTitle">Creative Explorations</h1>
-          <p id="ArtBody">A mix of visual work and personal projects that reflect how I think about design. Click any icon to explore the full piece.</p>
+          <h2 id="ArtTitle">Creative Explorations</h2>
+          <p id="ArtBody">
+            A mix of visual work and personal projects that reflect how I think about design.
+            Click any icon to explore the full piece.
+          </p>
         </div>
-      </div>  
-    </div>
+      </section>
 
-    <div class="ArtIcons">
-      <div class ="ProjectBlock">
-        <div class ="slide-up">
-        <a href="techdream.html">
-          <img src="Icons/chairforportfolio.png" class="icons" width="90%">
-          <h2 class="ArtNames">Tech's Dream</h2>
-        </a>
+      <section class="cards-section cards-section-dark" aria-label="Creative Exploration Projects">
+        <div class="cards-grid">
+          <article class="ProjectBlock slide-up">
+            <a href="techdream.html">
+              <img src="Icons/chairforportfolio.png" class="icons" alt="Tech's Dream icon" />
+              <h3 class="ArtNames">Tech's Dream</h3>
+            </a>
+          </article>
+          <article class="ProjectBlock slide-up">
+            <a href="keithharing.html">
+              <img src="Icons/keithharingforportfolio.png" class="icons" alt="12 Greek Myths icon" />
+              <h3 class="ArtNames">12 Greek Myths</h3>
+            </a>
+          </article>
+          <article class="ProjectBlock slide-up">
+            <a href="ulimi.html">
+              <img src="Icons/Ulimitocforwebsite.png" class="icons" alt="Ulimi Tongue of Culture icon" />
+              <h3 class="ArtNames">Ulimi Tongue of Culture</h3>
+            </a>
+          </article>
+          <article class="ProjectBlock slide-up">
+            <a href="musicanalysis.html">
+              <img src="Icons/discman for portfolio.png" class="icons" alt="Music Taste Analysis icon" />
+              <h3 class="ArtNames">Music Taste Analysis</h3>
+            </a>
+          </article>
+          <article class="ProjectBlock slide-up">
+            <a href="wavelength.html">
+              <img src="Icons/boomboxforportfolio.png" class="icons" alt="Wavelength icon" />
+              <h3 class="ArtNames">Wavelength</h3>
+            </a>
+          </article>
+          <article class="ProjectBlock slide-up">
+            <a href="musicmural.html">
+              <img src="Icons/vinylplayerforportfolio.png" class="icons" alt="Music Mural icon" />
+              <h3 class="ArtNames">Music Mural</h3>
+            </a>
+          </article>
+          <article class="ProjectBlock slide-up">
+            <a href="shatteredring.html">
+              <img src="Icons/filmcameraforportfolio.png" class="icons" alt="Shattered Ring icon" />
+              <h3 class="ArtNames">Shattered Ring</h3>
+            </a>
+          </article>
+          <article class="ProjectBlock slide-up">
+            <a href="buttercrumble.html">
+              <img src="Icons/croissantforportfolio.png" class="icons" alt="Butter and Crumble icon" />
+              <h3 class="ArtNames">Butter &amp; Crumble</h3>
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section id="AboutMe">
+        <img id="RyanHeadshot" src="RyanHeadshot.JPEG" alt="Ryan Murphy headshot" />
+        <div id="AboutMeText">
+          <h2 id="AboutMeHeader">About Me</h2>
+          <p class="AboutMeBody">
+            I'm a senior at Northwestern University majoring in Manufacturing &amp; Design
+            Engineering (MaDE), blending systems thinking, hands-on prototyping, and creative
+            strategy to design products that solve real human problems.
+          </p>
+          <p class="AboutMeBody">
+            With minors in Computer Science and Art, Theory &amp; Practice, I work at the
+            intersection of engineering, digital design, and aesthetics. I bring both analytical
+            rigor and creative intuition to every project. Whether I'm conducting user research,
+            developing a physical product, or building a digital interface, my goal is to deliver
+            thoughtful, user-centered solutions that are both functional and meaningful.
+          </p>
+          <p class="AboutMeBody">
+            I'm currently seeking a full-time opportunity where I can contribute across the full
+            product lifecycle. I am drawn to teams that value experimentation, iteration, and
+            human impact.
+          </p>
+          <p class="AboutMeBody">
+            I'm from Queens, the best borough in New York City. To relax, I enjoy listening to
+            different genres of music and painting my favorite album covers. I'm also a
+            passionate Mets fan and amateur chef who loves to experiment with food.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer id="ContactSection" class="engineer-footer">
+      <div class="footer-left">
+        <div class="footer-brand-row">
+          <h2 class="footer-brand">Ryan Murphy</h2>
         </div>
       </div>
-      <div class ="ProjectBlock">
-        <div class ="slide-up">
-        <a href="keithharing.html">
-          <img src="Icons/keithharingforportfolio.png" class="icons" width="90%">
-          <h2 class="ArtNames">12 Greek Myths</h2>
-        </a>
+
+      <div class="footer-right">
+        <div class="footer-section">
+          <h3>CONNECT</h3>
+          <ul>
+            <li><a href="mailto:ryanjmurphy049@gmail.com">ryanjmurphy049@gmail.com</a></li>
+            <li><a href="tel:+19176563507">917-656-3507</a></li>
+            <li>
+              <a href="https://www.linkedin.com/in/ryan-murphy-598bb7225/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class ="ProjectBlock">
-        <div class ="slide-up">
-        <a href="ulimi.html">
-          <img src="Icons/Ulimitocforwebsite.png" class="icons" width="90%">
-          <h2 class="ArtNames">Ulimi Tongue of Culture</h2>
-        </a>
-        </div>
-      </div>
-      <div class ="ProjectBlock">
-        <div class ="slide-up">
-        <a href="musicanalysis.html">
-          <img src="Icons/discman for portfolio.png" class="icons" width="90%">
-          <h2 class="ArtNames">Music Taste Analysis</h2>
-        </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="ArtIcons">
-      <div class ="ProjectBlock">
-        <div class ="slide-up">
-        <a href="wavelength.html">
-          <img src="Icons/boomboxforportfolio.png" class="icons" width="90%">
-          <h2 class="ArtNames">Wavelength</h2>
-        </a>
-        </div>
-      </div>
-      <div class ="ProjectBlock">
-        <div class ="slide-up">
-        <a href="musicmural.html">
-          <img src="Icons/vinylplayerforportfolio.png" class="icons" width="90%">
-          <h2 class="ArtNames">Music Mural</h2>
-        </a>
-        </div>
-      </div>
-      <div class ="ProjectBlock">
-        <div class ="slide-up">
-        <a href="shatteredring.html">
-          <img src="Icons/filmcameraforportfolio.png" class="icons" width="90%">
-          <h2 class="ArtNames">Shattered Ring</h2>
-        </a>
-        </div>
-      </div>
-      <div class ="ProjectBlock">
-        <div class ="slide-up">
-        <a href="buttercrumble.html">
-          <img src="Icons/croissantforportfolio.png" class="icons" width="90%">
-          <h2 class="ArtNames">Butter & Crumble</h2>
-        </a>
-        </div>
-      </div>
-    </div>
-
-    <div id="AboutMe">
-      <img id="RyanHeadshot" src="RyanHeadshot.JPEG">
-      <div id="AboutMeText">
-        <h1 id="AboutMeHeader">About Me</h1>
-        <p id="AboutMeBody">
-          I’m a senior at Northwestern University majoring in Manufacturing & Design Engineering (MaDE), blending systems thinking, hands-on prototyping, and creative strategy to design products that solve real human problems.
-        </p>
-        <p id="AboutMeBody">
-          With minors in Computer Science and Art, Theory & Practice, I work at the intersection of engineering, digital design, and aesthetics. I bring both analytical rigor and creative intuition to every project. Whether I’m conducting user research, developing a physical product, or building a digital interface, my goal is to deliver thoughtful, user-centered solutions that are both functional and meaningful.
-        </p>
-        <p id="AboutMeBody">
-          I’m currently seeking a full-time opportunity where I can contribute across the full product lifecycle. I am drawn to teams that value experimentation, iteration, and human impact.
-        </p>
-        <p id="AboutMeBody">I’m from Queens, the best borough in New York City. To relax, I enjoy listening to different genres of music and painting my favorite album covers. I’m also a passionate Mets fan and amateur chef who loves to experiment with food.
-        </p>
-
-      </div>
-    </div>
-
-
-<footer class="engineer-footer">
-  <div class="footer-left">
-    <div>
-      <div class="footer-brand-row">
-        <h2 class="footer-brand">Ryan Murphy</h2>
-      </div>
-
-    </div>
-
-  </div>
-
-  <div class="footer-right">
-    <div class="footer-section">
-      <h3>CONNECT</h3>
-      <ul>
-        <li>ryanjmurphy049@gmail.com</li>
-        <li>917-656-3507</li>
-        <li><a href=https://www.linkedin.com/in/ryan-murphy-598bb7225/" target="_blank">LinkedIn</a></li>
-      </ul>
-    </div>\
-  </div>
-</footer>
-
-    
-    <!-- Your custom JavaScript -->
-    <script src="main.js"></script>
-
+    </footer>
   </body>
 </html>

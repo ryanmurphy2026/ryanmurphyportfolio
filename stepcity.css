@@ -608,3 +608,141 @@ body {
     width: 40%;
   }
 }
+
+/* === Global Responsive Patch (Codex) === */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+#ImageSectionDivider img,
+[id*="Divider"] img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    justify-content: center !important;
+    padding: 14px 12px !important;
+  }
+
+  .nav-links {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 10px 12px !important;
+  }
+
+  .nav-links a {
+    font-size: 13px !important;
+    padding: 6px 10px !important;
+  }
+
+  #StartingImage {
+    height: auto !important;
+    min-height: 58vh;
+    padding: 16px 12px;
+  }
+
+  .WhiteBackground,
+  .GreenBackground {
+    padding: 16px !important;
+  }
+
+  .PinkTitle,
+  .GreenTitle {
+    font-size: clamp(1.8rem, 7vw, 2.2rem) !important;
+    line-height: 1.15 !important;
+  }
+
+  .BlackText,
+  .WhiteText,
+  #AboutMeText,
+  #ProjectContents,
+  #ArtContents {
+    width: min(92%, 760px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  #Name,
+  #VanPhoto,
+  #GroupPhoto,
+  #start,
+  #testing,
+  #brainstorming,
+  #team,
+  #documenting,
+  #AllvanName,
+  #ReframePhoto,
+  #PresentationPhoto {
+    width: min(92%, 860px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .Figmas {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+    width: min(92%, 860px) !important;
+    margin: 16px auto !important;
+  }
+
+  .Figmas img {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1199px) {
+  .Figmas {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 14px !important;
+  }
+
+  .Figmas img {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+}
+
+@media (hover: none) {
+  .nav-links a:hover {
+    transform: none !important;
+  }
+}
+
+/* === Single Scrollbar Fix === */
+html {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: auto;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: visible;
+  height: auto;
+}
+
+/* === Final Scrollbar Normalization === */
+html {
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  height: auto !important;
+}
+
+body {
+  overflow: visible !important;
+  height: auto !important;
+  min-height: 0 !important;
+}

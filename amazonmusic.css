@@ -3,486 +3,255 @@
   src: url(SENTIENT-VARIABLE.TTF);
 }
 
-body{
-    opacity: 0;
-    transition: opacity 0.8s ease-in-out;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f3ee;
-    font-family: Sentient;
+:root {
+  --bg-light: #f5f3ee;
+  --bg-dark: #036147;
+  --text-dark: #111111;
+  --text-light: #f5f3ee;
+  --title-pink: #f3cce7;
+  --border: #000000;
+  --content-max: 1100px;
+  --text-max: 860px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+  background-color: var(--bg-light);
+  font-family: Sentient, "Rubik", serif;
+  color: var(--text-dark);
 }
 
 body.loaded {
-    opacity: 1;
+  opacity: 1;
 }
 
-/* Page exit animation */
 body.exiting {
-    opacity: 0;
-    transition: opacity 0.4s ease-in-out;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.9;
+  margin: 0 0 1rem;
+}
+
+ul {
+  margin: 0 0 1rem;
+  padding-left: 1.2rem;
+  line-height: 1.8;
+}
 
 ::-webkit-scrollbar {
-    width:auto;
-    }
-    /*track*/
-    ::-webkit-scrollbar-track {
-    background:rgb(201, 200, 196);
-    border-width:2px;
-    border-style:solid;
-    border-color:black;
-    }
-    /*thumb*/
-    ::-webkit-scrollbar-thumb {
-    background:rgb(245, 243, 238);
-    border-width:2px;
-    border-style:solid;
-    border-color:black;
-    }
+  width: auto;
+}
 
-p{
-    font-size: 16px;
+::-webkit-scrollbar-track {
+  background: rgb(201, 200, 196);
+  border: 2px solid var(--border);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(245, 243, 238);
+  border: 2px solid var(--border);
 }
 
 .navbar {
-    background-color: #f5f3ee;
-    color: black;
-    border-bottom: 4px solid black;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    width: 100%;
-    display: flex;
-    justify-content: right;
-    align-items: center;
+  background-color: var(--bg-light);
+  border-bottom: 4px solid var(--border);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0.9rem 1rem;
 }
 
 .nav-links {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.45rem 0.7rem;
 }
 
 .nav-links a {
-    color: black;
-    font-size: 14px;
-    text-decoration: none;
-    padding: 5px 10px;
-    border-radius: 4px;
-    transition: all 0.5s ease;
+  color: var(--text-dark);
+  font-size: 0.82rem;
+  text-decoration: none;
+  padding: 0.35rem 0.55rem;
+  border-radius: 4px;
+  transition: transform 0.2s ease, color 0.2s ease;
 }
 
 .nav-links a:hover {
-    color: #036147; /* Color on hover */
-    transform: scale(1.2); /* Grow on hover */
+  color: var(--bg-dark);
+  transform: scale(1.08);
 }
 
-#StartingImage{
-    background-color: #036147;
-    width: 100%;
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#StartingImage {
+  background-color: var(--bg-dark);
+  width: 100%;
+  min-height: 62vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2rem;
 }
 
-
-
-.WhiteBackground{
-    background-color: #f5f3ee;
-    padding: 24px;
+#GroupPhoto {
+  width: min(760px, 92vw);
+  margin: 0 auto;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
 
-.GreenBackground{
-    background-color: #036147;
-    padding: 24px;
+.WhiteBackground,
+.GreenBackground {
+  padding: clamp(1rem, 2.4vw, 1.5rem);
 }
 
-.PinkTitle{
-    color:#f3cce7;
-    font-size: 48px;
-    text-align: center;
+.WhiteBackground {
+  background-color: var(--bg-light);
 }
 
-.GreenTitle{
-    color:#036147;
-    font-size: 48px;
-    text-align: center;
+.GreenBackground {
+  background-color: var(--bg-dark);
 }
 
-.BlackText{
-    color: black;
-    line-height: 2;
-    width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
+.PinkTitle,
+.GreenTitle {
+  font-size: clamp(1.8rem, 4.5vw, 3rem);
+  text-align: center;
+  margin: 0 0 1rem;
+  line-height: 1.1;
 }
 
-.WhiteText{
-    color: #f5f3ee;
-    line-height: 2;
-    width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
+.PinkTitle {
+  color: var(--title-pink);
 }
 
-#ImageSectionDivider{
-    margin-bottom: -8px;
-    overflow: hidden;
+.GreenTitle {
+  color: var(--bg-dark);
 }
 
-#GroupPhoto{
-    margin: auto;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+.BlackText,
+.WhiteText {
+  width: min(var(--text-max), 100%);
+  margin: 0 auto;
 }
 
-#brainstorming{
-    width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+.BlackText {
+  color: var(--text-dark);
 }
 
-.Figmas{
-    display: flex;
-    margin-top: 20px;
-    margin-bottom: 20px;
+.WhiteText {
+  color: var(--text-light);
 }
 
-#unlock{
-    width: 30%;
-    margin-left: 2%;
-    margin-right:1.5%;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+#Name {
+  width: min(1000px, 100%);
+  margin: 0 auto;
 }
 
-#edit{
-    width: 30%;
-    margin-left: 1.5%;
-    margin-right: 1.5%;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+#ImageSectionDivider {
+  margin-bottom: -6px;
+  overflow: hidden;
 }
 
-#updated{
-    width: 30%;
-    margin-left: 1.5%;
-    margin-right: 2%;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+#ImageSectionDivider img {
+  width: 100%;
 }
 
-#redeeming{
-    width: 30%;
-    margin-left: 15%;
-    margin-right: 5%;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+#brainstorming,
+#team {
+  width: min(var(--content-max), 100%);
+  margin: 0 auto 1rem;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-#redeemed{
-    width: 30%;
-    margin-left: 5%;
-    margin-right: 15%;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+#presenting {
+  width: min(var(--content-max), 100%);
+  margin: 0 auto;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-#regular{
-    width: 30%;
-    margin-left: 15%;
-    margin-right: 5%;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+.Figmas {
+  width: min(var(--content-max), 100%);
+  margin: 1rem auto 1.25rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.9rem;
 }
 
-#new{
-    width: 30%;
-    margin-left: 5%;
-    margin-right: 15%;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+.Figmas img {
+  width: 100%;
+  margin: 0;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-#friends{
-    width: 30%;
-    margin-left: 15%;
-    margin-right: 5%;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-}
-#community{
-    width: 30%;
-    margin-left: 5%;
-    margin-right: 15%;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-}
+@media (min-width: 640px) {
+  .navbar {
+    padding: 1.1rem 1.4rem;
+  }
 
-#mixtape{
-    width: 30%;
-    margin-left: 15%;
-    margin-right: 5%;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-}
+  .nav-links a {
+    font-size: 0.9rem;
+    padding: 0.38rem 0.6rem;
+  }
 
-#added{
-    width: 30%;
-    margin-left: 5%;
-    margin-right: 15%;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  #StartingImage {
+    min-height: 72vh;
+    padding: 1.6rem;
+  }
+
+  .Figmas {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
 }
 
-#connect1{
-    width: 30%;
-    margin-left: 2%;
-    margin-right:1.5%;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5)
+@media (min-width: 960px) {
+  .navbar {
+    justify-content: flex-end;
+    padding: 1.2rem 2rem;
+  }
+
+  .nav-links {
+    gap: 0.7rem 0.95rem;
+  }
+
+  #StartingImage {
+    min-height: 88vh;
+  }
+
+  .BlackText,
+  .WhiteText {
+    width: min(60%, var(--text-max));
+  }
+
+  .Figmas {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
-#connect2{
-    width: 30%;
-    margin-left: 1.5%;
-    margin-right: 1.5%;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-}
-
-#connect3{
-    width: 30%;
-    margin-left: 1.5%;
-    margin-right: 2%;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-}
-
-#presenting{
-    width: 100%;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-}
-
-#team{
-    width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-}
-
-#Name{
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-/* Mobile Responsive Styles */
-@media screen and (max-width: 768px) {
-    /* Navigation adjustments */
-    .navbar {
-        padding: 16px;
-        justify-content: center;
-    }
-    
-    .nav-links {
-        gap: 15px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    .nav-links a {
-        font-size: 13px;
-        padding: 8px 12px;
-    }
-    
-    /* Typography adjustments */
-    .PinkTitle,
-    .GreenTitle {
-        font-size: 32px;
-    }
-    
-    p {
-        font-size: 15px;
-    }
-    
-    /* Text content adjustments */
-    .BlackText,
-    .WhiteText {
-        width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
-        line-height: 1.8;
-    }
-    
-    #Name {
-        width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-    
-    /* Background sections */
-    .WhiteBackground,
-    .GreenBackground {
-        padding: 16px;
-    }
-    
-    /* Main image adjustments */
-    #GroupPhoto {
-        max-width: 90%;
-        height: auto;
-        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-    }
-    
-    #brainstorming,
-    #team {
-        width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
-        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
-    }
-    
-    #presenting {
-        width: 100%;
-        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
-    }
-    
-    /* Starting image section */
-    #StartingImage {
-        height: 70vh;
-        padding: 16px;
-        width: auto;
-    }
-
-    #GroupPhoto{
-    width: 80%;
-    }
-
-    
-    /* Figma layout - stack vertically on mobile */
-    .Figmas {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
-    
-    /* All figma images - make them larger on mobile */
-    #unlock,
-    #edit,
-    #updated,
-    #redeeming,
-    #redeemed,
-    #regular,
-    #new,
-    #friends,
-    #community,
-    #mixtape,
-    #added,
-    #connect1,
-    #connect2,
-    #connect3 {
-        width: 80%;
-        margin-left: 10%;
-        margin-right: 10%;
-        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
-    }
-}
-
-@media screen and (max-width: 480px) {
-    /* Extra small screens */
-    .navbar {
-        padding: 12px;
-    }
-    
-    .nav-links {
-        gap: 10px;
-    }
-    
-    .nav-links a {
-        font-size: 12px;
-        padding: 6px 10px;
-    }
-    
-    .PinkTitle,
-    .GreenTitle {
-        font-size: 24px;
-    }
-    
-    p {
-        font-size: 14px;
-    }
-    
-    .BlackText,
-    .WhiteText {
-        width: 95%;
-        margin-left: 2.5%;
-        margin-right: 2.5%;
-        line-height: 1.6;
-    }
-    
-    #Name {
-        width: 95%;
-        margin-left: 2.5%;
-        margin-right: 2.5%;
-    }
-    
-    .WhiteBackground,
-    .GreenBackground {
-        padding: 12px;
-    }
-    
-    #GroupPhoto {
-        max-width: 95%;
-        height: auto;
-        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
-    }
-    
-    #brainstorming,
-    #team {
-        width: 95%;
-        margin-left: 2.5%;
-        margin-right: 2.5%;
-        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
-    }
-    
-    #presenting {
-        width: 100%;
-        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
-    }
-    
-    #StartingImage {
-        height: 60vh;
-        padding: 12px;
-    }
-    
-    /* Make figma images even larger on very small screens */
-    #unlock,
-    #edit,
-    #updated,
-    #redeeming,
-    #redeemed,
-    #regular,
-    #new,
-    #friends,
-    #community,
-    #mixtape,
-    #added,
-    #connect1,
-    #connect2,
-    #connect3 {
-        width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
-        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
-    }
-    
-    .Figmas {
-        gap: 15px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    
-    /* Disable hover effects on touch devices */
-    .nav-links a:hover {
-        transform: none;
-    }
-}
-
-/* =========================
-   Mobile Responsiveness Additions
-   Put this at the VERY bottom of amazonmusic.css
-========================= */
-
-/* Global safety: prevent horizontal scrolling + make media scale */
-html, body {
+/* === Global Responsive Patch (Codex) === */
+html,
+body {
   max-width: 100%;
   overflow-x: hidden;
 }
@@ -493,294 +262,127 @@ img {
   display: block;
 }
 
-/* Make your divider images never cause overflow */
-#ImageSectionDivider img {
+#ImageSectionDivider img,
+[id*="Divider"] img {
   width: 100%;
   height: auto;
-  display: block;
 }
 
-/* Slightly nicer spacing on small screens */
-@media (max-width: 768px) {
-
-  /* NAV: wrap and center */
+@media (max-width: 900px) {
   .navbar {
-    justify-content: center;
-    padding: 14px 12px;
+    justify-content: center !important;
+    padding: 14px 12px !important;
   }
 
   .nav-links {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px 14px;
-    padding: 0 8px;
-  }
-
-  /* Text blocks: full width with comfy margins */
-  .BlackText,
-  .WhiteText {
-    width: min(92%, 680px);
-    margin: 0 auto;
-  }
-
-  /* Titles scale down */
-  .PinkTitle,
-  .GreenTitle {
-    font-size: 32px;
-    line-height: 1.15;
-  }
-
-  /* Starting section image: keep it centered and not oversized */
-  #StartingImage {
-    height: auto;          /* avoid awkward cropping */
-    min-height: 60vh;
-    padding: 18px 12px;
-  }
-
-  #GroupPhoto {
-    width: min(92%, 520px);
-    margin: 0 auto;
-  }
-
-  /* Big images */
-  #brainstorming,
-  #team {
-    width: min(92%, 680px);
-    margin: 0 auto;
-  }
-
-  /* FIGMAS: stack cleanly and center without relying on all the ID margins */
-  .Figmas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-    margin: 14px 0;
-  }
-
-  .Figmas img {
-    width: min(92%, 520px);
-    margin: 0 auto;        /* overrides your left/right margins on mobile */
-  }
-
-  /* Project title width */
-  #Name {
-    width: 92%;
-    margin: 0 auto;
-  }
-}
-
-@media (max-width: 480px) {
-
-  .PinkTitle,
-  .GreenTitle {
-    font-size: 24px;
-  }
-
-  p {
-    font-size: 14px;
-    line-height: 1.7;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 10px 12px !important;
   }
 
   .nav-links a {
-    font-size: 12px;
-    padding: 6px 10px;
+    font-size: 13px !important;
+    padding: 6px 10px !important;
   }
 
   #StartingImage {
-    min-height: 55vh;
-    padding: 14px 10px;
+    height: auto !important;
+    min-height: 58vh;
+    padding: 16px 12px;
   }
 
-  .Figmas img {
-    width: 95%;
-  }
-
-  /* Hover scale can feel weird on phones */
-  .nav-links a:hover {
-    transform: none;
-  }
-}
-/* =========================
-   Remove scrollbar on mobile
-========================= */
-
-@media (max-width: 768px) {
-  html,
-  body {
-    overflow: hidden;      /* removes all scrollbars */
-    height: 100%;
-  }
-
-  /* Hide scrollbar visuals (mobile browsers) */
-  ::-webkit-scrollbar {
-    display: none;
-  }
-
-  body {
-    -ms-overflow-style: none;  /* IE/Edge */
-    scrollbar-width: none;     /* Firefox */
-  }
-}
-
-/* =========================================================
-   MOBILE PATCH (put at the very bottom of your CSS)
-   Aligns with your existing styles + avoids desktop changes
-========================================================= */
-
-@media (max-width: 768px) {
-
-  /* Allow scrolling but hide scrollbar */
-  html, body {
-    overflow-x: hidden;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  /* Hide scrollbar visuals */
-  body {
-    -ms-overflow-style: none;   /* IE/Edge */
-    scrollbar-width: none;      /* Firefox */
-  }
-  body::-webkit-scrollbar {
-    width: 0;
-    height: 0;
-    display: none;
-  }
-
-  /* Global image safety */
-  img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  /* Navbar: centered + wraps cleanly */
-  .navbar {
-    justify-content: center;
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
-
-  .nav-links {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    padding: 0 10px;
-  }
-
-  .nav-links a {
-    font-size: 13px;
-    padding: 6px 8px;
-  }
-
-  /* Sections: a bit tighter */
   .WhiteBackground,
   .GreenBackground {
-    padding: 18px;
+    padding: 16px !important;
   }
 
-  /* Headings scale down */
   .PinkTitle,
   .GreenTitle {
-    font-size: 32px;
-    line-height: 1.15;
+    font-size: clamp(1.8rem, 7vw, 2.2rem) !important;
+    line-height: 1.15 !important;
   }
 
-  /* Text blocks: remove the 60% width + 20% margins on mobile */
   .BlackText,
-  .WhiteText {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-    text-align: justify;
-    text-justify: inter-word;
+  .WhiteText,
+  #AboutMeText,
+  #ProjectContents,
+  #ArtContents {
+    width: min(92%, 760px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 
-  p {
-    font-size: 16px;
-    line-height: 1.8;
+  #Name,
+  #VanPhoto,
+  #GroupPhoto,
+  #start,
+  #testing,
+  #brainstorming,
+  #team,
+  #documenting,
+  #AllvanName,
+  #ReframePhoto,
+  #PresentationPhoto {
+    width: min(92%, 860px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 
-  /* Hero section */
-  #StartingImage {
-    height: auto;
-    padding: 28px 16px;
-  }
-
-  /* Your hero image (you use #VanPhoto in this CSS) */
-  #VanPhoto {
-    width: 92%;
-    max-width: 520px;
-    height: auto;
-    margin: 0 auto;
-  }
-
-  /* Your other main image IDs */
-  #start {
-    width: 92%;
-    max-width: 520px;
-    height: auto;
-    margin: 0 auto;
-  }
-
-  #testing {
-    width: 100%;
-    height: auto;
-  }
-
-  /* Divider cropping you already started */
-  #ImageSectionDivider {
-    height: 100px;  /* tweak if you want */
-    overflow: hidden;
-  }
-  #ImageSectionDivider img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-
-  /* Image sections that had side margins */
-  #primarycolors,
-  #secondarycolors,
-  #fontshowcase,
-  #logocomparison {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  /* Figma comparisons: stack and center */
   .Figmas {
-    flex-direction: column;
-    align-items: center;
-    gap: 14px;
-    width: 100%;
-    margin-top: 16px;
-    margin-bottom: 16px;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+    width: min(92%, 860px) !important;
+    margin: 16px auto !important;
   }
 
-  #homepageold,
-  #homepagenew {
-    width: 92%;
-    margin-left: 0;
-    margin-right: 0;
+  .Figmas img {
+    width: 100% !important;
+    margin: 0 !important;
   }
 }
 
-/* Smaller phones */
-@media (max-width: 420px) {
-  .PinkTitle,
-  .GreenTitle {
-    font-size: 28px;
+@media (min-width: 901px) and (max-width: 1199px) {
+  .Figmas {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 14px !important;
   }
 
-  .nav-links a {
-    font-size: 12px;
+  .Figmas img {
+    width: 100% !important;
+    margin: 0 !important;
   }
+}
 
-  #ImageSectionDivider {
-    height: 80px;
+@media (hover: none) {
+  .nav-links a:hover {
+    transform: none !important;
   }
+}
+
+/* === Single Scrollbar Fix === */
+html {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: auto;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: visible;
+  height: auto;
+}
+
+/* === Final Scrollbar Normalization === */
+html {
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  height: auto !important;
+}
+
+body {
+  overflow: visible !important;
+  height: auto !important;
+  min-height: 0 !important;
 }
