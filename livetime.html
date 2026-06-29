@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="livetime.css">
+    <link rel="stylesheet" href="navbar.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
     <script src="main.js" defer></script>
@@ -17,13 +18,41 @@
   </head>
   <body>
     <nav class="navbar">
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="index.html#ProjectsSection">Design in Action</a>
-            <a href="index.html#ArtSection">Creative Explorations</a>
-            <a href="index.html#AboutMe">About Me</a>
-            <a href="index.html#ContactSection">Contact</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <div class="nav-dropdown">
+          <a class="nav-dropdown-toggle" href="index.html#ProjectsSection" aria-haspopup="true">Design in Action</a>
+          <div class="dropdown-menu" aria-label="Design in Action projects">
+            <a href="index.html#ProjectsSection">Overview</a>
+            <a href="surething.html">SureThing</a>
+            <a href="livetime.html">Live Time</a>
+            <a href="amazonmusic.html">Amazon Music</a>
+            <a href="stepcity.html">Step City</a>
+            <a href="gutter.html">Gutter Defender</a>
+            <a href="fleetclean.html">Fleet Clean</a>
+            <a href="funbrella.html">Funbrella</a>
+            <a href="retractawheel.html">Retract-A-Wheels</a>
+          </div>
         </div>
+        <div class="nav-dropdown">
+          <a class="nav-dropdown-toggle" href="index.html#ArtSection" aria-haspopup="true">Creative Explorations</a>
+          <div class="dropdown-menu" aria-label="Creative Exploration projects">
+            <a href="index.html#ArtSection">Overview</a>
+            <a href="nusublets.html">NU Sublets</a>
+            <a href="resole.html">ReSole</a>
+            <a href="techdream.html">Tech's Dream</a>
+            <a href="keithharing.html">12 Greek Myths</a>
+            <a href="ulimi.html">Ulimi Tongue of Culture</a>
+            <a href="musicanalysis.html">Music Taste Analysis</a>
+            <a href="wavelength.html">Wavelength</a>
+            <a href="musicmural.html">Music Mural</a>
+            <a href="shatteredring.html">Shattered Ring</a>
+            <a href="buttercrumble.html">Butter &amp; Crumble</a>
+          </div>
+        </div>
+        <a href="index.html#AboutMe">About Me</a>
+        <a href="index.html#ContactSection">Contact</a>
+      </div>
     </nav>
 
     <div id="StartingImage">
@@ -35,16 +64,20 @@
         </h1>
         <div class="BlackText">
             <p>
-                This past summer, I joined Lynkr as a design intern, where I led the startup’s full rebrand as it transitioned to Live Time. The goal of the rebrand was to modernize the app’s appearance while preserving the playful spirit of the original design. I developed the new brand identity, built a comprehensive design system, and applied it across the entire app experience. This included creating a brand book that defined Live Time’s visual direction, detailing the new color palette, typography, and logo.
+                This past summer, I joined Lynkr as a design intern, where I led the startupâ€™s full rebrand as it transitioned to Live Time. The goal of the rebrand was to modernize the app's appearance while preserving the playful spirit of the original design. I developed the new brand identity, built a comprehensive design system, and applied it across the entire app experience. This included creating a brand book that defined Live Timeâ€™s visual direction, detailing the new color palette, typography, and logo.
+            </p>
+            <p>
+                This project not only gave me the opportunity to lead a startup through a high-impact brand transformation, but also sharpened my skills in branding, UI/UX design, and design systems. My time at Live Time was an incredible experience, and Iâ€™m proud of the work we accomplished. Iâ€™m especially grateful to my team for their support and collaboration, which made bringing this creative vision to life possible. 
+
             </p>  
         </div>  
     </div>
 
     <div class="GreenBackground" id="Colors">
-        <h1 class="PinkTitle">Color Palette</h1>
+        <h1 class="PinkTitle">Refining Lynkr’s Pink Into a More Modern, Gender-Neutral Brand System</h1>
         <div class="WhiteText">
             <p>
-                Pink was Lynkr’s primary brand color, used throughout the original app. However, user feedback revealed that the original shade made the app feel “too girly.” Since pink is a distinctive color rarely used in branding, I felt retaining it in the rebrand would help Live Time stand out. To address user concerns, I refined the pink to a shade that felt more modern and gender-neutral, pairing it with black and white to establish Live Time’s primary colors. These colors were tested with accessibility checkers to ensure readability for all users. To add tonal variety, I introduced a lighter shade of pink and two complementary grays. After finalizing the primary palette, I developed five secondary colors and their lighter variations to provide greater flexibility across the app’s design.
+                Pink was Lynkr's primary brand color, used throughout the original app. However, user feedback revealed that the original shade made the app feel too girly. Since pink is a distinctive color rarely used in branding, I felt retaining it in the rebrand would help Live Time stand out. To address user concerns, I refined the pink to a shade that felt more modern and gender-neutral, pairing it with black and white to establish Live Time's primary colors. These colors were tested with accessibility checkers to ensure readability for all users. To add tonal variety, I introduced a lighter shade of pink and two complementary grays. After finalizing the primary palette, I developed five secondary colors and their lighter variations to provide greater flexibility across the app's design.
             </p>
             <img id="primarycolors" src="Live Time Photos/Live Time Primary Colors.png" width="80%">
             <img id="secondarycolors" src="Live Time Photos/Live Time Secondary Colors.png" width="80%">
@@ -56,7 +89,7 @@
     </div>
 
     <div class="WhiteBackground" id="Fonts">
-        <h1 class="GreenTitle">Typography</h1>
+        <h1 class="GreenTitle">Choosing Typography That Balances Personality and Readability</h1>
         <div class="BlackText">
             <p>
                 The rebrand introduced two new fonts. To maintain a sleek yet playful feel, I selected Rockhill Sans as the display font since it is both clean and modern while still full of personality. This font is primarily used for branding and display text within the app. For readability, I chose Hanken Grotesk as the primary font for all key information, ensuring the app remains clear and easy to navigate.
@@ -66,7 +99,7 @@
     </div>
 
     <div class="GreenBackground" id="Logo">
-        <h1 class="PinkTitle">Logo</h1>
+        <h1 class="PinkTitle">Simplifying the Flamingo Logo for a More Modern and Memorable Brand</h1>
         <div class="WhiteText">
             <p>
                 The flamingo logo was retained but redesigned to align with the new modern look. The redesign, first sketched on paper and then refined in Adobe Illustrator, uses clean, simple lines to make the logo easier to recognize and even draw from memory. The redesign is highly versatile, allowing the logo to be seamlessly incorporated into a text-based version. 
@@ -85,7 +118,7 @@
 
 
     <div class="WhiteBackground" id="AppOverhaul">
-        <h1 class="GreenTitle">App Overhaul</h1>
+        <h1 class="GreenTitle">Redesigning 150+ Screens Into a Cleaner, More Intuitive App Experience</h1>
         <div class="BlackText">
             <p>
                 The rebrand required a complete redesign of every screen in the app. The goal was to simplify the experience and deliver a clean, intuitive interface inspired by modern apps like Airbnb. The process began with greyboxing a low-fidelity version of the app in Figma to refine user flows and layouts. Once these were finalized, we transitioned to a high-fidelity prototype incorporating the new branding. In total, we designed over 150 screens, ensuring a consistent and cohesive experience across the entire app.
@@ -113,15 +146,6 @@
                     <img id="homepageold" src="Live Time Photos/Live Time Figmas/Live Time Create Event Page Old.png">
                     <img id="homepagenew" src="Live Time Photos/Live Time Figmas/Live Time Create Event Page New.png">
             </div>
-        </div>  
-    </div>
-
-    <div class="GreenBackground" id="TakeAway">
-        <h1 class="PinkTitle">Major Takeaways</h1>
-        <div class="WhiteText">
-            <p>
-                This project not only gave me the opportunity to lead a startup through a high-impact brand transformation, but also sharpened my skills in branding, UI/UX design, and design systems. My time at Live Time was an incredible experience, and I’m proud of the work we accomplished. I’m especially grateful to my team for their support and collaboration, which made bringing this creative vision to life possible. 
-            </p>             
         </div>  
     </div>
 

@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="surething.css">
+    <link rel="stylesheet" href="navbar.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
+    <script src="main.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <div class="nav-dropdown">
+          <a class="nav-dropdown-toggle" href="index.html#ProjectsSection" aria-haspopup="true">Design in Action</a>
+          <div class="dropdown-menu" aria-label="Design in Action projects">
+            <a href="index.html#ProjectsSection">Overview</a>
+            <a href="surething.html">SureThing</a>
+            <a href="livetime.html">Live Time</a>
+            <a href="amazonmusic.html">Amazon Music</a>
+            <a href="stepcity.html">Step City</a>
+            <a href="gutter.html">Gutter Defender</a>
+            <a href="fleetclean.html">Fleet Clean</a>
+            <a href="funbrella.html">Funbrella</a>
+            <a href="retractawheel.html">Retract-A-Wheels</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <a class="nav-dropdown-toggle" href="index.html#ArtSection" aria-haspopup="true">Creative Explorations</a>
+          <div class="dropdown-menu" aria-label="Creative Exploration projects">
+            <a href="index.html#ArtSection">Overview</a>
+            <a href="nusublets.html">NU Sublets</a>
+            <a href="resole.html">ReSole</a>
+            <a href="techdream.html">Tech's Dream</a>
+            <a href="keithharing.html">12 Greek Myths</a>
+            <a href="ulimi.html">Ulimi Tongue of Culture</a>
+            <a href="musicanalysis.html">Music Taste Analysis</a>
+            <a href="wavelength.html">Wavelength</a>
+            <a href="musicmural.html">Music Mural</a>
+            <a href="shatteredring.html">Shattered Ring</a>
+            <a href="buttercrumble.html">Butter &amp; Crumble</a>
+          </div>
+        </div>
+        <a href="index.html#AboutMe">About Me</a>
+        <a href="index.html#ContactSection">Contact</a>
+      </div>
+    </nav>
+
+    <div id="StartingImage">
+        <img id="VanPhoto" src="SureThing Photos/FinalPrototype.jpg" alt="SureThing final prototype">
+        
+    </div>
+
+    <div class="WhiteBackground" id="ProjectName">
+        <h1 class="GreenTitle" id="Name">Creating a More Dignified, Uncontaminated Urine Collection Experience for Women</h1>
+        <div class="BlackText">
+            <p>For my capstone project, I was part of a team that tackled a common but overlooked healthcare challenge: urinalysis. Urinalysis is one of the most widely-used diagnostic tools in healthcare, yet the urine collection process has remained largely unchanged. For many women, the current standard cup and midstream clean-catch procedure can feel awkward, unsanitary, and physically difficult to perform. These usability challenges also have clinical consequences. When patients struggle to follow collection instructions, samples are more likely to become contaminated, leading to unclear results, additional testing, supplemental costs, and unnecessary medical waste.</p>
+            <p>Our final concept, SureThing, is a handheld midstream urine separator that attaches to a standard urine collection cup. The device is designed to make urine collection easier to position, more hygienic, and intuitive to use while improving sample accuracy and remaining compatible with existing clinical workflows.</p>
+            <p>This project was especially meaningful because I worked on it throughout an entire school year, contributing at every stage from initial research to prototyping, testing, iteration, and patenting. My primary responsibility was leading user research, organizing multiple rounds of testing with women to better understand their experiences using urine collection devices. These conversations revealed key pain points related to cleanliness, comfort, positioning, and ease of collection, directly informing our design direction. I also led branding for SureThing, creating the brand identity and packaging to clearly communicate the product�s purpose and value to users.</p> 
+            <p>For our work, the team received the Breaking Glass Award from Northwestern's Segal Design Institute, part of the McCormick School of Engineering & Applied Science. This award has been presented only twice in the past five years to the capstone that best exemplifies the design process. Looking ahead, we hope to license the design to a medical device company. </p>
+        </div>  
+    </div>
+
+    <div class="GreenBackground" id="Hills">
+        <h1 class="PinkTitle">Learning About The Problem</h1>
+        <div class="WhiteText">
+            <p>The project began with a single survey response. One participant shared that providing a urine sample as a woman could be challenging. Curious whether this reflected an isolated experience or a broader problem, we began investigating it. To better understand the issue, I designed and distributed a more comprehensive survey to college-aged women across the Northwestern community. </p>
+            <img class="ProjectImage" id="SurveyResults" src="SureThing Photos/Survey for SureThing.png" alt="SureThing survey results">
+            <p>Of the 55 women who responded, 73% answered "Yes" to the question: "Do you find the current process of providing a urine sample difficult or inconvenient in any way, such as being uncomfortable, messy, or unsanitary?" </p>
+            <p>We also reached out to physicians at Northwestern University's Feinberg School of Medicine, where we learned that the standard urine collection cup is often ineffective at obtaining uncontaminated urine samples for UTI testing. Currently, the most common collection method used in clinical settings is the midstream clean-catch technique, which requires patients to discard the initial portion of the urine stream into the toilet before collecting the midstream sample in a cup. </p>
+        </div>  
+    </div>
+
+    <div id= "ImageSectionDivider">
+        <img src="WebsiteDivider4.jpg" width="100%">
+    </div>
+
+
+    <div class="WhiteBackground" id="Pivot">
+        <h1 class="GreenTitle">Discovering Pain Points in the Current Urine Collection Cup Design</h1>
+        <div class="BlackText">
+            <p>
+                To better understand why standard urine collection cups can be uncomfortable and difficult to use, I led user interviews and usability testing with college-aged women. Participants used a standard urine collection cup before reflecting on their experience, revealing four key pain points:
+            </p>
+            <ul>
+                <li>
+                    <strong>Cleanliness</strong>: Concern about getting urine on their hands during collection.
+                </li>
+                <li>
+                    <strong>Comfort</strong>: Difficulty positioning the cup comfortably.
+                </li>
+                <li>
+                    <strong>Aiming</strong>: Uncertainty about where the initial urine stream would land.
+                </li>
+                <li>
+                    <strong>Midstream Collection</strong>: Difficulty stopping and restarting urination, a requirement for the clean-catch collection method.
+                </li>
+            </ul>
+            <p>
+                Participants also evaluated five existing urine collection devices. Their feedback revealed that funnel-shaped designs increased confidence when aiming, while handles made devices easier to position.
+            </p>
+        </div>  
+    </div>
+
+    
+
+    <div class="GreenBackground" id="Research">
+        <h1 class="PinkTitle">Initial Prototype</h1>
+        <div class="WhiteText">
+            <img class="ProjectImage" id="PrototypePhoto" src="SureThing Photos/Old Prototype.png" alt="Initial SureThing prototype">
+            <p>Based on these insights, we developed the first prototype of SureThing, an attachment for a standard urine collection cup that automatically separates the initial urine stream from the midstream sample while providing a more comfortable collection experience.</p>
+            <p>Guided by user feedback, we incorporated a funnel to improve aiming and a handle to provide greater comfort and control during collection.</p>
+
+        </div>  
+    </div>
+    <div id= "ImageSectionDivider">
+        <img src="WebsiteDivider2.jpg" width="100%">
+    </div>
+
+    <div class="WhiteBackground" id="Reframing">
+        <h1 class="GreenTitle">First Round of Usability Testing</h1>
+        <div class="BlackText">
+            <p>With our first prototype, we wanted to evaluate whether users felt comfortable using the design. I conducted usability tests in which participants interacted with the prototype and shared feedback on their experience. These sessions revealed three key insights:</p>
+            <ul>
+                <li>The device was too tall. Participants felt uncomfortable when the bottom of the cup came close to or touched the toilet water.
+                </li>
+                <ul>
+                    <li><i>"Once the cup was sitting there, knowing that it was touching the bottom was really gross."</i></li>
+                </ul>
+                <li>The funnel was too wide. Participants felt that its width made the device more difficult to position comfortably.
+                    <ul>
+                        <li><i>"The cup is wide enough that I wasn't worried about missing any pee, but having to practically do the splits to get it into position was challenging."</i></li>
+                    </ul>
+                </li>
+                <li>The handle improved usability. Participants reported that the handle gave them better visibility and helped them aim the funnel more confidently.
+                </li>
+            </ul>
+            <p>Based on this feedback, we shortened the device and reduced the width of the funnel to improve comfort and ease of positioning. </p>
+
+        </div>  
+    </div>
+
+    
+    <div class="GreenBackground" id="Solution">
+        <h1 class="PinkTitle"> Second Round of Design Testing</h1>
+        <div class="WhiteText">
+            <p>After implementing these design changes, we conducted another round of usability testing to evaluate the revised prototype. These sessions revealed that participants found the design easier to position and more intuitive to use.</p>
+            <ul>
+                <li><i>"Last time I couldnt get it in a comfortable place, but this time I got it on the first try."</i>
+                </li>
+                <li><i>"It's intuitive where it's supposed to go and how you're supposed to use it."</i></li>
+            </ul>
+            <p>These findings validated that the revised design addressed the users' needs. </p>
+        </div>  
+    </div>
+
+    
+
+    <div class="WhiteBackground" id="Takeaways">
+        <h1 class="GreenTitle">Branding</h1>
+        <div class="BlackText">
+            <p>To develop SureThing's brand identity, I benchmarked existing medical products, including Cologuard and Tampax, to understand how established brands use color, layout, and messaging to build trust and communicate clarity. </p>
+            <img class="ProjectImage" id="Benchmarking" src="SureThing Photos/Brainstorming Session.jpg" alt="SureThing branding brainstorming">
+            <p>To name the product, I facilitated a collaborative brainstorming workshop with my team. I asked each team member to generate words that captured the functional benefits, emotional impact, and desired user experience we wanted the product to convey. Using these themes, we generated and evaluated potential names before selecting <strong>SureThing</strong>.</p>
+            <p>We chose <strong>SureThing</strong> because it reflects the product's core value proposition: making it easier to collect an uncontaminated urine sample with confidence. The name also evokes the feeling of being <i>sure</i> and <i>reassured</i>, reinforcing the sense of comfort and confidence we wanted users to experience throughout the collection process.</p>
+            <p>For the packaging, I selected a two-tone blue palette because blue is widely used in healthcare to communicate trust, safety, cleanliness, and reliability. We intentionally avoided stereotypically feminine colors and any colors that evoke urine to create a brand that felt clinical and professional.</p>
+            <p>Overall, the visual identity reinforces SureThing's goal of creating a more comfortable and confident urine collection experience for women. </p>
+        </div>  
+    </div>
+
+    <div id= "ImageSectionDivider">
+        <img src="Website Divider.jpg" width="100%">
+    </div>
+
+    <div class="GreenBackground" id="Solution">
+        <h1 class="PinkTitle"> Conclusion</h1>
+        <div class="WhiteText">
+            <img class="ProjectImage" id="AwardPhoto" src="SureThing Photos/SureThing Group Award.jpg" alt="SureThing team receiving the Breaking Glass Award">
+            <p>To conclude our capstone project, we presented our work to faculty from Northwestern's Segal Design Institute, part of the McCormick School of Engineering & Applied Science, and fellow Northwestern students. For our work, we received the Breaking Glass Award, recognizing the capstone that best exemplifies the design process. Looking ahead, we hope to license the design to a medical device company. </p>
+        </div>  
+    </div>
+
+    <div id= "ImageSectionDivider">
+        <img src="WebsiteDivider3.jpg" width="100%">
+    </div>
+
+    <script src="main.js"></script>
+    
+  </body>
+</html>
+

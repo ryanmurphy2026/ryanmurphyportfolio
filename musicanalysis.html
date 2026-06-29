@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="musicanalysis.css">
+    <link rel="stylesheet" href="navbar.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
     <script src="main.js" defer></script>
@@ -17,24 +18,52 @@
   </head>
   <body>
     <nav class="navbar">
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="index.html#ProjectsSection">Design in Action</a>
-            <a href="index.html#ArtSection">Creative Explorations</a>
-            <a href="index.html#AboutMe">About Me</a>
-            <a href="index.html#ContactSection">Contact</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <div class="nav-dropdown">
+          <a class="nav-dropdown-toggle" href="index.html#ProjectsSection" aria-haspopup="true">Design in Action</a>
+          <div class="dropdown-menu" aria-label="Design in Action projects">
+            <a href="index.html#ProjectsSection">Overview</a>
+            <a href="surething.html">SureThing</a>
+            <a href="livetime.html">Live Time</a>
+            <a href="amazonmusic.html">Amazon Music</a>
+            <a href="stepcity.html">Step City</a>
+            <a href="gutter.html">Gutter Defender</a>
+            <a href="fleetclean.html">Fleet Clean</a>
+            <a href="funbrella.html">Funbrella</a>
+            <a href="retractawheel.html">Retract-A-Wheels</a>
+          </div>
         </div>
+        <div class="nav-dropdown">
+          <a class="nav-dropdown-toggle" href="index.html#ArtSection" aria-haspopup="true">Creative Explorations</a>
+          <div class="dropdown-menu" aria-label="Creative Exploration projects">
+            <a href="index.html#ArtSection">Overview</a>
+            <a href="nusublets.html">NU Sublets</a>
+            <a href="resole.html">ReSole</a>
+            <a href="techdream.html">Tech's Dream</a>
+            <a href="keithharing.html">12 Greek Myths</a>
+            <a href="ulimi.html">Ulimi Tongue of Culture</a>
+            <a href="musicanalysis.html">Music Taste Analysis</a>
+            <a href="wavelength.html">Wavelength</a>
+            <a href="musicmural.html">Music Mural</a>
+            <a href="shatteredring.html">Shattered Ring</a>
+            <a href="buttercrumble.html">Butter &amp; Crumble</a>
+          </div>
+        </div>
+        <a href="index.html#AboutMe">About Me</a>
+        <a href="index.html#ContactSection">Contact</a>
+      </div>
     </nav>
 
     <div id="TechDream">
         <div id="Contents">
             <img src="Music Taste Analysis Photos/MusicTasteSpreadsheet.jpg" width="80%">
             <h1>Music Taste Analysis</h1>
-            <p>I listen to a lot of music, over 189,000 minutes the past two years. My passion for music runs so deep that since 2023, I’ve chosen a song every day to represent that day, adding to a growing playlist. With over 800 songs and counting, this simple ritual is something I look forward to daily, as each song holds personal significance. After learning about data visualization techniques, I thought it would be interesting to analyze my evolving music taste. Using tools like Exportify and the Last.fm API, I turned my Spotify history into a spreadsheet to uncover trends and insights over time. 
+            <p>I listen to a lot of music, over 189,000 minutes the past two years. My passion for music runs so deep that since 2023, Iâ€™ve chosen a song every day to represent that day, adding to a growing playlist. With over 800 songs and counting, this simple ritual is something I look forward to daily, as each song holds personal significance. After learning about data visualization techniques, I thought it would be interesting to analyze my evolving music taste. Using tools like Exportify and the Last.fm API, I turned my Spotify history into a spreadsheet to uncover trends and insights over time. 
             </p>
             <br>
             <p>
-                First, I analyzed the number of artists I’ve listened to, determining a total of 627 artists featured on the playlist. I then focused on the top artists, setting the cutoff at six songs.
+                First, I analyzed the number of artists Iâ€™ve listened to, determining a total of 627 artists featured on the playlist. I then focused on the top artists, setting the cutoff at six songs.
             </p>
             <div class="charts">
                 <img class="left" src="Music Taste Analysis Photos/zZ2Y1-most-common-artists.png">
@@ -42,7 +71,7 @@
                 <img class="right" src="Music Taste Analysis Photos/zZ2Y1-average-plays-for-most-common-artists.png">
             </div>
             <p>
-                Similar to artists, I also analyzed the number of genres I’ve listened to, determining a total of 304 genres featured on the playlist. To dive deeper, I narrowed my focus to the top ten.
+                Similar to artists, I also analyzed the number of genres Iâ€™ve listened to, determining a total of 304 genres featured on the playlist. To dive deeper, I narrowed my focus to the top ten.
             </p>
             <div class="charts">
                 <img class="left" src="Music Taste Analysis Photos/glj1E-top-ten-most-common-genres.png">

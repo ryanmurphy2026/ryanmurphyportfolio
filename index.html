@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ryan Murphy Portfolio</title>
     <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="navbar.css" />
     <link rel="icon" href="portfoliofavicon.png" type="image/x-icon" />
     <link rel="shortcut icon" href="portfoliofavicon.png" type="image/x-icon" />
 
@@ -23,8 +24,36 @@
     <nav class="navbar">
       <div class="nav-links">
         <a href="#LandingPage">Home</a>
-        <a href="#ProjectsSection">Design in Action</a>
-        <a href="#ArtSection">Creative Explorations</a>
+        <div class="nav-dropdown">
+          <a class="nav-dropdown-toggle" href="#ProjectsSection" aria-haspopup="true">Design in Action</a>
+          <div class="dropdown-menu" aria-label="Design in Action projects">
+            <a href="#ProjectsSection">Overview</a>
+            <a href="surething.html">SureThing</a>
+            <a href="livetime.html">Live Time</a>
+            <a href="amazonmusic.html">Amazon Music</a>
+            <a href="stepcity.html">Step City</a>
+            <a href="gutter.html">Gutter Defender</a>
+            <a href="fleetclean.html">Fleet Clean</a>
+            <a href="funbrella.html">Funbrella</a>
+            <a href="retractawheel.html">Retract-A-Wheels</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <a class="nav-dropdown-toggle" href="#ArtSection" aria-haspopup="true">Creative Explorations</a>
+          <div class="dropdown-menu" aria-label="Creative Exploration projects">
+            <a href="#ArtSection">Overview</a>
+            <a href="nusublets.html">NU Sublets</a>
+            <a href="resole.html">ReSole</a>
+            <a href="techdream.html">Tech's Dream</a>
+            <a href="keithharing.html">12 Greek Myths</a>
+            <a href="ulimi.html">Ulimi Tongue of Culture</a>
+            <a href="musicanalysis.html">Music Taste Analysis</a>
+            <a href="wavelength.html">Wavelength</a>
+            <a href="musicmural.html">Music Mural</a>
+            <a href="shatteredring.html">Shattered Ring</a>
+            <a href="buttercrumble.html">Butter &amp; Crumble</a>
+          </div>
+        </div>
         <a href="#AboutMe">About Me</a>
         <a href="#ContactSection">Contact</a>
       </div>
@@ -37,6 +66,9 @@
           <div id="introtext">
             <h1 id="Hello">Hello, I'm Ryan!</h1>
             <p id="rushtext">
+              I'm a designer and engineer who works at the intersection of engineering, design, and aesthetics to build user-centered solutions across both physical products and digital interfaces.
+            </p>
+            <p id="rushtext">
               If you're in a rush, you can download my resume below. Otherwise, enjoy your
               visit!
             </p>
@@ -44,16 +76,8 @@
           </div>
         </div>
       </section>
-
-      <section id="BrainSection">
-        <div id="BrainContents">
-          <h2 id="Combining">Combining Left &amp; Right Brain Thinking</h2>
-          <div class="slide-up" id="brainimagecontainer">
-            <img id="brainimage" src="brain.png" alt="Split brain concept illustration" />
-          </div>
-        </div>
-      </section>
-
+    
+    
       <section id="ProjectsSection">
         <div id="ProjectContents">
           <h2 id="ProjectTitle">Design in Action</h2>
@@ -61,12 +85,17 @@
             These are the projects where I put design thinking into practice, from research
             and ideation to prototyping and testing.
           </p>
-          <p>Click on any icon to explore the full project.</p>
         </div>
       </section>
 
       <section class="cards-section cards-section-light" aria-label="Design in Action Projects">
         <div class="cards-grid">
+          <article class="ProjectBlock slide-up">
+            <a href="surething.html">
+              <img src="Icons/SureThing Icon For Portfolio.png" class="icons" alt="Sure Thing project icon" />
+              <h3 class="ProjectNames">Sure Thing</h3>
+            </a>
+          </article>
           <article class="ProjectBlock slide-up">
             <a href="livetime.html">
               <img src="Icons/flamingo for portfolio.png" class="icons" alt="Live Time project icon" />
@@ -120,14 +149,25 @@
         <div id="ArtContents">
           <h2 id="ArtTitle">Creative Explorations</h2>
           <p id="ArtBody">
-            A mix of visual work and personal projects that reflect how I think about design.
-            Click any icon to explore the full piece.
+            Whether it's exploring my love for music or producing art in many forms, I strive to create a mix of visual work and personal projects that reflect how I think about design.
           </p>
         </div>
       </section>
 
       <section class="cards-section cards-section-dark" aria-label="Creative Exploration Projects">
         <div class="cards-grid">
+          <article class="ProjectBlock slide-up">
+            <a href="nusublets.html">
+              <img src="Icons/Nusublets Icon.png" class="icons" alt="Nusublets icon" />
+              <h3 class="ArtNames">Nu Sublets</h3>
+            </a>
+          </article>
+          <article class="ProjectBlock slide-up">
+            <a href="resole.html">
+              <img src="Icons/Resole Icon.png" class="icons" alt="Resole icon" />
+              <h3 class="ArtNames">Resole</h3>
+            </a>
+          </article>
           <article class="ProjectBlock slide-up">
             <a href="techdream.html">
               <img src="Icons/chairforportfolio.png" class="icons" alt="Tech's Dream icon" />
@@ -179,40 +219,46 @@
         </div>
       </section>
 
+
       <section id="AboutMe">
-        <img id="RyanHeadshot" src="RyanHeadshot.JPEG" alt="Ryan Murphy headshot" />
+        <img id="RyanHeadshot" src="Graduation Photos.jpg" alt="Ryan Murphy headshot" />
         <div id="AboutMeText">
           <h2 id="AboutMeHeader">About Me</h2>
           <p class="AboutMeBody">
-            I'm a senior at Northwestern University majoring in Manufacturing &amp; Design
-            Engineering (MaDE), blending systems thinking, hands-on prototyping, and creative
-            strategy to design products that solve real human problems.
+            I graduated from Northwestern University with a Bachelor of Science in Manufacturing & Design Engineering (MaDE), where I developed a multidisciplinary approach that blends systems thinking, hands-on prototyping, and creative problem-solving to design products that solve real human problems.
           </p>
           <p class="AboutMeBody">
-            With minors in Computer Science and Art, Theory &amp; Practice, I work at the
-            intersection of engineering, digital design, and aesthetics. I bring both analytical
-            rigor and creative intuition to every project. Whether I'm conducting user research,
-            developing a physical product, or building a digital interface, my goal is to deliver
-            thoughtful, user-centered solutions that are both functional and meaningful.
+            With minors in Computer Science and Art, Theory & Practice, I work at the intersection of engineering, product design, and visual communication. I bring both creative thinking and engineering rigor to every project. Whether I'm conducting user research, developing a product, or designing digital experiences, my goal is to create thoughtful, user-centered solutions that are both functional and meaningful.
           </p>
           <p class="AboutMeBody">
-            I'm currently seeking a full-time opportunity where I can contribute across the full
-            product lifecycle. I am drawn to teams that value experimentation, iteration, and
-            human impact.
+            I'm currently seeking a full-time opportunity where I can contribute across the entire product lifecycle while collaborating with teams that value experimentation, iteration, and human impact.
           </p>
           <p class="AboutMeBody">
-            I'm from Queens, the best borough in New York City. To relax, I enjoy listening to
-            different genres of music and painting my favorite album covers. I'm also a
-            passionate Mets fan and amateur chef who loves to experiment with food.
+            I'm from Queens, the best borough in New York City. To unwind, I enjoy listening to a wide range of music and painting my favorite album covers. I'm also a passionate Mets fan and an amateur chef who loves experimenting in the kitchen.
           </p>
         </div>
+      </section>  
+
+      <section id="BrainSection">
+        <div id="BrainContents">
+          <div class="slide-up" id="brainimagecontainer">
+            <img id="brainimage" src="brain.png" alt="Split brain concept illustration" />
+          </div>
+          <div class="slide-up" id="BrainText">
+            <h2 id="Combining">MaDE: Left &amp; Right Brain Thinking</h2>
+            <p id="BrainBody">
+              Manufacturing &amp; Design Engineering (MaDE) is a multidisciplinary program offered through Northwestern University's Segal Design Institute, a hub for design education, innovation, and research within the McCormick School of Engineering &amp; Applied Science. MaDE bridges human-centered design and engineering rigor, creating solutions that are both technically sound and user-focused. Its hands-on curriculum spans every stage of the product development process &mdash; from identifying unmet needs and generating concepts to engineering solutions and manufacturing at scale. 
+            </p>
+          </div>
+        </div>
       </section>
+
     </main>
 
     <footer id="ContactSection" class="engineer-footer">
       <div class="footer-left">
         <div class="footer-brand-row">
-          <h2 class="footer-brand">Ryan Murphy</h2>
+          <h2 class="footer-brand">Ryan J Murphy</h2>
         </div>
       </div>
 

@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="amazonmusic.css">
+    <link rel="stylesheet" href="navbar.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
     <script src="main.js" defer></script>
@@ -16,13 +17,41 @@
   </head>
   <body>
     <nav class="navbar">
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="index.html#ProjectsSection">Design in Action</a>
-            <a href="index.html#ArtSection">Creative Explorations</a>
-            <a href="index.html#AboutMe">About Me</a>
-            <a href="index.html#ContactSection">Contact</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <div class="nav-dropdown">
+          <a class="nav-dropdown-toggle" href="index.html#ProjectsSection" aria-haspopup="true">Design in Action</a>
+          <div class="dropdown-menu" aria-label="Design in Action projects">
+            <a href="index.html#ProjectsSection">Overview</a>
+            <a href="surething.html">SureThing</a>
+            <a href="livetime.html">Live Time</a>
+            <a href="amazonmusic.html">Amazon Music</a>
+            <a href="stepcity.html">Step City</a>
+            <a href="gutter.html">Gutter Defender</a>
+            <a href="fleetclean.html">Fleet Clean</a>
+            <a href="funbrella.html">Funbrella</a>
+            <a href="retractawheel.html">Retract-A-Wheels</a>
+          </div>
         </div>
+        <div class="nav-dropdown">
+          <a class="nav-dropdown-toggle" href="index.html#ArtSection" aria-haspopup="true">Creative Explorations</a>
+          <div class="dropdown-menu" aria-label="Creative Exploration projects">
+            <a href="index.html#ArtSection">Overview</a>
+            <a href="nusublets.html">NU Sublets</a>
+            <a href="resole.html">ReSole</a>
+            <a href="techdream.html">Tech's Dream</a>
+            <a href="keithharing.html">12 Greek Myths</a>
+            <a href="ulimi.html">Ulimi Tongue of Culture</a>
+            <a href="musicanalysis.html">Music Taste Analysis</a>
+            <a href="wavelength.html">Wavelength</a>
+            <a href="musicmural.html">Music Mural</a>
+            <a href="shatteredring.html">Shattered Ring</a>
+            <a href="buttercrumble.html">Butter &amp; Crumble</a>
+          </div>
+        </div>
+        <a href="index.html#AboutMe">About Me</a>
+        <a href="index.html#ContactSection">Contact</a>
+      </div>
     </nav>
 
     <div id="StartingImage">
@@ -33,13 +62,14 @@
         <h1 class="GreenTitle" id="Name">Amazon Music Social Redesign: Turning Streaming into Community</h1>
         <div class="BlackText">
             <p>
-                As part of Northwestern’s Bay Area Immersion Program, our team collaborated with Amazon Music on a 10-week design practicum focused on disrupting their platform to develop innovative ideas for future use. Our challenge was clear: help Amazon Music better attract and retain Gen Z users, particularly in comparison to competitors like Spotify.
+                As part of Northwesternâ€™s Bay Area Immersion Program, our team collaborated with Amazon Music on a 10-week design practicum focused on disrupting their platform to develop innovative ideas for future use. Our challenge was clear: help Amazon Music better attract and retain Gen Z users, particularly in comparison to competitors like Spotify.
             </p>  
+            <p>This project reinforced the value of keeping the design process playful and engaging. Whether developing inherently fun concepts or bringing them to life through mini skits and personal anecdotes, embracing a sense of joy and creativity was essential to our success. I learned that truly enjoying the process - and fostering a dynamic collaboration with the company - is the best way to stay energized, inspired, and innovative throughout the design journey. </p>
         </div>  
     </div>
 
     <div class="GreenBackground" id="Opportunity">
-        <h1 class="PinkTitle">Identifying the Opportunity</h1>
+        <h1 class="PinkTitle">Recognizing Amazon Music’s Opportunity to Make Listening More Social </h1>
         <div class="WhiteText">
             <p>
                 Our team quickly recognized that Amazon Music lacked the social components that make music inherently communal. This inspired our core mission: transform Amazon Music from a simple streaming service into a vibrant social music playground that fosters community and connection.
@@ -59,7 +89,7 @@
     </div>
 
     <div class="WhiteBackground" id="User Research">
-        <h1 class="GreenTitle">User Research</h1>
+        <h1 class="GreenTitle">Gen Z Listeners Love to Share What They Listen To</h1>
         <div class="BlackText">
             <p>
                 To ground our work in real user needs, we conducted 20+ in-depth interviews with college students aged 18-22. An overwhelming 85% reported regularly sharing music with others, uncovering a profound insight: for young people, music sharing isn't just a feature - it's an essential way to connect, bond, and express themselves.
@@ -102,7 +132,7 @@
 
 
     <div class="GreenBackground" id="Ideation">
-        <h1 class="PinkTitle">Ideation Process</h1>
+        <h1 class="PinkTitle">Brainstorming and Ideating with our Main Personas in Mind</h1>
         <div class="WhiteText">
             <img id="brainstorming" src="Amazon Music Photos/Brainstorming.jpg">
             <p>
@@ -116,7 +146,7 @@
     </div>
 
     <div class="WhiteBackground" id="Prototypes">
-        <h1 class="GreenTitle">Four Prototype Concepts</h1>
+        <h1 class="GreenTitle">Turning Amazon Music Into a Social Playground Through Four Feature Concepts</h1>
         <div class="BlackText">
             <p>
                 <strong>1. Profile Accents</strong>
@@ -179,16 +209,6 @@
             </ul>
 
             <p>After 10 weeks of in-depth research, brainstorming, and prototyping, we presented our ideas directly to Amazon Music executives at their San Francisco headquarters. Our goal was to inspire potential implementation and spark new directions for the platform's future.</p>
-        </div>  
-    </div>
-
-    <div class="GreenBackground" id="Takeaways">
-        <h1 class="PinkTitle">Major Takeaways</h1>
-        <div class="WhiteText">
-            <img id="team" src="Amazon Music Photos/Team Photo.jpg">
-            <p>
-                This project reinforced the value of keeping the design process playful and engaging. Whether developing inherently fun concepts or bringing them to life through mini skits and personal anecdotes, embracing a sense of joy and creativity was essential to our success. I learned that truly enjoying the process - and fostering a dynamic collaboration with the company - is the best way to stay energized, inspired, and innovative throughout the design journey.
-            </p>  
         </div>  
     </div>
 

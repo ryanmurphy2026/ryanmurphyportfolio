@@ -1,0 +1,279 @@
+@font-face {
+  font-family: Sentient;
+  src: url(SENTIENT-VARIABLE.TTF);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f3ee;
+    font-family: Sentient;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+/* Page exit animation */
+body.exiting {
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+::-webkit-scrollbar {
+    width:auto;
+    }
+    /*track*/
+    ::-webkit-scrollbar-track {
+    background:rgb(201, 200, 196);
+    border-width:2px;
+    border-style:solid;
+    border-color:black;
+    }
+    /*thumb*/
+    ::-webkit-scrollbar-thumb {
+    background:rgb(245, 243, 238);
+    border-width:2px;
+    border-style:solid;
+    border-color:black;
+    }
+
+p{
+    font-size: 16px;
+    color: white;
+    width: 100%;
+    margin: 0;
+    line-height: 2;
+}
+
+.navbar {
+    background-color: #f5f3ee;
+    color: black;
+    border-bottom: 4px solid black;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: all 0.5s ease;
+}
+
+.nav-links a:hover {
+    color: #036147; /* Color on hover */
+    transform: scale(1.2); /* Grow on hover */
+}
+
+#TechDream{
+    padding: 24px 16px 48px;
+    background-color: #036147;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    min-height: calc(100vh - 84px);
+    height: auto;
+}
+
+#Contents{
+    width: min(80%, 960px);
+    display: grid;
+    gap: 24px;
+}
+
+h1{
+    color:#f3cce7;
+}
+
+img{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+button {
+    background-color: #ff6c26;
+    color: #f5f3ee;
+    border: 2px solid #ff6c26;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+  
+button:hover {
+    background-color: #036147; 
+    color: #ff6c26; 
+}
+/* === Global Responsive Patch (Codex) === */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+#ImageSectionDivider img,
+[id*="Divider"] img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    justify-content: center !important;
+    padding: 14px 12px !important;
+  }
+
+  .nav-links {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 10px 12px !important;
+  }
+
+  .nav-links a {
+    font-size: 13px !important;
+    padding: 6px 10px !important;
+  }
+
+  #TechDream {
+    min-height: calc(100vh - 120px);
+    padding: 20px 16px 40px;
+  }
+
+  #Contents {
+    width: min(100%, 720px);
+    gap: 18px;
+  }
+
+  #Contents p {
+    font-size: clamp(15px, 4vw, 16px);
+    line-height: 1.75;
+  }
+
+  #Contents > img {
+    width: 100%;
+  }
+
+  #StartingImage {
+    height: auto !important;
+    min-height: 58vh;
+    padding: 16px 12px;
+  }
+
+  .WhiteBackground,
+  .GreenBackground {
+    padding: 16px !important;
+  }
+
+  .PinkTitle,
+  .GreenTitle {
+    font-size: clamp(1.8rem, 7vw, 2.2rem) !important;
+    line-height: 1.15 !important;
+  }
+
+  .BlackText,
+  .WhiteText,
+  #AboutMeText,
+  #ProjectContents,
+  #ArtContents {
+    width: min(92%, 760px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  #Name,
+  #VanPhoto,
+  #GroupPhoto,
+  #start,
+  #testing,
+  #brainstorming,
+  #team,
+  #documenting,
+  #AllvanName,
+  #ReframePhoto,
+  #PresentationPhoto {
+    width: min(92%, 860px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .Figmas {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+    width: min(92%, 860px) !important;
+    margin: 16px auto !important;
+  }
+
+  .Figmas img {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1199px) {
+  .Figmas {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 14px !important;
+  }
+
+  .Figmas img {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+}
+
+@media (hover: none) {
+  .nav-links a:hover {
+    transform: none !important;
+  }
+}
+
+/* === Creative Media Centering Fix === */
+#Contents > img,
+#Contents > iframe,
+#Contents iframe,
+#Contents .flourish-embed-iframe {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Keep chart rows aligned in musicanalysis */
+.charts img {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}

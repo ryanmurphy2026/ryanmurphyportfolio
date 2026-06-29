@@ -620,3 +620,33 @@ body {
   height: auto !important;
   min-height: 0 !important;
 }
+
+/* === Project Header Sizing === */
+.PinkTitle,
+.GreenTitle {
+  font-size: clamp(1.7rem, 3.4vw, 2.5rem);
+  line-height: 1.12;
+}
+
+@media (max-width: 900px) {
+  .PinkTitle,
+  .GreenTitle {
+    font-size: clamp(1.55rem, 6vw, 2rem) !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .PinkTitle,
+  .GreenTitle {
+    font-size: clamp(1.45rem, 7vw, 1.75rem) !important;
+  }
+}
+
+/* === Project Header Width === */
+.PinkTitle,
+.GreenTitle {
+  max-width: min(90%, 900px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
