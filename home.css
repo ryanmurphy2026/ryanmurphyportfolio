@@ -1,4 +1,4 @@
-@font-face {
+﻿@font-face {
   font-family: Sentient;
   src: url(SENTIENT-VARIABLE.TTF);
 }
@@ -180,7 +180,7 @@ a {
   width: min(680px, 100%);
   background-color: var(--bg-light);
   border: 4px dashed var(--bg-dark);
-  box-shadow: 10px 10px 0 var(--border);
+  box-shadow: 10px 10px 0 #2F2F2F;
   padding: 1.5rem;
   text-align: center;
 }
@@ -215,7 +215,7 @@ a {
 
 #BrainSection {
   background-color: var(--bg-dark);
-  padding: 1.35rem 1rem;
+  padding: 0.75rem 1rem;
 }
 
 #BrainContents {
@@ -507,7 +507,7 @@ a {
   }
 
   #BrainSection {
-    padding: 2.25rem 1.5rem;
+    padding: 1.25rem 1.5rem;
   }
 
   #BrainContents {
