@@ -1,4 +1,4 @@
-﻿@font-face {
+@font-face {
   font-family: Sentient;
   src: url(SENTIENT-VARIABLE.TTF);
 }
@@ -109,20 +109,6 @@ a {
   align-items: center;
 }
 
-.nav-dropdown-toggle::after {
-  content: "v";
-  display: inline-block;
-  font-family: "Rubik", sans-serif;
-  font-size: 0.7em;
-  margin-left: 0.35rem;
-  transform: translateY(-1px);
-  transition: transform 0.2s ease;
-}
-
-.nav-dropdown:hover .nav-dropdown-toggle::after,
-.nav-dropdown:focus-within .nav-dropdown-toggle::after {
-  transform: translateY(-1px) rotate(180deg);
-}
 
 .dropdown-menu {
   position: absolute;
@@ -305,6 +291,15 @@ a {
   background-color: var(--bg-dark);
 }
 
+.work-category-label {
+  margin: 0 auto 1.5rem;
+  color: var(--bg-dark);
+  font-family: Sentient, "Rubik", serif;
+  font-size: clamp(1.15rem, 2.4vw, 1.45rem);
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: center;
+}
 .cards-grid {
   width: min(var(--max-content), 100%);
   margin: 0 auto;
@@ -386,7 +381,7 @@ a {
 }
 
 #RyanHeadshot {
-  width: min(560px, 100%);
+  width: min(420px, 100%);
   margin: 0 auto;
   box-shadow: -10px 10px 0 var(--bg-dark);
 }
