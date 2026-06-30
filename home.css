@@ -220,7 +220,7 @@ a {
 
 #Combining {
   color: var(--highlight);
-  font-size: clamp(1.55rem, 3.6vw, 2.45rem);
+  font-size: clamp(1.35rem, 3vw, 2rem);
   line-height: 1.1;
   margin: 0 0 0.95rem;
 }
@@ -511,7 +511,7 @@ a {
 
   #BrainText {
     margin: 0;
-    text-align: left;
+    text-align: center;
   }
 
   .cards-grid {

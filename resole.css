@@ -95,7 +95,7 @@ p{
     background-color: #036147;
     display: flex;
     justify-content: center;
-    text-align: center;
+    text-align: left;
     min-height: calc(100vh - 84px);
     height: auto;
 }
@@ -108,6 +108,8 @@ p{
 
 h1{
     color:#f3cce7;
+    text-align: center;
+
 }
 
 img{
