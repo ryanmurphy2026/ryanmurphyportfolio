@@ -226,8 +226,9 @@ a {
 
 #BrainBody {
   color: var(--text-light);
-  line-height: 1.85;
+  line-height: 2;
   margin: 0;
+  text-align: left;
   overflow-wrap: break-word;
 }
 
