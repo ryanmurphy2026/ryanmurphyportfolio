@@ -201,46 +201,34 @@ a {
 
 #BrainSection {
   background-color: var(--bg-dark);
-  padding: 2rem 1.5rem;
+  padding: 2.4rem 1.5rem;
 }
 
 #BrainContents {
   width: min(900px, 100%);
   margin: 0 auto;
-  display: grid;
-  gap: 2.5rem;
-  align-items: center;
 }
 
 #BrainText {
-  width: min(680px, 100%);
+  width: min(820px, 100%);
   min-width: 0;
   margin: 0 auto;
-  text-align: left;
+  text-align: center;
 }
 
 #Combining {
   color: var(--highlight);
   font-size: clamp(1.2rem, 2.4vw, 1.8rem);
   line-height: 1.1;
-  margin: 0 0 0.75rem;
+  margin: 0 0 1rem;
   overflow-wrap: break-word;
 }
 
 #BrainBody {
   color: var(--text-light);
-  line-height: 1.75;
+  line-height: 1.85;
   margin: 0;
   overflow-wrap: break-word;
-}
-
-#brainimagecontainer {
-  display: flex;
-  justify-content: center;
-}
-
-#brainimage {
-  width: min(210px, 100%);
 }
 
 #ProjectsSection,
@@ -504,18 +492,6 @@ a {
     margin-inline: 0;
   }
 
-  #BrainSection {
-    padding: 2.5rem 2rem;
-  }
-
-  #BrainContents {
-    grid-template-columns: minmax(130px, 210px) minmax(0, 1fr);
-  }
-
-  #BrainText {
-    margin: 0;
-    text-align: left;
-  }
 
   .cards-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));

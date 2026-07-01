@@ -103,13 +103,13 @@ p{
 
 .PinkTitle{
     color:#f3cce7;
-    font-size: 48px;
+    font-size: 40px;
     text-align: center;
 }
 
 .GreenTitle{
     color:#036147;
-    font-size: 48px;
+    font-size: 40px;
     text-align: center;
 }
 
@@ -342,7 +342,7 @@ img {
 
   .PinkTitle,
   .GreenTitle {
-    font-size: clamp(1.8rem, 7vw, 2.2rem) !important;
+    font-size: clamp(1.55rem, 6vw, 1.9rem) !important;
     line-height: 1.15 !important;
   }
 

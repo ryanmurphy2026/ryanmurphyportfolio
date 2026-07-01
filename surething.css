@@ -766,12 +766,17 @@ body {
   width: min(100%, 760px);
 }
 
+#ResoleGroupPhoto {
+  width: min(100%, 620px);
+}
+
 @media (max-width: 900px) {
   .ProjectImage,
   #SurveyResults,
   #PrototypePhoto,
-  #AwardPhoto {
-    width: min(92%, 760px) !important;
+  #AwardPhoto,
+  #ResoleGroupPhoto {
+    width: min(92%, 620px) !important;
     margin-left: auto !important;
     margin-right: auto !important;
   }
