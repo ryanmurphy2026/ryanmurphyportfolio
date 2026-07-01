@@ -103,14 +103,22 @@ p{
 
 .PinkTitle{
     color:#f3cce7;
-    font-size: 48px;
+    font-size: 38px;
     text-align: center;
+    line-height: 1.18;
+    width: min(72%, 840px);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .GreenTitle{
     color:#036147;
-    font-size: 48px;
+    font-size: 38px;
     text-align: center;
+    line-height: 1.18;
+    width: min(72%, 840px);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .BlackText{
@@ -181,7 +189,8 @@ p{
     }
     
     .PinkTitle, .GreenTitle {
-        font-size: 36px;
+        font-size: 32px;
+        width: min(82%, 720px);
     }
     
     .BlackText, .WhiteText {
@@ -231,7 +240,8 @@ p{
     }
     
     .PinkTitle, .GreenTitle {
-        font-size: 28px;
+        font-size: 26px;
+        width: 90%;
         margin-bottom: 10px;
     }
     
@@ -276,7 +286,7 @@ p{
     }
     
     .PinkTitle, .GreenTitle {
-        font-size: 24px;
+        font-size: 22px;
     }
     
     .BlackText, .WhiteText {
@@ -350,8 +360,9 @@ img {
 
   .PinkTitle,
   .GreenTitle {
-    font-size: clamp(1.8rem, 7vw, 2.2rem) !important;
+    font-size: clamp(1.55rem, 5.5vw, 2rem) !important;
     line-height: 1.15 !important;
+    width: min(86%, 720px) !important;
   }
 
   .BlackText,
