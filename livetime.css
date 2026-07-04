@@ -129,6 +129,10 @@ p{
     margin-right: 20%;
 }
 
+.CenterText{
+    text-align: center;
+}
+
 #Name{
     width: 80%;
     margin-left: 10%;
