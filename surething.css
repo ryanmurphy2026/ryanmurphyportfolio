@@ -766,6 +766,14 @@ body {
   width: min(100%, 760px);
 }
 
+#PrototypePhoto {
+  width: min(100%, 520px);
+}
+
+#Packaging {
+  width: min(100%, 620px);
+}
+
 #ResoleGroupPhoto {
   width: min(100%, 620px);
 }
@@ -779,5 +787,13 @@ body {
     width: min(92%, 620px) !important;
     margin-left: auto !important;
     margin-right: auto !important;
+  }
+
+  #PrototypePhoto {
+    width: min(82%, 460px) !important;
+  }
+
+  #Packaging {
+    width: min(88%, 540px) !important;
   }
 }
