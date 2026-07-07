@@ -121,6 +121,10 @@ p{
     margin-right: auto;
 }
 
+.nowrap {
+    white-space: nowrap;
+}
+
 .BlackText{
     color: black;
     line-height: 2;
