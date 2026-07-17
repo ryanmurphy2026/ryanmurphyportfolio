@@ -149,6 +149,7 @@ a {
   align-items: center;
   justify-content: center;
   padding: 2rem 1rem;
+  overflow: hidden;
 }
 
 #background {
@@ -158,6 +159,16 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  animation: kenBurns 22s ease-in-out infinite alternate;
+}
+
+@keyframes kenBurns {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.08);
+  }
 }
 
 #introductionblock {
@@ -448,6 +459,19 @@ a {
   transform: translateY(0);
 }
 
+.cards-grid .slide-up {
+  transition-delay: calc(var(--card-index, 0) * 0.08s);
+}
+
+.cards-grid .ProjectBlock:nth-child(1) { --card-index: 1; }
+.cards-grid .ProjectBlock:nth-child(2) { --card-index: 2; }
+.cards-grid .ProjectBlock:nth-child(3) { --card-index: 3; }
+.cards-grid .ProjectBlock:nth-child(4) { --card-index: 4; }
+.cards-grid .ProjectBlock:nth-child(5) { --card-index: 5; }
+.cards-grid .ProjectBlock:nth-child(6) { --card-index: 6; }
+.cards-grid .ProjectBlock:nth-child(7) { --card-index: 7; }
+.cards-grid .ProjectBlock:nth-child(8) { --card-index: 8; }
+
 @media (min-width: 640px) {
   .navbar {
     justify-content: flex-end;
@@ -646,7 +670,9 @@ img {
   }
 }
 
-
-
-
+@media (prefers-reduced-motion: reduce) {
+  #background {
+    animation: none !important;
+  }
+}
 

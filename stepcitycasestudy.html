@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Step City — Case Study</title>
+    <link rel="stylesheet" href="stepcitycasestudy.css">
+    <link rel="stylesheet" href="navbar.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
+    <script src="main.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <div class="nav-dropdown">
+          <a class="nav-dropdown-toggle" href="index.html#ProjectsSection" aria-haspopup="true">Design in Action</a>
+          <div class="dropdown-menu" aria-label="Design in Action projects">
+            <a href="livetime.html">Live Time</a>
+            <a href="amazonmusic.html">Amazon Music</a>
+            <a href="stepcity.html">Step City</a>
+            <a href="nusublets.html">NU Sublets</a>
+            <a href="surething.html">Sure Thing</a>
+            <a href="resole.html">ReSole</a>
+            <a href="gutter.html">The Gutter Defender</a>
+            <a href="fleetclean.html">Fleet Clean</a>
+            <a href="funbrella.html">Funbrella</a>
+            <a href="retractawheel.html">Retract-A-Wheels</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <a class="nav-dropdown-toggle" href="index.html#ArtSection" aria-haspopup="true">Creative Explorations</a>
+          <div class="dropdown-menu" aria-label="Creative Exploration projects">
+            <a href="buttercrumble.html">Butter &amp; Crumble</a>
+            <a href="wavelength.html">Wavelength</a>
+            <a href="musicanalysis.html">Music Taste Analysis</a>
+            <a href="musicmural.html">Music Mural</a>
+            <a href="ulimi.html">Ulimi Tongue of Culture</a>
+            <a href="keithharing.html">12 Greek Myths</a>
+            <a href="shatteredring.html">Shattered Ring</a>
+            <a href="techdream.html">Tech's Dream</a>
+          </div>
+        </div>
+        <a href="index.html#AboutMe">About Me</a>
+        <a href="index.html#ContactSection">Contact</a>
+      </div>
+    </nav>
+
+    <div id="StartingImage">
+        <img id="VanPhoto" src="Step City Photos/Figma Prototypes/Pyramid.png">
+    </div>
+
+    <div class="WhiteBackground" id="ProjectName">
+        <h1 class="GreenTitle" id="Name">Step City: Transforming Physical Activity into Urban Adventure
+        </h1>
+        <div class="BlackText">
+            <p class="Eyebrow">Case Study</p>
+            <ul class="MetaList">
+                <li>
+                    <span class="MetaLabel">Role</span>
+                    <span class="MetaValue">UX / Product Designer</span>
+                </li>
+                <li>
+                    <span class="MetaLabel">Program</span>
+                    <span class="MetaValue">Northwestern Segal Design Institute</span>
+                </li>
+                <li>
+                    <span class="MetaLabel">Team</span>
+                    <span class="MetaValue">Collaborative Team Project</span>
+                </li>
+                <li>
+                    <span class="MetaLabel">Platform</span>
+                    <span class="MetaValue">Mobile App Concept</span>
+                </li>
+            </ul>
+            <p>
+                Step City is a mobile application designed to transform everyday physical activity into an engaging urban adventure. By combining real-world exploration with virtual city-building mechanics, the app encourages users to discover their surroundings while staying active. The concept evolved through multiple iterations based on user feedback and research, ultimately creating a solution that seamlessly integrates exercise into users' daily routines while providing clear progression and social interaction opportunities.
+            </p>
+        </div>
+    </div>
+
+    <div class="GreenBackground" id="Hills">
+        <h1 class="PinkTitle">Starting with the Pain Point of Traversing Hills in San Francisco</h1>
+        <div class="WhiteText">
+            <p>
+                Our team's journey began with a simple observation about urban life in San Francisco - hills are universally considered a miserable part of daily commutes. This sparked our initial question:
+            </p>
+            <p class="center">
+                <i>How might we make commuting on hills less like a chore and more like an adventure?</i>
+            </p>
+            <p>
+                This led to our first concept, Hill Kill, a mobile game where users would climb real-world hills to defeat virtual hill-themed monsters. With excitement, we presented this early concept to potential users for feedback.
+            </p>
+        </div>
+    </div>
+
+    <div id= "ImageSectionDivider">
+        <img src="WebsiteDivider4.jpg" width="100%">
+    </div>
+
+
+    <div class="WhiteBackground" id="Pivot">
+        <h1 class="GreenTitle">Pivoting After Users Failed to Resonate with Our Idea</h1>
+        <div class="BlackText">
+            <p>
+                The response was sobering. Users didn't connect with our hill-slaying concept:
+            </p>
+            <p>
+                <ul>
+                    <li><i>"Why would I log into it and not Apple Fitness?"</i></li>
+                    <li><i>"Why not just use Pokemon Go at that point?"</i></li>
+                    <li><i>"I wouldn't go out of my way to kill a mountain on an app. I wouldn't go out of my way to download it. I wouldn't feel excited."</i></li>
+                </ul>
+            </p>
+            <p>
+                This critical feedback forced us to reassess our approach and return to square one.
+            </p>
+        </div>
+    </div>
+
+
+
+    <div class="GreenBackground" id="Research">
+        <h1 class="PinkTitle">Using Research to Move from Hill Commuting to Broader Fitness Motivation</h1>
+        <div class="WhiteText">
+            <p>
+                Rather than focusing narrowly on hills, we expanded our research to explore broader health and fitness motivations. Our interviews revealed three key insights:
+            </p>
+            <ol>
+                <li>
+                    <strong>Time Constraints</strong>: Most people struggle with consistent exercise due to perceived lack of time
+                </li>
+                <li>
+                    <strong>Social Motivation</strong>: Exercise becomes more appealing when it includes social elements
+                </li>
+                <li>
+                    <strong>Engagement Factors</strong>: Users are motivated by fun activities and visible progress
+                </li>
+            </ol>
+            <div class="Persona">
+                <h3>Fitness Phil</h3>
+                <p>From these insights, we came up with the persona Fitness Phil - a young person who recently moved into a new city seeking both physical activity and urban exploration.</p>
+            </div>
+        </div>
+    </div>
+    <div id= "ImageSectionDivider">
+        <img src="WebsiteDivider2.jpg" width="100%">
+    </div>
+
+    <div class="WhiteBackground" id="Reframing">
+        <h1 class="GreenTitle">Reframing Fitness as a Seamless, Rewarding Part of Daily Life</h1>
+        <div class="BlackText">
+            <img id="ReframePhoto" src="Step City Photos/Ideation.jpg" width="100%">
+            <p>
+                With deeper insight, we reformulated our guiding question:
+            </p>
+            <p>
+                <i>How might we transform physical activity for young people from a time burden into a seamless, delightful experience with clear progression milestones?</i>
+            </p>
+        </div>
+    </div>
+
+
+    <div class="GreenBackground" id="Solution">
+        <h1 class="PinkTitle">Designing Step City to Make Fitness Feel Like Urban Exploration</h1>
+        <div class="WhiteText">
+            <p>
+                Our answer was Step City - a mobile game where players build an imaginary city by physically exploring and exercising in their real-world environment. The tagline captures this perfectly:
+            </p>
+            <p class="center"><i>"Grow your city step by step, by stepping out into your city."</i></p>
+            <p>
+                <strong>Key Features:</strong>
+            </p>
+
+            <div class="FeatureBlock">
+                <span class="FeatureLabel">01</span>
+                <h3>Step Stations</h3>
+                <p>Visit real-world locations to unlock virtual blueprints of landmarks; Step stations are physically placed throughout the user's city.</p>
+                <div class="Figmas" id="StepStations">
+                    <img id="scanning" src="Step City Photos/Figma Prototypes/Collect Blueprint - Scanning.png">
+                    <img id="getblueprint" src="Step City Photos/Figma Prototypes/Collect Blueprint - Result.png">
+                </div>
+            </div>
+
+            <div class="FeatureBlock">
+                <span class="FeatureLabel">02</span>
+                <h3>Quest-Based Rewards</h3>
+                <p>Complete physical challenges to earn building materials, with more difficult quests yielding greater rewards.</p>
+                <div class="Figmas" id="Quests">
+                    <img id="quest" src="Step City Photos/Figma Prototypes/Quest Page - Hard.png">
+                    <img id="progress" src="Step City Photos/Figma Prototypes/Quest Progress 2.png">
+                    <img id="questreward" src="Step City Photos/Figma Prototypes/Quest Reward Menu.png">
+                </div>
+            </div>
+
+            <div class="FeatureBlock">
+                <span class="FeatureLabel">03</span>
+                <h3>City Building</h3>
+                <p>Use collected materials and blueprints to construct a personalized virtual city.</p>
+                <div class="Figmas" id="CityBuilding">
+                    <img id="blueprintmenu" src="Step City Photos/Figma Prototypes/Building Tower - Selection.png">
+                    <img id="buildingresult" src="Step City Photos/Figma Prototypes/Building Tower - Built.png">
+                </div>
+            </div>
+
+            <div class="FeatureBlock">
+                <span class="FeatureLabel">04</span>
+                <h3>Progress Milestone</h3>
+                <p>Central monument that visually represents the user's ongoing achievements.</p>
+                <div class="Figmas" id="Milestone">
+                    <img id="milestonemenu"src="Step City Photos/Figma Prototypes/Click Milestone.png">
+                </div>
+            </div>
+
+            <div class="FeatureBlock">
+                <span class="FeatureLabel">05</span>
+                <h3>Social Interaction</h3>
+                <p>Visit friends' cities, trade materials, and collaborate on quests together.</p>
+                <div class="Figmas" id="Friends">
+                    <img id="friendslist" src="Step City Photos/Figma Prototypes/Friends List.png">
+                    <img id="trading" src="Step City Photos/Figma Prototypes/Friends - Trading.png">
+                    <img id="visit" src="Step City Photos/Figma Prototypes/Friends - Visit.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id= "ImageSectionDivider">
+        <img src="Website Divider.jpg" width="100%">
+    </div>
+
+
+    <div class="WhiteBackground" id="Presenting">
+        <h1 class="GreenTitle">Presenting Our Work</h1>
+        <div class="BlackText">
+            <p>
+                We presented our work to faculty from Northwestern's Segal Design Institute, professional designers from Atlassian and New Computer, a startup founded by a former Apple designer, and fellow Northwestern students.
+            </p>
+        </div>
+    </div>
+
+    <div class="GreenBackground" id="Reflection">
+        <h1 class="PinkTitle">What Did I Learn From This Project?</h1>
+        <div class="WhiteText">
+            <p>
+                This project highlighted an essential design lesson: initial ideas may not resonate with potential users, necessitating a pivot and a return to the drawing board. By adopting a more thorough, research-driven approach, our team developed a much stronger final product that effectively addressed user needs, making physical activity both purposeful and enjoyable.
+            </p>
+        </div>
+        <div id="ClosingLink">
+            <p><a href="index.html#ProjectsSection">&larr; Back to all projects</a></p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+
+  </body>
+</html>

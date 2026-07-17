@@ -1,0 +1,719 @@
+@font-face {
+  font-family: Sentient;
+  src: url(SENTIENT-VARIABLE.TTF);
+}
+
+body{
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f3ee;
+    font-family: Sentient;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+/* Page exit animation */
+body.exiting {
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+
+::-webkit-scrollbar {
+    width:auto;
+    }
+    /*track*/
+    ::-webkit-scrollbar-track {
+    background:rgb(201, 200, 196);
+    border-width:2px;
+    border-style:solid;
+    border-color:black;
+    }
+    /*thumb*/
+    ::-webkit-scrollbar-thumb {
+    background:rgb(245, 243, 238);
+    border-width:2px;
+    border-style:solid;
+    border-color:black;
+    }
+
+p{
+    font-size: 16px;
+}
+
+
+.navbar {
+    background-color: #f5f3ee;
+    color: black;
+    border-bottom: 4px solid black;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: all 0.5s ease;
+}
+
+.nav-links a:hover {
+    color: #036147; /* Color on hover */
+    transform: scale(1.2); /* Grow on hover */
+}
+
+#StartingImage{
+    background-color: #036147;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#VanPhoto{
+    margin: auto;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.WhiteBackground{
+    background-color: #f5f3ee;
+    padding: 24px;
+}
+
+.GreenBackground{
+    background-color: #036147;
+    padding: 24px;
+}
+
+.PinkTitle{
+    color:#f3cce7;
+    font-size: 48px;
+    text-align: center;
+}
+
+.GreenTitle{
+    color:#036147;
+    font-size: 48px;
+    text-align: center;
+}
+
+.BlackText{
+    color: black;
+    line-height: 2;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.WhiteText{
+    color: #f5f3ee;
+    line-height: 2;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.CenterText{
+    text-align: center;
+}
+
+#Name{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#ImageSectionDivider{
+    margin-bottom: -8px;
+    overflow: hidden;
+}
+
+#start{
+    width: 60%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+#testing{
+    width: 100%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.center{
+    text-align: center;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Sentient;
+}
+
+::-webkit-scrollbar {
+    width:auto;
+    }
+    /*track*/
+    ::-webkit-scrollbar-track {
+    background:rgb(201, 200, 196);
+    border-width:2px;
+    border-style:solid;
+    border-color:black;
+    }
+    /*thumb*/
+    ::-webkit-scrollbar-thumb {
+    background:rgb(245, 243, 238);
+    border-width:2px;
+    border-style:solid;
+    border-color:black;
+    }
+
+p{
+    font-size: 16px;
+}
+
+.navbar {
+    background-color: #f5f3ee;
+    color: black;
+    border-bottom: 4px solid black;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: all 0.5s ease;
+}
+
+.nav-links a:hover {
+    color: #036147; /* Color on hover */
+    transform: scale(1.2); /* Grow on hover */
+}
+
+#StartingImage{
+    background-color: #036147;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#VanPhoto{
+    margin: auto;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.WhiteBackground{
+    background-color: #f5f3ee;
+    padding: 24px;
+}
+
+.GreenBackground{
+    background-color: #036147;
+    padding: 24px;
+}
+
+.PinkTitle{
+    color:#f3cce7;
+    font-size: 48px;
+    text-align: center;
+}
+
+.GreenTitle{
+    color:#036147;
+    font-size: 48px;
+    text-align: center;
+}
+
+.BlackText{
+    color: black;
+    line-height: 2;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.WhiteText{
+    color: #f5f3ee;
+    line-height: 2;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#Name{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#ImageSectionDivider{
+    margin-bottom: -8px;
+    overflow: hidden;
+}
+
+#start{
+    width: 60%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+#testing{
+    width: 100%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.center{
+    text-align: center;
+}
+
+#primarycolors {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    margin-left:10%;
+    margin-right:10%;
+}
+
+#secondarycolors{
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    margin-left:10%;
+    margin-right:10%;
+}
+
+#fontshowcase{
+    margin-left:10%;
+    margin-right:10%;
+}
+
+#logocomparison{
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    margin-left:10%;
+    margin-right:10%;
+}
+
+.Figmas{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#homepageold{
+    width: 30%;
+    margin-left: 15%;
+    margin-right: 5%;
+}
+
+#homepagenew{
+    width: 30%;
+    margin-left: 5%;
+    margin-right: 15%;
+}
+
+@media only screen and (max-width: 720px) {
+    .navbar {
+        /* Flexbox compatibility for Safari */
+        display: -webkit-box;      /* Safari specific */
+        display: -webkit-flex;     /* Safari specific */
+        display: -ms-flexbox;      /* IE/Edge */
+        display: flex;
+
+        /* Ensure justify-content works across browsers */
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+
+        /* Additional properties to ensure consistent layout */
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+
+  /* Make spacing feel better on small screens */
+  .WhiteBackground,
+  .GreenBackground {
+    padding: 18px;
+  }
+
+  /* Headings scale down */
+  .PinkTitle,
+  .GreenTitle {
+    font-size: 32px;
+    line-height: 1.15;
+  }
+
+  /* Main text containers: stop using the 60% + 20% margins on mobile */
+  .BlackText,
+  .WhiteText {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  /* Nav wraps nicely */
+  .navbar {
+    justify-content: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 10px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+    padding: 6px 8px;
+  }
+
+  /* Starting hero image: make it bigger and avoid overflow */
+  #StartingImage {
+    height: auto;
+    padding: 28px 16px;
+    width: auto;
+  }
+
+  #start {
+    width: 92%;
+    max-width: 520px;
+    height: auto;
+  }
+
+  /* Make your content images fit cleanly */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Your in-section images that had side margins */
+  #primarycolors,
+  #secondarycolors,
+  #fontshowcase,
+  #logocomparison {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  /* Before/After figma comparisons: stack instead of side-by-side */
+  .Figmas {
+    flex-direction: column;
+    gap: 14px;
+    align-items: center;
+    width: 75%;
+  }
+
+  /* IDs are reused in your HTML, but CSS still applies */
+  #homepageold,
+  #homepagenew {
+    width: 92%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/* Smaller phones */
+@media (max-width: 420px) {
+  .PinkTitle,
+  .GreenTitle {
+    font-size: 28px;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .BlackText,
+  .WhiteText {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+}
+
+@media (max-width: 768px) {
+
+  #ImageSectionDivider {
+    height: 100px;          /* adjust this to make it taller */
+    overflow: hidden;
+  }
+
+  #ImageSectionDivider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;      /* allows image to be cropped */
+    display: block;
+  }
+
+}
+
+/* === Global Responsive Patch (Codex) === */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+#ImageSectionDivider img,
+[id*="Divider"] img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    justify-content: center !important;
+    padding: 14px 12px !important;
+  }
+
+  .nav-links {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 10px 12px !important;
+  }
+
+  .nav-links a {
+    font-size: 13px !important;
+    padding: 6px 10px !important;
+  }
+
+  #StartingImage {
+    height: auto !important;
+    min-height: 58vh;
+    padding: 16px 12px;
+  }
+
+  .WhiteBackground,
+  .GreenBackground {
+    padding: 16px !important;
+  }
+
+  .PinkTitle,
+  .GreenTitle {
+    font-size: clamp(1.8rem, 7vw, 2.2rem) !important;
+    line-height: 1.15 !important;
+  }
+
+  .BlackText,
+  .WhiteText,
+  #AboutMeText,
+  #ProjectContents,
+  #ArtContents {
+    width: min(92%, 760px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  #Name,
+  #VanPhoto,
+  #GroupPhoto,
+  #start,
+  #testing,
+  #brainstorming,
+  #team,
+  #documenting,
+  #AllvanName,
+  #ReframePhoto,
+  #PresentationPhoto {
+    width: min(92%, 860px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .Figmas {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+    width: min(92%, 860px) !important;
+    margin: 16px auto !important;
+  }
+
+  .Figmas img {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1199px) {
+  .Figmas {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 14px !important;
+  }
+
+  .Figmas img {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+}
+
+@media (hover: none) {
+  .nav-links a:hover {
+    transform: none !important;
+  }
+}
+
+/* === Single Scrollbar Fix === */
+html {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: auto;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: visible;
+  height: auto;
+}
+
+/* === Final Scrollbar Normalization === */
+html {
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  height: auto !important;
+}
+
+body {
+  overflow: visible !important;
+  height: auto !important;
+  min-height: 0 !important;
+}
+
+/* === Project Header Sizing === */
+.PinkTitle,
+.GreenTitle {
+  font-size: clamp(1.7rem, 3.4vw, 2.5rem);
+  line-height: 1.12;
+}
+
+@media (max-width: 900px) {
+  .PinkTitle,
+  .GreenTitle {
+    font-size: clamp(1.55rem, 6vw, 2rem) !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .PinkTitle,
+  .GreenTitle {
+    font-size: clamp(1.45rem, 7vw, 1.75rem) !important;
+  }
+}
+
+/* === Project Header Width === */
+.PinkTitle,
+.GreenTitle {
+  max-width: min(90%, 900px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* === Case Study Additions === */
+.Eyebrow {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.78rem;
+  margin: 0 0 0.6rem;
+  color: #036147;
+}
+
+.MetaList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.4rem 2.4rem;
+  list-style: none;
+  margin: 1.5rem auto 0;
+  padding: 1.3rem 0 0;
+  border-top: 2px solid black;
+  width: min(92vw, 1000px);
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 2.4rem;
+}
+
+.MetaList li {
+  text-align: center;
+}
+
+.MetaLabel {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.7rem;
+  color: black;
+  opacity: 0.65;
+  margin-bottom: 0.3rem;
+}
+
+.MetaValue {
+  display: block;
+  font-size: 0.95rem;
+}
+
+#ClosingLink {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+#ClosingLink a {
+  color: black;
+  text-decoration: underline;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 900px) {
+  .MetaList {
+    gap: 1rem 1.6rem;
+    width: 100%;
+  }
+}
+

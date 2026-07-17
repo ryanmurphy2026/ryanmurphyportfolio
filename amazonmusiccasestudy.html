@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Amazon Music Social Redesign — Case Study</title>
+    <link rel="stylesheet" href="amazonmusiccasestudy.css">
+    <link rel="stylesheet" href="navbar.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
+    <script src="main.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <div class="nav-dropdown">
+          <a class="nav-dropdown-toggle" href="index.html#ProjectsSection" aria-haspopup="true">Design in Action</a>
+          <div class="dropdown-menu" aria-label="Design in Action projects">
+            <a href="livetime.html">Live Time</a>
+            <a href="amazonmusic.html">Amazon Music</a>
+            <a href="stepcity.html">Step City</a>
+            <a href="nusublets.html">NU Sublets</a>
+            <a href="surething.html">Sure Thing</a>
+            <a href="resole.html">ReSole</a>
+            <a href="gutter.html">The Gutter Defender</a>
+            <a href="fleetclean.html">Fleet Clean</a>
+            <a href="funbrella.html">Funbrella</a>
+            <a href="retractawheel.html">Retract-A-Wheels</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <a class="nav-dropdown-toggle" href="index.html#ArtSection" aria-haspopup="true">Creative Explorations</a>
+          <div class="dropdown-menu" aria-label="Creative Exploration projects">
+            <a href="buttercrumble.html">Butter &amp; Crumble</a>
+            <a href="wavelength.html">Wavelength</a>
+            <a href="musicanalysis.html">Music Taste Analysis</a>
+            <a href="musicmural.html">Music Mural</a>
+            <a href="ulimi.html">Ulimi Tongue of Culture</a>
+            <a href="keithharing.html">12 Greek Myths</a>
+            <a href="shatteredring.html">Shattered Ring</a>
+            <a href="techdream.html">Tech's Dream</a>
+          </div>
+        </div>
+        <a href="index.html#AboutMe">About Me</a>
+        <a href="index.html#ContactSection">Contact</a>
+      </div>
+    </nav>
+
+    <div id="StartingImage">
+        <img id="GroupPhoto" src="Amazon Music Photos/GroupPic.jpg" width="50%">
+    </div>
+
+    <div class="WhiteBackground" id="ProjectName">
+        <h1 class="GreenTitle" id="Name">Amazon Music Social Redesign: Turning Streaming into Community</h1>
+        <br>
+        <div class="BlackText">
+            <p class="Eyebrow">Project</p>
+            <ul class="MetaList">
+                <li>
+                    <span class="MetaLabel">Role</span>
+                    <span class="MetaValue">UX / Product Designer</span>
+                </li>
+                <li>
+                    <span class="MetaLabel">Timeline</span>
+                    <span class="MetaValue">10 Weeks</span>
+                </li>
+                <li>
+                    <span class="MetaLabel">Program</span>
+                    <span class="MetaValue">Northwestern Bay Area Immersion Program</span>
+                </li>
+                <li>
+                    <span class="MetaLabel">Partner</span>
+                    <span class="MetaValue">Amazon Music</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="WhiteBackground" id="Context">
+        <div class="BlackText">
+            <p>
+                As part of Northwestern's Bay Area Immersion Program, our team collaborated with Amazon Music on a 10-week design practicum focused on disrupting their platform to develop innovative ideas for future use. Our challenge was clear: help Amazon Music better attract and retain Gen Z users, particularly in comparison to competitors like Spotify.
+            </p>
+        </div>
+    </div>
+
+    <div class="GreenBackground" id="Opportunity">
+        <h1 class="PinkTitle">Recognizing Amazon Music’s Opportunity to Make Listening More Social</h1>
+        <div class="WhiteText">
+            <p>
+                Our team quickly recognized that Amazon Music lacked the social components that make music inherently communal. This inspired our core mission: transform Amazon Music from a simple streaming service into a vibrant social music playground that fosters community and connection.
+            </p>
+            <p>
+                We framed our approach with two key questions:
+            </p>
+            <ul>
+                <li><i>How might we turn Amazon Music into a social music playground to encourage fan-to-fan activity?</i></li>
+                <li><i>How might we transform Amazon Music into more than just a streaming platform?</i></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="ImageSectionDivider">
+        <img src="WebsiteDivider4.jpg" width="100%">
+    </div>
+
+    <div class="WhiteBackground" id="User Research">
+        <h1 class="GreenTitle">Gen Z Listeners Love to Share What They Listen To</h1>
+        <div class="BlackText">
+            <p>
+                To ground our work in real user needs, we conducted 20+ in-depth interviews with college students aged 18-22. An overwhelming 85% reported regularly sharing music with others, uncovering a profound insight: for young people, music sharing isn't just a feature - it's an essential way to connect, bond, and express themselves.
+            </p>
+            <p>
+                <strong>Key User Insights</strong>
+            </p>
+            <ul>
+                <li><i>"I was able to make a new friend from posting my music on Instagram."</i></li>
+                <li><i>"Music is representative of your personality, so connecting with people through your music taste is validating."</i></li>
+                <li><i>"I feel good about myself when I share a song and they say they like it."</i></li>
+            </ul>
+
+            <p><strong>User Personas</strong></p>
+            <p>Our research led to the development of two distinct personas:</p>
+
+            <div class="Persona">
+                <h3>Lurking Louise</h3>
+                <p>Louise enjoys her personal music library but sometimes finds it repetitive. She turns to platforms like Spotify and Instagram to passively discover new music by exploring what friends are listening to and sharing.</p>
+                <ul>
+                    <li>Primary Goal:
+                        <ul>
+                            <li>See what her friends are listening to without necessarily sharing her own music preferences</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="Persona">
+                <h3>Social Sally</h3>
+                <p>Sally is passionate about sharing music. She's always first to post comments about new releases from her favorite artists via Instagram. She sees music as a crucial way to express herself and connect with others.</p>
+                <ul>
+                    <li>Primary Goal:
+                        <ul>
+                            <li>Share her music taste as a form of self-expression</li>
+                            <li>Form new connections through shared musical interests</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="GreenBackground" id="Ideation">
+        <h1 class="PinkTitle">Brainstorming and Ideating with Our Main Personas in Mind</h1>
+        <div class="WhiteText">
+            <img id="brainstorming" src="Amazon Music Photos/Brainstorming.jpg">
+            <p>
+                Armed with these insights, our team organized multiple brainstorming sessions using whiteboards and collaborative digital spaces. This approach allowed us to explore diverse concepts and identify the most impactful solutions.
+            </p>
+        </div>
+    </div>
+
+    <div id="ImageSectionDivider">
+        <img src="Website Divider.jpg" width="100%">
+    </div>
+
+    <div class="WhiteBackground" id="Prototypes">
+        <h1 class="GreenTitle">Turning Amazon Music into a Social Playground Through Four Feature Concepts</h1>
+        <div class="BlackText">
+            <div class="FeatureBlock">
+                <span class="FeatureLabel">01</span>
+                <h3>Profile Accents</h3>
+                <p>
+                    We designed a system of badges and customizable profile pages to add personalization to Amazon Music, transforming it into another form of self-expression:
+                </p>
+                <ul>
+                    <li><strong>Badges</strong>: Unlock by reaching listening milestones with favorite artists</li>
+                    <div class="Figmas">
+                        <img id="unlock" src="Amazon Music Photos/Figmas/Home Page.png">
+                        <img id="edit" src="Amazon Music Photos/Figmas/Edit Badges.png">
+                        <img id="updated" src="Amazon Music Photos/Figmas/Profile Page Just Tyler.png">
+                    </div>
+                    <li><strong>Exclusive Event Badges</strong>: Obtain by attending concerts or special events</li>
+                    <div class="Figmas">
+                        <img id="redeeming" src="Amazon Music Photos/Figmas/User Settings Redeem.png">
+                        <img id="redeemed" src="Amazon Music Photos/Figmas/Redeemed Badge.png">
+                    </div>
+                    <li><strong>Customizable Profile Pages</strong>: Toggle between standard profiles and personalized virtual spaces</li>
+                    <div class="Figmas">
+                        <img id="regular" src="Amazon Music Photos/Figmas/Profile Page Just Tyler.png">
+                        <img id="new" src="Amazon Music Photos/Figmas/New Profile.png">
+                    </div>
+                </ul>
+            </div>
+
+            <div class="FeatureBlock">
+                <span class="FeatureLabel">02</span>
+                <h3>Social Feed</h3>
+                <p>A dedicated platform where fans can connect, share recommendations, and discuss music, forming genuine communities around shared interests.</p>
+                <div class="Figmas">
+                    <img id="friends" src="Amazon Music Photos/Figmas/Friends Page 2.png">
+                    <img id="community" src="Amazon Music Photos/Figmas/Community Page 2.png">
+                </div>
+            </div>
+
+            <div class="FeatureBlock">
+                <span class="FeatureLabel">03</span>
+                <h3>Mixtape</h3>
+                <p>A feature allowing friends to listen to music together and create shared playlists:</p>
+                <ul>
+                    <li>Democratize queue system to ensure everyone's selections are played</li>
+                    <li>AI-powered song suggestions based on everyone's music taste when selections run low</li>
+                    <div class="Figmas">
+                        <img id="mixtape" src="Amazon Music Photos/Figmas/Mixtape.png">
+                        <img id="added" src="Amazon Music Photos/Figmas/Added Songs.png">
+                    </div>
+                </ul>
+            </div>
+
+            <div class="FeatureBlock">
+                <span class="FeatureLabel">04</span>
+                <h3>Event Page</h3>
+                <p>
+                    A centralized sandbox within Amazon Music that:
+                </p>
+                <ul>
+                    <li>Experiments with various digital experiences and live events</li>
+                    <li>Takes a playful approach to connecting individuals through music-related activities</li>
+                    <li>Makes it easier for users to discover local, live, and in-person events happening close by</li>
+                    <div class="Figmas">
+                        <img id="connect1" src="Amazon Music Photos/Figmas/Connect Page v3.png">
+                        <img id="connect2" src="Amazon Music Photos/Figmas/Connect Page v2.png">
+                        <img id="connect3" src="Amazon Music Photos/Figmas/Connect Page v1.png">
+                    </div>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+     <div class="GreenBackground" id="Ideation">
+        <h1 class="PinkTitle">Presenting Our Work</h1>
+        <div class="WhiteText">
+            <p>After 10 weeks of user research, brainstorming, and prototyping, we presented our concepts to Amazon Music stakeholders at their San Francisco headquarters. Our goal was to encourage implementation and inspire new directions for the platform.</p>
+            <img id="presenting" src="Amazon Music Photos/Presenting.jpg">
+        </div>
+    </div>
+
+    <div id="ImageSectionDivider">
+        <img src="WebsiteDivider2.jpg" width="100%">
+    </div>
+
+    <div class="WhiteBackground" id="Reflection">
+        <h1 class="GreenTitle">What Did I Learn From This Project?</h1>
+        <div class="BlackText">
+            <p>This project reinforced the value of keeping the design process playful and engaging. Whether developing inherently fun concepts or bringing them to life through mini skits and personal anecdotes, embracing a sense of joy and creativity was essential to our success. I learned that truly enjoying the process - and fostering a dynamic collaboration with the company - is the best way to stay energized, inspired, and innovative throughout the design journey.</p>
+        </div>
+    </div>
+
+    <div id="ClosingLink">
+        <p><a href="index.html#ProjectsSection">&larr; Back to all projects</a></p>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

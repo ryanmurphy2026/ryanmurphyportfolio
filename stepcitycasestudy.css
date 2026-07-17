@@ -1,0 +1,879 @@
+@font-face {
+  font-family: Sentient;
+  src: url(SENTIENT-VARIABLE.TTF);
+}
+
+body{
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f3ee;
+    font-family: Sentient;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+/* Page exit animation */
+body.exiting {
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+::-webkit-scrollbar {
+    width:auto;
+    }
+    /*track*/
+    ::-webkit-scrollbar-track {
+    background:rgb(201, 200, 196);
+    border-width:2px;
+    border-style:solid;
+    border-color:black;
+    }
+    /*thumb*/
+    ::-webkit-scrollbar-thumb {
+    background:rgb(245, 243, 238);
+    border-width:2px;
+    border-style:solid;
+    border-color:black;
+    }
+
+p{
+    font-size: 16px;
+}
+
+.navbar {
+    background-color: #f5f3ee;
+    color: black;
+    border-bottom: 4px solid black;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: all 0.5s ease;
+}
+
+.nav-links a:hover {
+    color: #036147; /* Color on hover */
+    transform: scale(1.2); /* Grow on hover */
+}
+
+#StartingImage{
+    background-color: #036147;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#VanPhoto{
+    width: 15%;
+    margin: auto;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.WhiteBackground{
+    background-color: #f5f3ee;
+    padding: 24px;
+}
+
+.GreenBackground{
+    background-color: #036147;
+    padding: 24px;
+}
+
+.PinkTitle{
+    color:#f3cce7;
+    font-size: 48px;
+    text-align: center;
+}
+
+.GreenTitle{
+    color:#036147;
+    font-size: 48px;
+    text-align: center;
+}
+
+.BlackText{
+    color: black;
+    line-height: 2;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.WhiteText{
+    color: #f5f3ee;
+    line-height: 2;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#ImageSectionDivider{
+    margin-bottom: -8px;
+    overflow: hidden;
+}
+
+#ReframePhoto{
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+#PresentationPhoto{
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.Figmas{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#scanning{
+    width:30%;
+    margin-left: 15%;
+    margin-right:5%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+#getblueprint{
+    width: 30%;
+    margin-left: 5%;
+    margin-right: 15%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#quest{
+    width:30%;
+    margin-left: 2%;
+    margin-right:1.5%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#progress{
+    width:30%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#questreward{
+    width:30%;
+    margin-left: 1.5%;
+    margin-right: 2%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#blueprintmenu{
+    width:30%;
+    margin-left: 15%;
+    margin-right:5%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#buildingresult{
+    width: 30%;
+    margin-left: 5%;
+    margin-right: 15%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#milestonemenu{
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#friendslist{
+    width:30%;
+    margin-left: 2%;
+    margin-right:1.5%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#trading{
+    width:30%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#visit{
+    width:30%;
+    margin-left: 1.5%;
+    margin-right: 2%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#Name{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center{
+    text-align: center;
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+    /* Navigation adjustments */
+    .navbar {
+        padding: 16px;
+        justify-content: center;
+    }
+    
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .nav-links a {
+        font-size: 13px;
+        padding: 8px 12px;
+    }
+    
+    /* Typography adjustments */
+    .PinkTitle,
+    .GreenTitle {
+        font-size: 32px;
+    }
+    
+    p {
+        font-size: 15px;
+    }
+    
+    /* Text content adjustments */
+    .BlackText,
+    .WhiteText {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        line-height: 1.8;
+    }
+    
+    #Name {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    /* Background sections */
+    .WhiteBackground,
+    .GreenBackground {
+        padding: 16px;
+    }
+    
+    /* Main image adjustments */
+    #VanPhoto {
+        width: 40%;
+        min-width: 200px;
+    }
+    
+    #ReframePhoto,
+    #PresentationPhoto {
+        max-width: 100%;
+        height: auto;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    }
+    
+    /* Starting image section */
+    #StartingImage {
+        height: 80vh;
+        padding: 16px;
+    }
+    
+    /* Figma layout - stack vertically on mobile */
+    .Figmas {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+    /* Individual figma images - make them larger on mobile */
+    #scanning,
+    #getblueprint,
+    #quest,
+    #progress,
+    #questreward,
+    #blueprintmenu,
+    #buildingresult,
+    #friendslist,
+    #trading,
+    #visit {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+    }
+    
+    #milestonemenu {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Extra small screens */
+    .navbar {
+        padding: 12px;
+    }
+    
+    .nav-links {
+        gap: 10px;
+    }
+    
+    .nav-links a {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+    
+    .PinkTitle,
+    .GreenTitle {
+        font-size: 24px;
+    }
+    
+    p {
+        font-size: 14px;
+    }
+    
+    .BlackText,
+    .WhiteText {
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        line-height: 1.6;
+    }
+    
+    #Name {
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+    
+    .WhiteBackground,
+    .GreenBackground {
+        padding: 12px;
+    }
+    
+    #VanPhoto {
+        width: 60%;
+        min-width: 150px;
+    }
+    
+    #StartingImage {
+        height: 50vh;
+        padding: 12px;
+    }
+    
+    /* Make figma images even larger on very small screens */
+    #scanning,
+    #getblueprint,
+    #quest,
+    #progress,
+    #questreward,
+    #blueprintmenu,
+    #buildingresult,
+    #friendslist,
+    #trading,
+    #visit,
+    #milestonemenu {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    }
+    
+    .Figmas {
+        gap: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    /* Disable hover effects on touch devices */
+    .nav-links a:hover {
+        transform: none;
+    }
+}
+
+/* =============== Mobile responsiveness (add at bottom of CSS) =============== */
+
+/* Make images behave on all screen sizes */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Prevent random horizontal scrolling on mobile */
+html, body {
+  overflow-x: hidden;
+}
+
+/* --- Tablet + Mobile --- */
+@media (max-width: 768px) {
+  /* NAV */
+  .navbar {
+    justify-content: center;
+    padding: 14px 12px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 12px;
+    padding: 0 6px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+    padding: 8px 10px;
+  }
+
+  /* TITLES / TYPE */
+  .PinkTitle,
+  .GreenTitle {
+    font-size: 32px;
+    line-height: 1.15;
+  }
+
+  p, li {
+    font-size: 15px;
+  }
+
+  /* SECTIONS */
+  .WhiteBackground,
+  .GreenBackground {
+    padding: 16px;
+  }
+
+  /* TEXT BLOCKS: stop hard 60% + 20% margins */
+  .BlackText,
+  .WhiteText {
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto;
+    line-height: 1.75;
+  }
+
+  #Name {
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  /* HERO */
+  #StartingImage {
+    height: 60vh; /* a bit shorter so it doesn't eat the whole screen */
+    padding: 16px;
+  }
+
+  #VanPhoto {
+    width: clamp(180px, 55vw, 320px); /* scales nicely */
+  }
+
+  /* FIGMA ROWS -> STACK */
+  .Figmas {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  /* Override ALL the per-image margins and widths on mobile */
+  .Figmas img,
+  #milestonemenu {
+    width: 60%;
+    margin: 0 !important;
+  }
+
+  /* Lists often cause overflow when nested weirdly */
+  ul, ol {
+    padding-left: 20px;
+  }
+
+  /* Touch devices: kill hover scale */
+  .nav-links a:hover {
+    transform: none;
+  }
+}
+
+/* --- Small phones --- */
+@media (max-width: 480px) {
+  .PinkTitle,
+  .GreenTitle {
+    font-size: 26px;
+  }
+
+  p, li {
+    font-size: 14px;
+  }
+
+  .WhiteBackground,
+  .GreenBackground {
+    padding: 12px;
+  }
+
+  #StartingImage {
+    height: 50vh;
+  }
+
+  #VanPhoto {
+    width: clamp(160px, 70vw, 280px);
+  }
+
+  .Figmas img,
+  #milestonemenu {
+    width: 60%;
+  }
+}
+/* ===== Oversized section dividers ===== */
+
+#ImageSectionDivider {
+  width: 100%;
+  overflow: hidden;      /* crops the sides */
+  margin-bottom: -8px;   /* keep your existing overlap look */
+}
+
+#ImageSectionDivider img {
+  width: 150%;           /* make image 150% wider */
+  max-width: none;       /* prevent browser from clamping */
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%); /* center the oversized image */
+  display: block;
+}
+
+@media (max-width: 768px) {
+  #StartingImage {
+    height: 60vh;
+    min-height: 360px;
+    padding: 16px;
+  }
+
+  #VanPhoto {
+    width: clamp(200px, 65vw, 360px);
+  }
+}
+
+@media (max-width: 480px) {
+  #StartingImage {
+    height: 60vh;
+    min-height: 300px;
+  }
+
+  #VanPhoto {
+    width: 50vw;
+  }
+}
+/* ===== HARD STOP: horizontal scroll fix ===== */
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  .Figmas img,
+  #milestonemenu {
+    width: min(420px, 80%);
+    max-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .Figmas img {
+    width: 40%;
+  }
+}
+
+/* === Global Responsive Patch (Codex) === */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+#ImageSectionDivider img,
+[id*="Divider"] img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    justify-content: center !important;
+    padding: 14px 12px !important;
+  }
+
+  .nav-links {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 10px 12px !important;
+  }
+
+  .nav-links a {
+    font-size: 13px !important;
+    padding: 6px 10px !important;
+  }
+
+  #StartingImage {
+    height: auto !important;
+    min-height: 58vh;
+    padding: 16px 12px;
+  }
+
+  .WhiteBackground,
+  .GreenBackground {
+    padding: 16px !important;
+  }
+
+  .PinkTitle,
+  .GreenTitle {
+    font-size: clamp(1.8rem, 7vw, 2.2rem) !important;
+    line-height: 1.15 !important;
+  }
+
+  .BlackText,
+  .WhiteText,
+  #AboutMeText,
+  #ProjectContents,
+  #ArtContents {
+    width: min(92%, 760px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  #Name,
+  #VanPhoto,
+  #GroupPhoto,
+  #start,
+  #testing,
+  #brainstorming,
+  #team,
+  #documenting,
+  #AllvanName,
+  #ReframePhoto,
+  #PresentationPhoto {
+    width: min(92%, 860px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .Figmas {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+    width: min(92%, 860px) !important;
+    margin: 16px auto !important;
+  }
+
+  .Figmas img {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1199px) {
+  .Figmas {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 14px !important;
+  }
+
+  .Figmas img {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+}
+
+@media (hover: none) {
+  .nav-links a:hover {
+    transform: none !important;
+  }
+}
+
+/* === Single Scrollbar Fix === */
+html {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: auto;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: visible;
+  height: auto;
+}
+
+/* === Final Scrollbar Normalization === */
+html {
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  height: auto !important;
+}
+
+body {
+  overflow: visible !important;
+  height: auto !important;
+  min-height: 0 !important;
+}
+
+/* === Project Header Sizing === */
+.PinkTitle,
+.GreenTitle {
+  font-size: clamp(1.7rem, 3.4vw, 2.5rem);
+  line-height: 1.12;
+}
+
+@media (max-width: 900px) {
+  .PinkTitle,
+  .GreenTitle {
+    font-size: clamp(1.55rem, 6vw, 2rem) !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .PinkTitle,
+  .GreenTitle {
+    font-size: clamp(1.45rem, 7vw, 1.75rem) !important;
+  }
+}
+
+/* === Project Header Width === */
+.PinkTitle,
+.GreenTitle {
+  max-width: min(90%, 900px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* === Case Study Additions === */
+.Eyebrow {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.78rem;
+  margin: 0 0 0.6rem;
+  color: #036147;
+}
+
+.MetaList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.4rem 2.4rem;
+  list-style: none;
+  margin: 1.5rem auto 0;
+  padding: 1.3rem 0 0;
+  border-top: 2px solid black;
+  width: min(92vw, 1000px);
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 2.4rem;
+}
+
+.MetaList li {
+  text-align: center;
+}
+
+.MetaLabel {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.7rem;
+  color: black;
+  opacity: 0.65;
+  margin-bottom: 0.3rem;
+}
+
+.MetaValue {
+  display: block;
+  font-size: 0.95rem;
+}
+
+.Persona {
+  border-left: 3px solid #036147;
+  padding-left: 1rem;
+  margin: 0 0 1.5rem;
+}
+
+.WhiteText .Persona {
+  border-left-color: #f3cce7;
+}
+
+.Persona h3 {
+  font-style: italic;
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+.FeatureLabel {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+  margin: 0 0 0.3rem;
+  opacity: 0.75;
+}
+
+.FeatureBlock {
+  margin-bottom: 2rem;
+}
+
+.FeatureBlock:last-child {
+  margin-bottom: 0;
+}
+
+.FeatureBlock h3 {
+  margin: 0 0 0.6rem;
+  font-size: 1.3rem;
+}
+
+#ClosingLink {
+  text-align: center;
+  padding: 1.5rem 1rem 0;
+}
+
+#ClosingLink a {
+  color: #f3cce7;
+  text-decoration: underline;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 900px) {
+  .MetaList {
+    gap: 1rem 1.6rem;
+    width: 100%;
+  }
+}
+
