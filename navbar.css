@@ -9,7 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Rubik", Arial, sans-serif;
+  font-family: Sentient, "Rubik", Arial, sans-serif;
   font-size: 16px;
   position: relative;
   z-index: 20;
