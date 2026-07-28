@@ -89,13 +89,28 @@ document.addEventListener('DOMContentLoaded', function() {
 document.querySelectorAll('a[href]').forEach(link => {
     link.addEventListener('click', function(e) {
         const href = this.getAttribute('href');
-        
+
         // Only intercept internal links
         if (href.startsWith('#') || href.startsWith('/') || href.includes(window.location.host)) {
+            const [hrefPath, hrefHash] = href.split('#');
+            const currentPath = window.location.pathname.split('/').pop();
+            const targetPath = hrefPath === '' ? currentPath : hrefPath.split('/').pop();
+
+            // If linking to a section on the page we're already on, smooth scroll instead of reloading
+            if (hrefHash && targetPath === currentPath) {
+                const target = document.getElementById(hrefHash);
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth' });
+                    history.pushState(null, '', href);
+                    return;
+                }
+            }
+
             e.preventDefault();
-            
+
             document.body.classList.add('exiting');
-            
+
             setTimeout(() => {
                 window.location.href = href;
             }, 400);

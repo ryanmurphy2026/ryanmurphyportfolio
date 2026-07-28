@@ -25,7 +25,7 @@
       <div class="nav-links">
         <a href="index.html">Home</a>
         <div class="nav-dropdown">
-          <a class="nav-dropdown-toggle" href="index.html#ProjectsSection" aria-haspopup="true">Design in Action</a>
+          <a class="nav-dropdown-toggle" href="index.html#ProjectsSection" aria-haspopup="true">Work</a>
           <div class="dropdown-menu" aria-label="Design in Action projects">
             <a href="livetime.html">Live Time</a>
             <a href="amazonmusic.html">Amazon Music</a>
@@ -40,7 +40,7 @@
           </div>
         </div>
         <div class="nav-dropdown">
-          <a class="nav-dropdown-toggle" href="index.html#ArtSection" aria-haspopup="true">Creative Explorations</a>
+          <a class="nav-dropdown-toggle" href="index.html#ArtSection" aria-haspopup="true">Gallery</a>
           <div class="dropdown-menu" aria-label="Creative Exploration projects">
             <a href="buttercrumble.html">Butter &amp; Crumble</a>
             <a href="wavelength.html">Wavelength</a>
@@ -54,26 +54,34 @@
         </div>
         <a href="index.html#AboutMe">About Me</a>
         <a href="index.html#ContactSection">Contact</a>
+        <a href="RJM Resume - Portfolio.pdf" target="_blank" download>Resume</a>
       </div>
     </nav>
 
     <main>
       <section id="LandingPage">
         <div id="background"></div>
-        <div class="slide-up" id="introductionblock">
-          <div id="introtext">
-            <h1 id="Hello">Hello, I'm Ryan!</h1>
-            <p id="rushtext">
-              I'm a designer and engineer who works at the intersection of engineering, product design, and visual communication to build user-centered solutions across both digital interfaces and physical products.
-            </p>
-            <p id="rushtext">
-               I earned a B.S. in Manufacturing & Design Engineering (MaDE) from Northwestern University, with minors in Computer Science and Art, Theory & Practice. 
-            </p>
-            <a class="resume-link" href="RJM Resume - Portfolio.pdf" download>Resume</a>
+        <div id="LandingContent">
+          <div class="slide-up" id="introductionblock">
+            <div id="introtext">
+              <h1 id="Hello">Hello, I'm Ryan!</h1>
+              <p id="rushtext">
+                I'm a product designer who works at the intersection of engineering, product design, and visual communication to build user-centered solutions across both digital and physical products.
+              </p>
+              <p id="rushtext">
+                 I recently earned my B.S. in <a href="https://design.northwestern.edu/programs/bs-manufacturing-design-engineering/" target="_blank" id="madelink"> Manufacturing & Design Engineering (MaDE)</a> from Northwestern University, with minors in Computer Science and Art, Theory & Practice.
+              </p>
+            </div>
           </div>
+          <!--
+          <div class="slide-up" id="photoblock">
+            <img id="LandingPhoto" src="RyanHeadshot.JPEG" alt="Photo of Ryan Murphy" />
+          </div>
+        -->
         </div>
       </section>
     
+    <!--
       <section id="BrainSection">
         <div id="BrainContents">
           <div class="slide-up" id="BrainText">
@@ -84,10 +92,11 @@
           </div>
         </div>
       </section>
+    -->
 
       <section id="ProjectsSection">
         <div id="ProjectContents">
-          <h2 id="ProjectTitle">Design in Action</h2>
+          <h2 id="ProjectTitle">Work</h2>
           <p>
             These are the projects where I put design thinking into practice, from research
             and ideation to prototyping and testing.
@@ -96,22 +105,22 @@
       </section>
 
       <section class="cards-section cards-section-light" aria-label="Digital Product and Interface Projects">
-        <h3 class="work-category-label">Digital Interfaces</h3>
+        <h3 class="work-category-label">Digital Products</h3>
         <div class="cards-grid">
           <article class="ProjectBlock slide-up">
-            <a href="livetimecasestudy.html">
+            <a href="livetime.html">
               <img src="Icons/flamingo for portfolio.png" class="icons" alt="Live Time project icon" />
               <h3 class="ProjectNames">Live Time</h3>
             </a>
           </article>
           <article class="ProjectBlock slide-up">
-            <a href="amazonmusiccasestudy.html">
+            <a href="amazonmusic.html">
               <img src="Icons/walkmanforwebsite.png" class="icons" alt="Amazon Music project icon" />
               <h3 class="ProjectNames">Amazon Music</h3>
             </a>
           </article>
           <article class="ProjectBlock slide-up">
-            <a href="stepcitycasestudy.html">
+            <a href="stepcity.html">
               <img src="Icons/stepcityforportfolio.png" class="icons" alt="Step City project icon" />
               <h3 class="ProjectNames">Step City</h3>
             </a>
@@ -148,12 +157,14 @@
               <h3 class="ProjectNames">The Gutter Defender</h3>
             </a>
           </article>
+          <!--
           <article class="ProjectBlock slide-up">
             <a href="fleetclean.html">
               <img src="Icons/truck for portfolio.png" class="icons" alt="Fleet Clean project icon" />
               <h3 class="ProjectNames">Fleet Clean</h3>
             </a>
           </article>
+          
           <article class="ProjectBlock slide-up">
             <a href="funbrella.html">
               <img src="Icons/Umbrella icon for portfolio.png" class="icons" alt="Funbrella project icon" />
@@ -166,6 +177,7 @@
               <h3 class="ProjectNames">Retract-A-Wheels</h3>
             </a>
           </article>
+        -->
         </div>
       </section>
 
@@ -175,9 +187,9 @@
 
       <section id="ArtSection">
         <div id="ArtContents">
-          <h2 id="ArtTitle">Creative Explorations</h2>
+          <h2 id="ArtTitle">Gallery</h2>
           <p id="ArtBody">
-            Whether it's exploring my love for music or producing art in many forms, I strive to create a mix of visual work and personal projects that reflect how I think about design.
+            Whether it's exploring my love for music or producing art in many forms, my visual work and personal projects reflect how I think about design.
           </p>
         </div>
       </section>
