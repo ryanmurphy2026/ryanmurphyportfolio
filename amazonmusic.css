@@ -122,7 +122,7 @@ ul {
 
 .WhiteBackground,
 .GreenBackground {
-  padding: clamp(1rem, 2.4vw, 1.5rem);
+  padding: clamp(0.9rem, 1.8vw, 1.4rem) clamp(1rem, 2.4vw, 1.5rem);
 }
 
 .WhiteBackground {
@@ -414,5 +414,224 @@ body {
   max-width: min(90%, 900px);
   margin-left: auto;
   margin-right: auto;
+}
+
+/* === Case Study Additions === */
+.Eyebrow {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.78rem;
+  margin: 0 0 0.6rem;
+  color: #036147;
+}
+
+.MetaList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.4rem 2.4rem;
+  list-style: none;
+  margin: 1.5rem auto 0;
+  padding: 1.3rem 0 0;
+  border-top: 2px solid black;
+  width: min(92vw, 1000px);
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 2.4rem;
+}
+
+.MetaList li {
+  text-align: center;
+}
+
+.MetaLabel {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.7rem;
+  color: black;
+  opacity: 0.65;
+  margin-bottom: 0.3rem;
+}
+
+.MetaValue {
+  display: block;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 900px) {
+  .MetaList {
+    gap: 1rem 1.6rem;
+    width: 100%;
+  }
+}
+
+.Persona {
+  padding-left: 1rem;
+  margin: 0 0 1.5rem;
+}
+
+.Persona h3 {
+  color: #036147;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+.BrainstormImage {
+  display: block;
+  margin: 0 auto 1.5rem;
+  width: 35%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.PresentingImage {
+  width: 42%;
+}
+
+.FeatureConceptsTitle {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.PrimaryGoal {
+  font-weight: 500;
+}
+
+.PrimaryGoal span {
+  display: block;
+  margin-top: 0.25rem;
+  padding-left: 1.5rem;
+  font-weight: 400;
+}
+
+.FeatureGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 1rem 0 1.2rem;
+}
+
+.FeatureGridItem {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.FeatureVideo {
+  display: block;
+  margin: 0 auto;
+  width: 320px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+.FeatureGridItem video {
+  width: 320px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+  flex-shrink: 0;
+}
+
+.FeatureGridItem p {
+  margin: 0;
+  max-width: 220px;
+}
+
+.FeatureGridText {
+  max-width: 220px;
+}
+
+.FeatureGridText p {
+  max-width: none;
+}
+
+.FeatureGridText p + p {
+  margin-top: 1.2rem;
+}
+
+.BrainstormRow {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 0 auto 1.5rem;
+}
+
+.BrainstormRow img {
+  width: 25%;
+  height: 260px;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.LoFiRow {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+  margin: 0 auto 1.5rem;
+}
+
+.LoFiRow img {
+  width: auto;
+  height: 280px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+h2 {
+  color: var(--bg-dark);
+  text-align: center;
+  font-size: clamp(1.4rem, 2.8vw, 1.9rem);
+  margin: 0 0 1.5rem;
+}
+
+p {
+  font-family: "Rubik", sans-serif;
+}
+
+@media (min-width: 901px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+#ClosingLink {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+#ClosingLink a {
+  color: var(--bg-dark);
+  text-decoration: underline;
+  font-size: 0.95rem;
+}
+
+.QuoteGrid {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 1.2rem;
+  margin: 1.2rem 0;
+}
+
+.QuoteBox {
+  flex: 1 1 0;
+  padding: 1.2rem;
+  text-align: center;
+}
+
+.QuoteBox p {
+  margin: 0;
+  font-style: italic;
 }
 

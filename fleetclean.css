@@ -447,3 +447,7 @@ body {
   height: auto !important;
   min-height: 0 !important;
 }
+
+p {
+  font-family: "Rubik", sans-serif;
+}

@@ -776,3 +776,7 @@ body {
     margin-right: auto !important;
   }
 }
+
+p {
+  font-family: "Rubik", sans-serif;
+}
