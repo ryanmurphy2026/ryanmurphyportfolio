@@ -295,26 +295,38 @@ p{
 }
 
 #primarycolors {
+    width: 45%;
+    display: block;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
-    margin-left:10%;
-    margin-right:10%;
+    margin: 0 auto 24px;
 }
 
 #secondarycolors{
+    width: 45%;
+    display: block;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
-    margin-left:10%;
-    margin-right:10%;
+    margin: 0 auto 24px;
 }
 
 #fontshowcase{
-    margin-left:10%;
-    margin-right:10%;
+    width: 45%;
+    display: block;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    margin: 0 auto 24px;
 }
 
 #logocomparison{
+    width: 45%;
+    display: block;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
-    margin-left:10%;
-    margin-right:10%;
+    margin: 0 auto 24px;
+}
+
+#GroupPhoto {
+    width: 45%;
+    display: block;
+    margin: 0 auto 1.5rem;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 .Figmas{
@@ -377,7 +389,13 @@ p{
     width: 100%;
     margin-left: 0;
     margin-right: 0;
-    
+
+  }
+
+  .SubsectionTitle {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   p {
@@ -702,12 +720,44 @@ body {
 #ClosingLink {
   text-align: center;
   padding: 2rem 1rem;
+  background-color: #f5f3ee;
 }
 
 #ClosingLink a {
-  color: black;
+  color: #036147;
   text-decoration: underline;
   font-size: 0.95rem;
+}
+
+h2 {
+  color: #036147;
+  text-align: center;
+  font-size: clamp(1.4rem, 2.8vw, 1.9rem);
+  margin: 0 auto 1.5rem;
+  max-width: 700px;
+}
+
+.GreenBackground h2 {
+  color: #f3cce7;
+}
+
+.AppStoreScreenshot {
+  display: block;
+  margin: 0 auto 1.5rem;
+  width: 50%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.SubsectionTitle {
+  color: #036147;
+  text-align: left;
+  font-size: 1.25rem;
+  width: 60%;
+  margin: 2.5rem 20% 1rem;
+}
+
+.GreenBackground .SubsectionTitle {
+  color: #f3cce7;
 }
 
 @media (max-width: 900px) {
@@ -720,4 +770,110 @@ body {
 
 p {
   font-family: "Rubik", sans-serif;
+}
+
+/* === Persona / Feature Grid (matches stepcitycasestudy) === */
+.Persona {
+  border-left: 3px solid #036147;
+  padding-left: 1rem;
+  margin: 0 0 1.5rem;
+}
+
+.WhiteText .Persona {
+  border-left-color: #f3cce7;
+}
+
+.Persona h3 {
+  font-style: italic;
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+.Persona.FeaturePersona {
+  border-left: none;
+  padding-left: 0;
+}
+
+.Persona.FeaturePersona h3 {
+  font-style: normal;
+  font-weight: 700;
+  color: #036147;
+}
+
+.FeatureGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 1rem 0 1.2rem;
+}
+
+.FeatureGridItem {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.FeatureGridItem video {
+  width: 320px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
+  flex-shrink: 0;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.FeatureGridItem .Persona.FeaturePersona {
+  margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+  .FeatureGridItem {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .FeatureGridItem video {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 10;
+  }
+}
+
+.LoFiRow {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 3rem;
+  width: min(50%, 600px);
+  margin: 0 auto 1.5rem;
+}
+
+.LoFiRow img {
+  width: calc(33.333% - 2rem);
+  height: auto;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 900px) {
+  .LoFiRow {
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 1rem;
+  }
+
+  .LoFiRow img {
+    width: calc(50% - 0.5rem);
+  }
+}
+
+@media (max-width: 560px) {
+  .LoFiRow {
+    width: 90%;
+  }
+
+  .LoFiRow img {
+    width: 70%;
+  }
 }

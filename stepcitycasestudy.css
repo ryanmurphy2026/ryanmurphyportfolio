@@ -134,7 +134,16 @@ p{
 }
 
 #ReframePhoto{
+    display: block;
+    width: 42%;
+    margin: 0 auto 1.5rem;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 900px) {
+    #ReframePhoto {
+        width: 70%;
+    }
 }
 
 #PresentationPhoto{
@@ -837,6 +846,38 @@ body {
   font-size: 1.1rem;
 }
 
+.Persona.FeaturePersona {
+  border-left: none;
+  padding-left: 0;
+}
+
+.Persona.FeaturePersona h3 {
+  font-style: normal;
+  font-weight: 700;
+}
+
+.GreenBackground strong,
+.GreenBackground b {
+  color: #f3cce7;
+}
+
+.GreenBackground h3 {
+  color: #f3cce7;
+}
+
+h2 {
+  color: #036147;
+  text-align: center;
+  font-size: clamp(1.4rem, 2.8vw, 1.9rem);
+  margin: 0 auto 1.5rem;
+  max-width: 720px;
+  line-height: 1.3;
+}
+
+.GreenBackground h2 {
+  color: #f3cce7;
+}
+
 .FeatureLabel {
   display: block;
   text-transform: uppercase;
@@ -861,7 +902,8 @@ body {
 
 #ClosingLink {
   text-align: center;
-  padding: 1.5rem 1rem 0;
+  padding: 2rem 1rem;
+  background-color: #036147;
 }
 
 #ClosingLink a {
@@ -877,6 +919,98 @@ body {
   }
 }
 
+.FeatureGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 1rem 0 1.2rem;
+}
+
+.FeatureGridItem {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.FeatureGridItem video {
+  width: 320px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
+  flex-shrink: 0;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.FeatureGridItem .Persona.FeaturePersona {
+  margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+  .FeatureGridItem {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .FeatureGridItem video {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 10;
+  }
+}
+
+.PivotImageRow {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 0 auto 1.5rem;
+}
+
+.PivotImageRow img {
+  width: 28%;
+  height: 220px;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+@media (max-width: 900px) {
+  .PivotImageRow {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .PivotImageRow img {
+    width: 80%;
+    height: auto;
+  }
+}
+
+.QuoteGrid {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 1.2rem;
+  margin: 1.2rem 0;
+}
+
+.QuoteBox {
+  flex: 1 1 0;
+  padding: 1.2rem;
+  text-align: center;
+}
+
+.QuoteBox p {
+  margin: 0;
+  font-style: italic;
+}
+
+@media (max-width: 900px) {
+  .QuoteGrid {
+    flex-direction: column;
+  }
+}
 
 p {
   font-family: "Rubik", sans-serif;
