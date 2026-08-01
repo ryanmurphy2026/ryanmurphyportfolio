@@ -115,7 +115,7 @@ ul {
 }
 
 #GroupPhoto {
-  width: min(760px, 92vw);
+  width: min(684px, 82.8vw);
   margin: 0 auto;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
@@ -398,21 +398,24 @@ body {
 
 /* === Project Header Sizing === */
 .PinkTitle,
-.GreenTitle {
+.GreenTitle,
+h2 {
   font-size: clamp(1.7rem, 3.4vw, 2.5rem);
   line-height: 1.12;
 }
 
 @media (max-width: 900px) {
   .PinkTitle,
-  .GreenTitle {
+  .GreenTitle,
+  h2 {
     font-size: clamp(1.55rem, 6vw, 2rem) !important;
   }
 }
 
 @media (max-width: 480px) {
   .PinkTitle,
-  .GreenTitle {
+  .GreenTitle,
+  h2 {
     font-size: clamp(1.45rem, 7vw, 1.75rem) !important;
   }
 }
@@ -514,7 +517,12 @@ body {
 }
 
 .PrimaryGoal {
-  font-weight: 500;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.PrimaryGoal i {
+  font-style: italic;
 }
 
 .PrimaryGoal span {
@@ -613,7 +621,6 @@ body {
 h2 {
   color: var(--bg-dark);
   text-align: center;
-  font-size: clamp(1.4rem, 2.8vw, 1.9rem);
   margin: 0 0 1.5rem;
 }
 
@@ -633,7 +640,15 @@ h2 {
   color: var(--text-light);
 }
 
+.GuidingQuestion {
+  font-size: 1rem;
+}
+
 .GreenBackground .Persona h3 {
+  color: var(--title-pink);
+}
+
+.GreenBackground .SubsectionTitle {
   color: var(--title-pink);
 }
 
@@ -676,5 +691,6 @@ p {
 .QuoteBox p {
   margin: 0;
   font-style: italic;
+  line-height: 1.5;
 }
 

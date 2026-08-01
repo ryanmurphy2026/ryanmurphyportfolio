@@ -836,11 +836,24 @@ body {
   margin: 0 0 1.5rem;
 }
 
+.Persona p {
+  line-height: 1.5;
+}
+
 .WhiteText .Persona {
   border-left-color: #f3cce7;
 }
 
+.GuidingQuestion {
+  font-size: 1rem;
+}
+
+.GreenBackground .GuidingQuestion {
+  color: #f5f3ee;
+}
+
 .Persona h3 {
+  color: #036147;
   font-style: italic;
   margin: 0 0 0.5rem;
   font-size: 1.1rem;
@@ -855,6 +868,19 @@ body {
   font-style: normal;
   font-weight: 700;
 }
+
+.SubsectionTitle {
+  color: #036147;
+  text-align: left;
+  font-size: 1.25rem;
+  width: 60%;
+  margin: 2.5rem 20% 1rem;
+}
+
+.GreenBackground .SubsectionTitle {
+  color: #f3cce7;
+}
+
 
 .GreenBackground strong,
 .GreenBackground b {
@@ -928,6 +954,12 @@ h2 {
 
 .FeatureGridItem {
   display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.FeatureGridItemRow {
+  display: flex;
   align-items: center;
   gap: 1.2rem;
 }
@@ -947,7 +979,7 @@ h2 {
 }
 
 @media (max-width: 900px) {
-  .FeatureGridItem {
+  .FeatureGridItemRow {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -1004,6 +1036,7 @@ h2 {
 .QuoteBox p {
   margin: 0;
   font-style: italic;
+  line-height: 1.5;
 }
 
 @media (max-width: 900px) {
