@@ -369,6 +369,26 @@ a {
   color: var(--text-light);
 }
 
+.ProjectCaption {
+  margin: 0;
+  min-height: 1.3em;
+  font-size: 0.95rem;
+  font-weight: 300;
+  opacity: 0.75;
+}
+
+.ProjectCaption:empty::before {
+  content: "\00a0";
+}
+
+.cards-section-light .ProjectCaption {
+  color: var(--text-dark);
+}
+
+.cards-section-dark .ProjectCaption {
+  color: var(--text-light);
+}
+
 @keyframes rubberBand {
   0% {
     transform: scaleX(1);
