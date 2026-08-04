@@ -406,17 +406,49 @@ h2 {
 
 @media (max-width: 900px) {
   .PinkTitle,
-  .GreenTitle,
-  h2 {
+  .GreenTitle {
     font-size: clamp(1.55rem, 6vw, 2rem) !important;
+  }
+
+  h2 {
+    font-size: 28px !important;
+    line-height: 1.15 !important;
   }
 }
 
 @media (max-width: 480px) {
   .PinkTitle,
-  .GreenTitle,
-  h2 {
+  .GreenTitle {
     font-size: clamp(1.45rem, 7vw, 1.75rem) !important;
+  }
+
+  h2 {
+    font-size: 19px !important;
+    line-height: 1.15 !important;
+  }
+}
+
+@media (max-width: 400px) {
+  h2 {
+    font-size: 15px !important;
+  }
+}
+
+@media (max-width: 376px) {
+  h2 {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 340px) {
+  h2 {
+    font-size: 13px !important;
+  }
+}
+
+@media (max-width: 320px) {
+  h2 {
+    font-size: 12px !important;
   }
 }
 
@@ -511,7 +543,7 @@ h2 {
 }
 
 .FeatureConceptsTitle {
-  max-width: 720px;
+  max-width: min(94%, 950px);
   margin-left: auto;
   margin-right: auto;
 }
@@ -621,7 +653,8 @@ h2 {
 h2 {
   color: var(--bg-dark);
   text-align: center;
-  margin: 0 0 1.5rem;
+  margin: 0 auto 1.5rem;
+  max-width: min(94%, 950px);
 }
 
 .SubsectionTitle {

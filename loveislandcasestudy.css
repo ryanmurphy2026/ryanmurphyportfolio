@@ -1,0 +1,529 @@
+@font-face {
+  font-family: Sentient;
+  src: url(SENTIENT-VARIABLE.TTF);
+}
+
+body{
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f3ee;
+    font-family: Sentient;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+/* Page exit animation */
+body.exiting {
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+::-webkit-scrollbar {
+    width:auto;
+    }
+    /*track*/
+    ::-webkit-scrollbar-track {
+    background:rgb(201, 200, 196);
+    border-width:2px;
+    border-style:solid;
+    border-color:black;
+    }
+    /*thumb*/
+    ::-webkit-scrollbar-thumb {
+    background:rgb(245, 243, 238);
+    border-width:2px;
+    border-style:solid;
+    border-color:black;
+    }
+
+p{
+    font-size: 16px;
+    font-family: "Rubik", sans-serif;
+}
+
+.navbar {
+    background-color: #f5f3ee;
+    color: black;
+    border-bottom: 4px solid black;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: all 0.5s ease;
+}
+
+.nav-links a:hover {
+    color: #036147;
+    transform: scale(1.2);
+}
+
+#StartingImage{
+    background-color: #036147;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#HeroPhoto{
+    width: 42%;
+    margin: auto;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.WhiteBackground{
+    background-color: #f5f3ee;
+    padding: 24px;
+}
+
+.GreenBackground{
+    background-color: #036147;
+    padding: 24px;
+}
+
+.PinkTitle{
+    color:#f3cce7;
+    font-size: 48px;
+    text-align: center;
+}
+
+.GreenTitle{
+    color:#036147;
+    font-size: 48px;
+    text-align: center;
+}
+
+.BlackText{
+    color: black;
+    line-height: 2;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.WhiteText{
+    color: #f5f3ee;
+    line-height: 2;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#ImageSectionDivider{
+    margin-bottom: -8px;
+    overflow: hidden;
+}
+
+.center{
+    text-align: center;
+}
+
+#Name{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* === Case Study Additions (matches stepcitycasestudy) === */
+.Eyebrow {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.78rem;
+  margin: 0 0 0.6rem;
+  color: #036147;
+}
+
+.MetaList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.4rem 2.4rem;
+  list-style: none;
+  margin: 1.5rem auto 0;
+  padding: 1.3rem 0 0;
+  border-top: 2px solid black;
+  width: min(92vw, 1000px);
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 2.4rem;
+}
+
+.MetaList li {
+  text-align: center;
+}
+
+.MetaLabel {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.7rem;
+  color: black;
+  opacity: 0.65;
+  margin-bottom: 0.3rem;
+}
+
+.MetaValue {
+  display: block;
+  font-size: 0.95rem;
+}
+
+.Persona {
+  border-left: 3px solid #036147;
+  padding-left: 1rem;
+  margin: 0 0 1.5rem;
+}
+
+.Persona p {
+  line-height: 1.5;
+}
+
+.WhiteText .Persona {
+  border-left-color: #f3cce7;
+}
+
+.Persona h3 {
+  color: #036147;
+  font-style: italic;
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+.Persona.FeaturePersona {
+  border-left: none;
+  padding-left: 0;
+}
+
+.Persona.FeaturePersona h3 {
+  font-style: normal;
+  font-weight: 700;
+}
+
+.GuidingQuestion {
+  font-size: 1rem;
+}
+
+.GreenBackground .GuidingQuestion {
+  color: #f5f3ee;
+}
+
+.SubsectionTitle {
+  color: #036147;
+  text-align: left;
+  font-size: 1.25rem;
+  width: 60%;
+  margin: 2.5rem 20% 1rem;
+}
+
+.GreenBackground .SubsectionTitle {
+  color: #f3cce7;
+}
+
+.GreenBackground strong,
+.GreenBackground b {
+  color: #f3cce7;
+}
+
+.GreenBackground h3 {
+  color: #f3cce7;
+}
+
+h2 {
+  color: #036147;
+  text-align: center;
+  font-size: clamp(1.4rem, 2.8vw, 1.9rem);
+  margin: 0 auto 1.5rem;
+  max-width: 720px;
+  line-height: 1.3;
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 19px !important;
+    line-height: 1.15 !important;
+  }
+}
+
+@media (max-width: 400px) {
+  h2 {
+    font-size: 16px !important;
+  }
+}
+
+@media (max-width: 376px) {
+  h2 {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 340px) {
+  h2 {
+    font-size: 13px !important;
+  }
+}
+
+@media (max-width: 320px) {
+  h2 {
+    font-size: 12px !important;
+  }
+}
+
+.GreenBackground h2 {
+  color: #f3cce7;
+}
+
+#ClosingLink {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #036147;
+}
+
+#ClosingLink a {
+  color: #f3cce7;
+  text-decoration: underline;
+  font-size: 0.95rem;
+}
+
+.FeatureGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 1rem 0 1.2rem;
+}
+
+.FeatureGridItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.FeatureGridItemRow {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.FeatureGridItem video {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
+  flex-shrink: 0;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.FeatureGridItem .Persona.FeaturePersona {
+  margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+  .FeatureGridItemRow {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .FeatureGridItem video {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 10;
+  }
+}
+
+.QuoteGrid {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 1.2rem;
+  margin: 1.2rem 0;
+}
+
+.QuoteBox {
+  flex: 1 1 0;
+  padding: 1.2rem;
+  text-align: center;
+}
+
+.QuoteBox p {
+  margin: 0;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .QuoteGrid {
+    flex-direction: column;
+  }
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 16px;
+        justify-content: center;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+        padding: 8px 12px;
+    }
+
+    .PinkTitle,
+    .GreenTitle {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .BlackText,
+    .WhiteText {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        line-height: 1.8;
+    }
+
+    #Name {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .WhiteBackground,
+    .GreenBackground {
+        padding: 16px;
+    }
+
+    #HeroPhoto {
+        width: 70%;
+        min-width: 200px;
+    }
+
+    #StartingImage {
+        height: auto;
+        min-height: 58vh;
+        padding: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        padding: 12px;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    .PinkTitle,
+    .GreenTitle {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .BlackText,
+    .WhiteText {
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        line-height: 1.6;
+    }
+
+    #Name {
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+
+    .WhiteBackground,
+    .GreenBackground {
+        padding: 12px;
+    }
+
+    #HeroPhoto {
+        width: 85%;
+        min-width: 150px;
+    }
+
+    /* Disable hover effects on touch devices */
+    .nav-links a:hover {
+        transform: none;
+    }
+}
+
+/* Make images/videos behave on all screen sizes */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+@media (max-width: 900px) {
+  .MetaList {
+    gap: 1rem 1.6rem;
+    width: 100%;
+  }
+}
+
+/* ===== Oversized section dividers ===== */
+#ImageSectionDivider {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: -8px;
+}
+
+#ImageSectionDivider img {
+  width: 150%;
+  max-width: none;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+}
+
+@media (hover: none) {
+  .nav-links a:hover {
+    transform: none !important;
+  }
+}

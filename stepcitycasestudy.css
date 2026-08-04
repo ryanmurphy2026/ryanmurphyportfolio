@@ -900,6 +900,37 @@ h2 {
   line-height: 1.3;
 }
 
+@media (max-width: 480px) {
+  h2 {
+    font-size: 19px !important;
+    line-height: 1.15 !important;
+  }
+}
+
+@media (max-width: 400px) {
+  h2 {
+    font-size: 16px !important;
+  }
+}
+
+@media (max-width: 376px) {
+  h2 {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 340px) {
+  h2 {
+    font-size: 13px !important;
+  }
+}
+
+@media (max-width: 320px) {
+  h2 {
+    font-size: 12px !important;
+  }
+}
+
 .GreenBackground h2 {
   color: #f3cce7;
 }
@@ -921,9 +952,14 @@ h2 {
   margin-bottom: 0;
 }
 
-.FeatureBlock h3 {
+.FeatureGridItem > h3 {
+  color: #036147;
   margin: 0 0 0.6rem;
-  font-size: 1.3rem;
+  font-size: 1.15rem;
+}
+
+.GreenBackground .FeatureGridItem > h3 {
+  color: #f3cce7;
 }
 
 #ClosingLink {

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Love Island USA — Case Study</title>
+    <link rel="stylesheet" href="loveislandcasestudy.css">
+    <link rel="stylesheet" href="navbar.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
+    <script src="main.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <div class="nav-dropdown">
+          <a class="nav-dropdown-toggle" href="index.html#ProjectsSection" aria-haspopup="true">Projects</a>
+          <div class="dropdown-menu" aria-label="Design in Action projects">
+            <a href="livetimecasestudy.html">Live Time</a>
+            <a href="amazonmusiccasestudy.html">Amazon Music</a>
+            <a href="stepcitycasestudy.html">Step City</a>
+            <a href="nusublets.html">NU Sublets</a>
+            <a href="surething.html">Sure Thing</a>
+            <a href="resole.html">ReSole</a>
+            <a href="gutter.html">The Gutter Defender</a>
+
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <a class="nav-dropdown-toggle" href="index.html#ArtSection" aria-haspopup="true">Gallery</a>
+          <div class="dropdown-menu" aria-label="Creative Exploration projects">
+            <a href="buttercrumble.html">Butter &amp; Crumble</a>
+            <a href="wavelength.html">Wavelength</a>
+            <a href="musicanalysis.html">Music Taste Analysis</a>
+            <a href="musicmural.html">Music Mural</a>
+            <a href="ulimi.html">Ulimi Tongue of Culture</a>
+            <a href="keithharing.html">12 Greek Myths</a>
+            <a href="shatteredring.html">Shattered Ring</a>
+            <a href="techdream.html">Tech's Dream</a>
+          </div>
+        </div>
+        <a href="index.html#AboutMe">About Me</a>
+        <a href="RJM Resume - Portfolio.pdf" target="_blank" download>Resume</a>
+        <a href="index.html#ContactSection">Contact</a>
+      </div>
+    </nav>
+
+    <div id="StartingImage">
+        <img id="HeroPhoto" src="Love Island Photos/Love Island App Redesign.png">
+    </div>
+
+    <div class="WhiteBackground" id="ProjectName">
+        <h1 class="GreenTitle" id="Name">Love Island USA: Redesigning the Official App to Match the Show's Energy</h1>
+        <div class="BlackText">
+            <p class="Eyebrow">Personal Project</p>
+            <ul class="MetaList">
+                <li>
+                    <span class="MetaLabel">Role</span>
+                    <span class="MetaValue">Product Designer</span>
+                </li>
+                <li>
+                    <span class="MetaLabel">Team</span>
+                    <span class="MetaValue">Solo</span>
+                </li>
+                <li>
+                    <span class="MetaLabel">Status</span>
+                    <span class="MetaValue">Concept</span>
+                </li>
+            </ul>
+            <p>
+                Love Island USA is a hugely popular reality show on Peacock where contestants spend a month on an island, isolated from the outside world, in search of love. It's an entertaining show to watch with friends, with viewers playing an active role by voting through the Love Island USA app to decide which islanders are eliminated.
+            </p>
+            <p>
+                The official app looks and functions poorly. It currently has a 1.9-star rating on the App Store, with reviews consistently echoing the same complaints.
+            </p>
+        </div>
+
+        <h3 class="SubsectionTitle">Challenge</h3>
+        <div class="BlackText">
+            <p>
+                This is clearly a missed opportunity for Peacock. Given the app's high level of engagement, it could serve as an effective platform for advertising, merchandise sales, and deeper audience interaction. I challenged myself to redesign the official Love Island USA app, using the project as an opportunity to explore how AI tools could fit into my design workflow.
+            </p>
+        </div>
+    </div>
+
+    <div class="GreenBackground" id="Research">
+        <h2>Uncovering Why Fans Dislike the App</h2>
+        <div class="WhiteText">
+            <p>
+                To better understand why the app is so disliked, I spoke with three friends who are fans of the show. Their responses were telling:
+            </p>
+            <div class="QuoteGrid">
+                <div class="QuoteBox"><p><i>"It sucks and the UI is clunky."</i></p></div>
+                <div class="QuoteBox"><p><i>"It looks archaic."</i></p></div>
+                <div class="QuoteBox"><p><i>"I'm not inclined to do anything besides vote."</i></p></div>
+            </div>
+            <p>
+                These conversations revealed two key pain points: the app looks outdated, and its layout makes it difficult to find information. My own audit of the app surfaced the same issues:
+            </p>
+            <ul>
+                <li><strong>Redundant Navigation:</strong> The bottom navigation bar includes two separate buttons for purchasing items, creating unnecessary redundancy.</li>
+                <li><strong>Buried Content:</strong> Information about the Islanders is difficult to find at first glance.</li>
+                <li><strong>Off-Brand Visuals:</strong> The color palette doesn't reflect the vibrant, recognizable aesthetic of the Love Island brand.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="WhiteBackground" id="Personas">
+        <h2>Designing for Two Types of Viewers</h2>
+        <div class="BlackText">
+            <p>
+                To help guide my redesign, I created two personas representing the primary types of Love Island USA viewers:
+            </p>
+            <div class="Persona">
+                <h3><i>The Superfan</i></h3>
+                <p>Watches every episode, engages in online discussions, and votes consistently.</p>
+            </div>
+            <div class="Persona">
+                <h3><i>The Casual Fan</i></h3>
+                <p>Watches two to three episodes per week, doesn't always remember who's who or what happened recently, and votes when prompted.</p>
+            </div>
+            <p>
+                It was also important to consider the stakeholders' needs throughout the design process, balancing user needs with Peacock's business goals of driving revenue through advertising and merchandise sales.
+            </p>
+        </div>
+    </div>
+
+    <div id="ImageSectionDivider">
+        <img src="WebsiteDivider3.jpg" width="100%">
+    </div>
+
+    <div class="GreenBackground" id="Process">
+        <h2>From Wireframes to High-Fidelity Screens, with AI as a Collaborator</h2>
+        <div class="WhiteText">
+            <p>
+                I began with wireframes. I experimented with using Claude to generate them, but it lacked context about the underlying design problem and produced layouts that didn't reflect real user needs. It also made iteration difficult, so I designed the low-fidelity wireframes in Figma instead and shared them with my friends to gather feedback on the layout before incorporating their input into the next iteration.
+            </p>
+            <p>
+                Next, I built out a design system, pulling colors and typography directly from the show's branding. Claude Code was useful for expanding the system quickly, handling simple components like buttons and text fields well, but it struggled with more complex components, such as cards, so I built those myself.
+            </p>
+            <p>
+                Once the design system was finalized, I moved on to high-fidelity designs. To speed up the process, I used Claude Code to generate an initial pass using my low-fidelity wireframes and design system as references, then refined the output to match my vision.
+            </p>
+        </div>
+    </div>
+
+    <div class="WhiteBackground" id="Features">
+        <h2>Key Features</h2>
+        <div class="BlackText">
+            <div class="FeatureGrid">
+                <div class="FeatureGridItem">
+                    <h3>Feature #1: Home Page</h3>
+                    <div class="FeatureGridItemRow">
+                        <video autoplay loop muted playsinline>
+                            <source src="Love Island Photos/Love Island Videos/Love Island - Home Page.mp4" type="video/mp4">
+                        </video>
+                        <div class="Persona FeaturePersona">
+                            <p>The home screen aligns with modern app experiences.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="FeatureGridItem">
+                    <h3>Feature #2: Islanders Tab</h3>
+                    <div class="FeatureGridItemRow">
+                        <video autoplay loop muted playsinline>
+                            <source src="Love Island Photos/Love Island Videos/Love Island - Islanders Tab.mp4" type="video/mp4">
+                        </video>
+                        <div class="Persona FeaturePersona">
+                            <p>Added an Islanders tab to the navigation bar. This helps casual fans keep track of who's coupled up and who's still in the villa, while giving superfans quick access to their favorite contestants' social media.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="FeatureGridItem">
+                    <h3>Feature #3: Group Page</h3>
+                    <div class="FeatureGridItemRow">
+                        <video autoplay loop muted playsinline>
+                            <source src="Love Island Photos/Love Island Videos/Love Island - Group Page.mp4" type="video/mp4">
+                        </video>
+                        <div class="Persona FeaturePersona">
+                            <p>Reimagined the voting flow to reduce friction and confusion.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="FeatureGridItem">
+                    <h3>Feature #4: Shop Page</h3>
+                    <div class="FeatureGridItemRow">
+                        <video autoplay loop muted playsinline>
+                            <source src="Love Island Photos/Love Island Videos/Love Island - Shop Page.mp4" type="video/mp4">
+                        </video>
+                        <div class="Persona FeaturePersona">
+                            <p>Added a Shop page to encourage browsing. I chose not to implement a full purchase flow because it didn't fit the scope of the project. Instead, tapping a product redirects users to Peacock's website, which felt like the more practical approach.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="FeatureGridItem">
+                    <h3>Feature #5: Extras Page</h3>
+                    <div class="FeatureGridItemRow">
+                        <video autoplay loop muted playsinline>
+                            <source src="Love Island Photos/Love Island Videos/Love Island - Extras Page.mp4" type="video/mp4">
+                        </video>
+                        <div class="Persona FeaturePersona">
+                            <p>Refined the Extras page to improve its visual hierarchy.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="GreenBackground" id="Solution">
+        <h2>Reflection</h2>
+
+        <h3 class="SubsectionTitle">Key Takeaway</h3>
+        <div class="WhiteText">
+            <p>
+                AI is most effective with clear direction. It performed best when I provided clear instructions and concrete references, accelerating execution and producing results much closer to my vision, though I still needed to refine the output before arriving at the final design.
+            </p>
+        </div>
+
+        <h3 class="SubsectionTitle">What would I do differently today?</h3>
+        <div class="WhiteText">
+            <p>
+                Bring in more voices earlier. I relied on three friends for feedback, but a wider, more structured round of user testing would have surfaced more edge cases in the voting and Islanders flows before I committed to high-fidelity designs.
+            </p>
+        </div>
+    </div>
+
+    <div id="ClosingLink">
+        <p><a href="index.html#ProjectsSection">&larr; Back to all projects</a></p>
+    </div>
+
+    <div id="ImageSectionDivider">
+        <img src="WebsiteDivider4.jpg" width="100%">
+    </div>
+
+    <script src="main.js"></script>
+
+  </body>
+</html>

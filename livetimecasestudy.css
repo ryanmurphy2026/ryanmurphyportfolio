@@ -655,12 +655,34 @@ body {
   .GreenTitle {
     font-size: clamp(1.55rem, 6vw, 2rem) !important;
   }
+
+  h2 {
+    font-size: 30px !important;
+    line-height: 1.15 !important;
+  }
 }
 
 @media (max-width: 480px) {
   .PinkTitle,
   .GreenTitle {
     font-size: clamp(1.45rem, 7vw, 1.75rem) !important;
+  }
+
+  h2 {
+    font-size: 20px !important;
+    line-height: 1.15 !important;
+  }
+}
+
+@media (max-width: 400px) {
+  h2 {
+    font-size: 15px !important;
+  }
+}
+
+@media (max-width: 340px) {
+  h2 {
+    font-size: 13px !important;
   }
 }
 
@@ -732,9 +754,10 @@ body {
 h2 {
   color: #036147;
   text-align: center;
-  font-size: clamp(1.4rem, 2.8vw, 1.9rem);
+  font-size: clamp(1.7rem, 3.4vw, 2.5rem);
+  line-height: 1.12;
   margin: 0 auto 1.5rem;
-  max-width: 700px;
+  max-width: min(94%, 950px);
 }
 
 .GreenBackground h2 {

@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm ls *)",
+      "Read(//c/Users/rjmur/AppData/Local/ms-playwright/**)",
+      "Bash(npm init *)",
+      "Bash(npm install *)",
+      "Bash(node check_lines.js)",
+      "Bash(node bisect.js)",
+      "Bash(node debug.js)",
+      "Bash(node check_other.js)",
+      "Bash(node -e ' *)"
+    ]
+  }
+}
