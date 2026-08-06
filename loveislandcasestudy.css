@@ -318,6 +318,10 @@ h2 {
   gap: 0.6rem;
 }
 
+.FeatureGridItem h3 {
+  color: #036147;
+}
+
 .FeatureGridItemRow {
   display: flex;
   align-items: center;
