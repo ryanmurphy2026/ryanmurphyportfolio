@@ -9,7 +9,8 @@
       "Bash(node bisect.js)",
       "Bash(node debug.js)",
       "Bash(node check_other.js)",
-      "Bash(node -e ' *)"
+      "Bash(node -e ' *)",
+      "Bash(python3 -c \"from PIL import Image; im=Image.open\\('Love Island Photos/Love Island USA Appstore Screenshot.webp'\\); print\\(im.size\\)\")"
     ]
   }
 }

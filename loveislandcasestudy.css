@@ -86,7 +86,7 @@ p{
 }
 
 #HeroPhoto{
-    width: 42%;
+    width: 55%;
     margin: auto;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
@@ -96,6 +96,52 @@ p{
     padding: 24px;
 }
 
+#AppstoreScreenshot{
+    width: 60%;
+    display: block;
+    margin: 16px auto;
+    border-radius: 8px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.LoFiRow {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 3rem;
+  width: min(50%, 600px);
+  margin: 0 auto 1.5rem;
+}
+
+.LoFiRow img {
+  width: calc(33.333% - 2rem);
+  height: auto;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 900px) {
+  .LoFiRow {
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 1rem;
+  }
+
+  .LoFiRow img {
+    width: calc(50% - 0.5rem);
+  }
+}
+
+@media (max-width: 560px) {
+  .LoFiRow {
+    width: 90%;
+  }
+
+  .LoFiRow img {
+    width: 70%;
+  }
+}
+
 .GreenBackground{
     background-color: #036147;
     padding: 24px;
@@ -103,14 +149,20 @@ p{
 
 .PinkTitle{
     color:#f3cce7;
-    font-size: 48px;
     text-align: center;
 }
 
 .GreenTitle{
     color:#036147;
-    font-size: 48px;
     text-align: center;
+}
+
+/* === Project Header Sizing === */
+.PinkTitle,
+.GreenTitle,
+h2 {
+  font-size: clamp(1.7rem, 3.4vw, 2.5rem);
+  line-height: 1.12;
 }
 
 .BlackText{
@@ -252,13 +304,28 @@ p{
 h2 {
   color: #036147;
   text-align: center;
-  font-size: clamp(1.4rem, 2.8vw, 1.9rem);
   margin: 0 auto 1.5rem;
   max-width: 720px;
-  line-height: 1.3;
+}
+
+@media (max-width: 900px) {
+  .PinkTitle,
+  .GreenTitle {
+    font-size: clamp(1.55rem, 6vw, 2rem) !important;
+  }
+
+  h2 {
+    font-size: 28px !important;
+    line-height: 1.15 !important;
+  }
 }
 
 @media (max-width: 480px) {
+  .PinkTitle,
+  .GreenTitle {
+    font-size: clamp(1.45rem, 7vw, 1.75rem) !important;
+  }
+
   h2 {
     font-size: 19px !important;
     line-height: 1.15 !important;
@@ -267,7 +334,7 @@ h2 {
 
 @media (max-width: 400px) {
   h2 {
-    font-size: 16px !important;
+    font-size: 15px !important;
   }
 }
 
@@ -399,11 +466,6 @@ h2 {
         padding: 8px 12px;
     }
 
-    .PinkTitle,
-    .GreenTitle {
-        font-size: 32px;
-    }
-
     p {
         font-size: 15px;
     }
@@ -432,6 +494,10 @@ h2 {
         min-width: 200px;
     }
 
+    #AppstoreScreenshot {
+        width: 85%;
+    }
+
     #StartingImage {
         height: auto;
         min-height: 58vh;
@@ -451,11 +517,6 @@ h2 {
     .nav-links a {
         font-size: 12px;
         padding: 6px 10px;
-    }
-
-    .PinkTitle,
-    .GreenTitle {
-        font-size: 24px;
     }
 
     p {
@@ -486,6 +547,10 @@ h2 {
         min-width: 150px;
     }
 
+    #AppstoreScreenshot {
+        width: 95%;
+    }
+
     /* Disable hover effects on touch devices */
     .nav-links a:hover {
         transform: none;
@@ -510,20 +575,9 @@ html, body {
   }
 }
 
-/* ===== Oversized section dividers ===== */
-#ImageSectionDivider {
-  width: 100%;
-  overflow: hidden;
-  margin-bottom: -8px;
-}
-
 #ImageSectionDivider img {
-  width: 150%;
-  max-width: none;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  display: block;
+  width: 100%;
+  height: auto;
 }
 
 @media (hover: none) {
