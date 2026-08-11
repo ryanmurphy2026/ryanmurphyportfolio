@@ -516,6 +516,13 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+  margin-bottom: 24px;
+}
+
+#start,
+#ImageSectionDivider img,
+[id*="Divider"] img {
+  margin-bottom: 0;
 }
 
 #ImageSectionDivider img,
@@ -729,6 +736,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: 0.7rem;
+  font-family: "Rubik", sans-serif;
   color: black;
   opacity: 0.65;
   margin-bottom: 0.3rem;

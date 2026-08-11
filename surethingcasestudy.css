@@ -3,247 +3,679 @@
   src: url(SENTIENT-VARIABLE.TTF);
 }
 
-:root {
-  --bg-light: #f5f3ee;
-  --bg-dark: #036147;
-  --text-dark: #111111;
-  --text-light: #f5f3ee;
-  --title-pink: #f3cce7;
-  --border: #000000;
-  --content-max: 1100px;
-  --text-max: 860px;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
-
-body {
-  opacity: 0;
-  transition: opacity 0.8s ease-in-out;
-  background-color: var(--bg-light);
-  font-family: Sentient, "Rubik", serif;
-  color: var(--text-dark);
+body{
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f3ee;
+    font-family: Sentient;
 }
 
 body.loaded {
-  opacity: 1;
+    opacity: 1;
 }
 
+/* Page exit animation */
 body.exiting {
-  opacity: 0;
-  transition: opacity 0.4s ease-in-out;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-p {
-  font-size: 1rem;
-  line-height: 1.9;
-  margin: 0 0 1rem;
-}
-
-ul {
-  margin: 0 0 1rem;
-  padding-left: 1.2rem;
-  line-height: 1.8;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
 }
 
 ::-webkit-scrollbar {
-  width: auto;
-}
+    width:auto;
+    }
+    /*track*/
+    ::-webkit-scrollbar-track {
+    background:rgb(201, 200, 196);
+    border-width:2px;
+    border-style:solid;
+    border-color:black;
+    }
+    /*thumb*/
+    ::-webkit-scrollbar-thumb {
+    background:rgb(245, 243, 238);
+    border-width:2px;
+    border-style:solid;
+    border-color:black;
+    }
 
-::-webkit-scrollbar-track {
-  background: rgb(201, 200, 196);
-  border: 2px solid var(--border);
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgb(245, 243, 238);
-  border: 2px solid var(--border);
+p{
+    font-size: 16px;
 }
 
 .navbar {
-  background-color: var(--bg-light);
-  border-bottom: 4px solid var(--border);
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 0.9rem 1rem;
+    background-color: #f5f3ee;
+    color: black;
+    border-bottom: 4px solid black;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
 }
 
 .nav-links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.45rem 0.7rem;
+    display: flex;
+    gap: 20px;
 }
 
 .nav-links a {
-  color: var(--text-dark);
-  font-size: 0.82rem;
-  text-decoration: none;
-  padding: 0.35rem 0.55rem;
-  border-radius: 4px;
-  transition: transform 0.2s ease, color 0.2s ease;
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: all 0.5s ease;
 }
 
 .nav-links a:hover {
-  color: var(--bg-dark);
-  transform: scale(1.08);
+    color: #036147; /* Color on hover */
+    transform: scale(1.2); /* Grow on hover */
 }
 
-#StartingImage {
-  background-color: var(--bg-dark);
-  width: 100%;
-  min-height: 62vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1.2rem;
+#StartingImage{
+    background-color: #036147;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#GroupPhoto {
-  width: auto;
-  height: auto;
-  max-width: min(684px, 82.8vw);
-  max-height: 68vh;
-  margin: 0 auto;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+#VanPhoto{
+    width: auto;
+    height: auto;
+    max-width: min(82vw, 1100px);
+    max-height: 68vh;
+    margin: auto;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
 
-.WhiteBackground,
-.GreenBackground {
-  padding: clamp(0.9rem, 1.8vw, 1.4rem) clamp(1rem, 2.4vw, 1.5rem);
+.WhiteBackground{
+    background-color: #f5f3ee;
+    padding: 24px;
 }
 
-.WhiteBackground {
-  background-color: var(--bg-light);
+.GreenBackground{
+    background-color: #036147;
+    padding: 24px;
 }
 
-.GreenBackground {
-  background-color: var(--bg-dark);
+.PinkTitle{
+    color:#f3cce7;
+    font-size: 48px;
+    text-align: center;
 }
 
-.PinkTitle,
-.GreenTitle {
-  font-size: clamp(1.8rem, 4.5vw, 3rem);
+.GreenTitle{
+    color:#036147;
+    font-size: 48px;
+    text-align: center;
+}
+
+.BlackText{
+    color: black;
+    line-height: 2;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.WhiteText{
+    color: #f5f3ee;
+    line-height: 2;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.Eyebrow {
   text-align: center;
-  margin: 0 0 1rem;
-  line-height: 1.1;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.78rem;
+  margin: 0 0 0.6rem;
+  color: #036147;
 }
 
-.PinkTitle {
-  color: var(--title-pink);
+.MetaList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.4rem 2.4rem;
+  list-style: none;
+  margin: 1.5rem auto 0;
+  padding: 1.3rem 0 0;
+  border-top: 2px solid black;
+  width: min(92vw, 1000px);
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 2.4rem;
 }
 
-.GreenTitle {
-  color: var(--bg-dark);
+.MetaList li {
+  text-align: center;
 }
 
-.BlackText,
-.WhiteText {
-  width: min(var(--text-max), 100%);
-  margin: 0 auto;
+.MetaLabel {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.7rem;
+  color: black;
+  opacity: 0.65;
+  margin-bottom: 0.3rem;
 }
 
-.BlackText {
-  color: var(--text-dark);
+.MetaValue {
+  display: block;
+  font-size: 0.95rem;
 }
 
-.WhiteText {
-  color: var(--text-light);
+@media (max-width: 900px) {
+  .MetaList {
+    gap: 1rem 1.6rem;
+    width: 100%;
+  }
 }
 
-#Name {
-  width: min(1000px, 100%);
-  margin: 0 auto;
+#ClosingLink {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #036147;
 }
 
-#ImageSectionDivider {
-  margin-bottom: -6px;
-  overflow: hidden;
+#ClosingLink a {
+  color: #f5f3ee;
+  text-decoration: underline;
+  font-size: 0.95rem;
 }
 
-#ImageSectionDivider img {
-  width: 100%;
+#ImageSectionDivider{
+    margin-bottom: -8px;
+    overflow: hidden;
 }
 
-.Figmas {
-  width: min(var(--content-max), 100%);
-  margin: 1rem auto 1.25rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 0.9rem;
+#ReframePhoto{
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
 
-.Figmas img {
-  width: 100%;
-  margin: 0;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+#PresentationPhoto{
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
 
-@media (min-width: 640px) {
+.Figmas{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#scanning{
+    width:30%;
+    margin-left: 15%;
+    margin-right:5%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+#getblueprint{
+    width: 30%;
+    margin-left: 5%;
+    margin-right: 15%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#quest{
+    width:30%;
+    margin-left: 2%;
+    margin-right:1.5%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#progress{
+    width:30%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#questreward{
+    width:30%;
+    margin-left: 1.5%;
+    margin-right: 2%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#blueprintmenu{
+    width:30%;
+    margin-left: 15%;
+    margin-right:5%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#buildingresult{
+    width: 30%;
+    margin-left: 5%;
+    margin-right: 15%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#milestonemenu{
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#friendslist{
+    width:30%;
+    margin-left: 2%;
+    margin-right:1.5%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#trading{
+    width:30%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#visit{
+    width:30%;
+    margin-left: 1.5%;
+    margin-right: 2%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#Name{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.center{
+    text-align: center;
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+    /* Navigation adjustments */
+    .navbar {
+        padding: 16px;
+        justify-content: center;
+    }
+    
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .nav-links a {
+        font-size: 13px;
+        padding: 8px 12px;
+    }
+    
+    /* Typography adjustments */
+    .PinkTitle,
+    .GreenTitle {
+        font-size: 32px;
+    }
+    
+    p {
+        font-size: 15px;
+    }
+    
+    /* Text content adjustments */
+    .BlackText,
+    .WhiteText {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        line-height: 1.8;
+    }
+    
+    #Name {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    /* Background sections */
+    .WhiteBackground,
+    .GreenBackground {
+        padding: 16px;
+    }
+    
+    /* Main image adjustments */
+    #VanPhoto {
+        width: 40%;
+        min-width: 200px;
+    }
+    
+    #ReframePhoto,
+    #PresentationPhoto {
+        max-width: 100%;
+        height: auto;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    }
+    
+    /* Starting image section */
+    #StartingImage {
+        height: 80vh;
+        padding: 16px;
+    }
+    
+    /* Figma layout - stack vertically on mobile */
+    .Figmas {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+    /* Individual figma images - make them larger on mobile */
+    #scanning,
+    #getblueprint,
+    #quest,
+    #progress,
+    #questreward,
+    #blueprintmenu,
+    #buildingresult,
+    #friendslist,
+    #trading,
+    #visit {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+    }
+    
+    #milestonemenu {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Extra small screens */
+    .navbar {
+        padding: 12px;
+    }
+    
+    .nav-links {
+        gap: 10px;
+    }
+    
+    .nav-links a {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+    
+    .PinkTitle,
+    .GreenTitle {
+        font-size: 24px;
+    }
+    
+    p {
+        font-size: 14px;
+    }
+    
+    .BlackText,
+    .WhiteText {
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        line-height: 1.6;
+    }
+    
+    #Name {
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+    
+    .WhiteBackground,
+    .GreenBackground {
+        padding: 12px;
+    }
+    
+    #VanPhoto {
+        width: 60%;
+        min-width: 150px;
+    }
+    
+    #StartingImage {
+        height: 50vh;
+        padding: 12px;
+    }
+    
+    /* Make figma images even larger on very small screens */
+    #scanning,
+    #getblueprint,
+    #quest,
+    #progress,
+    #questreward,
+    #blueprintmenu,
+    #buildingresult,
+    #friendslist,
+    #trading,
+    #visit,
+    #milestonemenu {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    }
+    
+    .Figmas {
+        gap: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    /* Disable hover effects on touch devices */
+    .nav-links a:hover {
+        transform: none;
+    }
+}
+
+/* =============== Mobile responsiveness (add at bottom of CSS) =============== */
+
+/* Make images behave on all screen sizes */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Prevent random horizontal scrolling on mobile */
+html, body {
+  overflow-x: hidden;
+}
+
+/* --- Tablet + Mobile --- */
+@media (max-width: 768px) {
+  /* NAV */
   .navbar {
-    padding: 1.1rem 1.4rem;
-  }
-
-  .nav-links a {
-    font-size: 0.9rem;
-    padding: 0.38rem 0.6rem;
-  }
-
-  #StartingImage {
-    min-height: 72vh;
-    padding: 1.6rem;
-  }
-
-  .Figmas {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1rem;
-  }
-}
-
-@media (min-width: 960px) {
-  .navbar {
-    justify-content: flex-end;
-    padding: 1.2rem 2rem;
+    justify-content: center;
+    padding: 14px 12px;
   }
 
   .nav-links {
-    gap: 0.7rem 0.95rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 12px;
+    padding: 0 6px;
   }
 
-  #StartingImage {
-    min-height: 88vh;
+  .nav-links a {
+    font-size: 13px;
+    padding: 8px 10px;
   }
 
+  /* TITLES / TYPE */
+  .PinkTitle,
+  .GreenTitle {
+    font-size: 32px;
+    line-height: 1.15;
+  }
+
+  p, li {
+    font-size: 15px;
+  }
+
+  /* SECTIONS */
+  .WhiteBackground,
+  .GreenBackground {
+    padding: 16px;
+  }
+
+  /* TEXT BLOCKS: stop hard 60% + 20% margins */
   .BlackText,
   .WhiteText {
-    width: min(60%, var(--text-max));
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto;
+    line-height: 1.75;
   }
 
-  .SubsectionTitle {
-    width: min(60%, var(--text-max)) !important;
+  #Name {
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto;
   }
 
+  /* HERO */
+  #StartingImage {
+    height: 60vh; /* a bit shorter so it doesn't eat the whole screen */
+    padding: 16px;
+  }
+
+  #VanPhoto {
+    width: clamp(180px, 55vw, 320px); /* scales nicely */
+  }
+
+  /* FIGMA ROWS -> STACK */
   .Figmas {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  /* Override ALL the per-image margins and widths on mobile */
+  .Figmas img,
+  #milestonemenu {
+    width: 60%;
+    margin: 0 !important;
+  }
+
+  /* Lists often cause overflow when nested weirdly */
+  ul, ol {
+    padding-left: 20px;
+  }
+
+  /* Touch devices: kill hover scale */
+  .nav-links a:hover {
+    transform: none;
   }
 }
 
-/* === Global Responsive Patch === */
+/* --- Small phones --- */
+@media (max-width: 480px) {
+  .PinkTitle,
+  .GreenTitle {
+    font-size: 26px;
+  }
+
+  p, li {
+    font-size: 14px;
+  }
+
+  .WhiteBackground,
+  .GreenBackground {
+    padding: 12px;
+  }
+
+  #StartingImage {
+    height: 50vh;
+  }
+
+  #VanPhoto {
+    width: clamp(160px, 70vw, 280px);
+  }
+
+  .Figmas img,
+  #milestonemenu {
+    width: 60%;
+  }
+}
+/* ===== Oversized section dividers ===== */
+
+#ImageSectionDivider {
+  width: 100%;
+  overflow: hidden;      /* crops the sides */
+  margin-bottom: -8px;   /* keep your existing overlap look */
+}
+
+#ImageSectionDivider img {
+  width: 150%;           /* make image 150% wider */
+  max-width: none;       /* prevent browser from clamping */
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%); /* center the oversized image */
+  display: block;
+}
+
+@media (max-width: 768px) {
+  #StartingImage {
+    height: 60vh;
+    min-height: 360px;
+    padding: 16px;
+  }
+
+  #VanPhoto {
+    width: clamp(200px, 65vw, 360px);
+  }
+}
+
+@media (max-width: 480px) {
+  #StartingImage {
+    height: 60vh;
+    min-height: 300px;
+  }
+
+  #VanPhoto {
+    width: 50vw;
+  }
+}
+/* ===== HARD STOP: horizontal scroll fix ===== */
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  .Figmas img,
+  #milestonemenu {
+    width: min(420px, 80%);
+    max-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .Figmas img {
+    width: 40%;
+  }
+}
+
+/* === Global Responsive Patch (Codex) === */
 html,
 body {
   max-width: 100%;
@@ -298,14 +730,25 @@ img {
 
   .BlackText,
   .WhiteText,
-  .SubsectionTitle {
+  #AboutMeText,
+  #ProjectContents,
+  #ArtContents {
     width: min(92%, 760px) !important;
     margin-left: auto !important;
     margin-right: auto !important;
   }
 
   #Name,
-  #GroupPhoto {
+  #VanPhoto,
+  #GroupPhoto,
+  #start,
+  #testing,
+  #brainstorming,
+  #team,
+  #documenting,
+  #AllvanName,
+  #ReframePhoto,
+  #PresentationPhoto {
     width: min(92%, 860px) !important;
     margin-left: auto !important;
     margin-right: auto !important;
@@ -370,218 +813,6 @@ body {
   min-height: 0 !important;
 }
 
-/* === Project Header Sizing === */
-.PinkTitle,
-.GreenTitle,
-h2 {
-  font-size: clamp(1.7rem, 3.4vw, 2.5rem);
-  line-height: 1.12;
-}
-
-@media (max-width: 900px) {
-  .PinkTitle,
-  .GreenTitle {
-    font-size: clamp(1.55rem, 6vw, 2rem) !important;
-  }
-
-  h2 {
-    font-size: 28px !important;
-    line-height: 1.15 !important;
-  }
-}
-
-@media (max-width: 480px) {
-  .PinkTitle,
-  .GreenTitle {
-    font-size: clamp(1.45rem, 7vw, 1.75rem) !important;
-  }
-
-  h2 {
-    font-size: 19px !important;
-    line-height: 1.15 !important;
-  }
-}
-
-@media (max-width: 400px) {
-  h2 {
-    font-size: 15px !important;
-  }
-}
-
-@media (max-width: 376px) {
-  h2 {
-    font-size: 14px !important;
-  }
-}
-
-@media (max-width: 340px) {
-  h2 {
-    font-size: 13px !important;
-  }
-}
-
-@media (max-width: 320px) {
-  h2 {
-    font-size: 12px !important;
-  }
-}
-
-/* === Project Header Width === */
-.PinkTitle,
-.GreenTitle {
-  max-width: min(90%, 900px);
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* === Case Study Additions === */
-.Eyebrow {
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  font-size: 0.78rem;
-  margin: 0 0 0.6rem;
-  color: #036147;
-}
-
-.MetaList {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.4rem 2.4rem;
-  list-style: none;
-  margin: 1.5rem auto 0;
-  padding: 1.3rem 0 0;
-  border-top: 2px solid black;
-  width: min(92vw, 1000px);
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-bottom: 2.4rem;
-}
-
-.MetaList li {
-  text-align: center;
-}
-
-.MetaLabel {
-  display: block;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-size: 0.7rem;
-  color: black;
-  opacity: 0.65;
-  margin-bottom: 0.3rem;
-}
-
-.MetaValue {
-  display: block;
-  font-size: 0.95rem;
-}
-
-@media (max-width: 900px) {
-  .MetaList {
-    gap: 1rem 1.6rem;
-    width: 100%;
-  }
-}
-
-.Persona {
-  border-left: 3px solid #036147;
-  padding-left: 1rem;
-  margin: 0 0 1.5rem;
-}
-
-.Persona h3 {
-  color: #036147;
-  font-weight: 700;
-  margin: 0 0 0.5rem;
-  font-size: 1.1rem;
-}
-
-.FeatureConceptsTitle {
-  max-width: min(94%, 950px);
-  margin-left: auto;
-  margin-right: auto;
-}
-
-h2 {
-  color: var(--bg-dark);
-  text-align: center;
-  margin: 0 auto 1.5rem;
-  max-width: min(94%, 950px);
-}
-
-.SubsectionTitle {
-  color: var(--bg-dark);
-  text-align: left;
-  font-size: 1.25rem;
-  width: min(var(--text-max), 100%);
-  margin: 2.5rem auto 1rem;
-}
-
-.GreenBackground h2 {
-  color: var(--title-pink);
-}
-
-.GreenBackground h3 {
-  color: var(--text-light);
-}
-
-.GuidingQuestion {
-  font-size: 1rem;
-}
-
-.GreenBackground .Persona h3 {
-  color: var(--title-pink);
-}
-
-.GreenBackground .SubsectionTitle {
-  color: var(--title-pink);
-}
-
-p {
-  font-family: "Rubik", sans-serif;
-}
-
-@media (min-width: 901px) {
-  body {
-    font-size: 14px;
-  }
-}
-
-#ClosingLink {
-  text-align: center;
-  padding: 2rem 1rem;
-  background-color: var(--bg-dark);
-}
-
-#ClosingLink a {
-  color: var(--text-light);
-  text-decoration: underline;
-  font-size: 0.95rem;
-}
-
-.QuoteGrid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.2rem;
-  margin: 1.2rem 0;
-}
-
-.QuoteBox {
-  flex: 1 1 240px;
-  padding: 1.2rem;
-  text-align: center;
-}
-
-.QuoteBox p {
-  margin: 0;
-  font-style: italic;
-  line-height: 1.5;
-}
-
 /* === SureThing Image Presentation === */
 .ProjectImage {
   width: min(100%, 860px);
@@ -593,6 +824,11 @@ p {
   width: min(100%, 900px);
 }
 
+#PrototypePhoto,
+#AwardPhoto {
+  width: min(100%, 760px);
+}
+
 #PrototypePhoto {
   width: min(100%, 520px);
 }
@@ -601,16 +837,16 @@ p {
   width: min(100%, 620px);
 }
 
-#AwardPhoto {
-  width: min(100%, 760px);
+#ResoleGroupPhoto {
+  width: min(100%, 620px);
 }
 
 @media (max-width: 900px) {
   .ProjectImage,
   #SurveyResults,
   #PrototypePhoto,
-  #Packaging,
-  #AwardPhoto {
+  #AwardPhoto,
+  #ResoleGroupPhoto {
     width: min(92%, 620px) !important;
     margin-left: auto !important;
     margin-right: auto !important;
@@ -623,4 +859,8 @@ p {
   #Packaging {
     width: min(88%, 540px) !important;
   }
+}
+
+p {
+  font-family: "Rubik", sans-serif;
 }

@@ -12,6 +12,24 @@ body{
     font-family: Sentient;
 }
 
+html::-webkit-scrollbar {
+    width: auto;
+}
+/*track*/
+html::-webkit-scrollbar-track {
+    background: rgb(201, 200, 196);
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+}
+/*thumb*/
+html::-webkit-scrollbar-thumb {
+    background: rgb(245, 243, 238);
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+}
+
 body.loaded {
     opacity: 1;
 }
@@ -21,24 +39,6 @@ body.exiting {
     opacity: 0;
     transition: opacity 0.4s ease-in-out;
 }
-
-::-webkit-scrollbar {
-    width:auto;
-    }
-    /*track*/
-    ::-webkit-scrollbar-track {
-    background:rgb(201, 200, 196);
-    border-width:2px;
-    border-style:solid;
-    border-color:black;
-    }
-    /*thumb*/
-    ::-webkit-scrollbar-thumb {
-    background:rgb(245, 243, 238);
-    border-width:2px;
-    border-style:solid;
-    border-color:black;
-    }
 
 p{
     font-size: 16px;
@@ -231,6 +231,7 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: 0.7rem;
+  font-family: "Rubik", sans-serif;
   color: black;
   opacity: 0.65;
   margin-bottom: 0.3rem;
@@ -363,11 +364,11 @@ h2 {
 #ClosingLink {
   text-align: center;
   padding: 2rem 1rem;
-  background-color: #036147;
+  background-color: #f5f3ee;
 }
 
 #ClosingLink a {
-  color: #f3cce7;
+  color: #036147;
   text-decoration: underline;
   font-size: 0.95rem;
 }
@@ -386,7 +387,7 @@ h2 {
 }
 
 .FeatureGridItem h3 {
-  color: #036147;
+  color: #f3cce7;
 }
 
 .FeatureGridItemRow {
@@ -563,7 +564,7 @@ img {
   height: auto;
 }
 
-html, body {
+html {
   overflow-x: hidden;
   max-width: 100%;
 }
