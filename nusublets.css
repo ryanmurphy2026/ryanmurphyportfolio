@@ -131,6 +131,18 @@ p{
     margin-right: 20%;
 }
 
+#ClosingLink {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #f5f3ee;
+}
+
+#ClosingLink a {
+  color: #036147;
+  text-decoration: underline;
+  font-size: 0.95rem;
+}
+
 #ImageSectionDivider{
     margin-bottom: -8px;
     overflow: hidden;
