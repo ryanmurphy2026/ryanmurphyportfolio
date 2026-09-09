@@ -84,6 +84,11 @@ p{
     align-items: center;
 }
 
+#start{
+    width: 35%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
 #VanPhoto{
     width: 15%;
     margin: auto;
