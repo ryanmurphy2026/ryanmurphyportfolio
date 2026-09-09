@@ -273,6 +273,10 @@ h2 {
   font-weight: 700;
 }
 
+.Persona.FeaturePersona p {
+  line-height: inherit;
+}
+
 .GuidingQuestion {
   font-size: 1rem;
 }
@@ -392,11 +396,12 @@ h2 {
 
 .FeatureGridItemRow {
   display: flex;
-  align-items: center;
-  gap: 1.2rem;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .FeatureGridItem video {
+  align-self: center;
   width: 400px;
   height: 300px;
   object-fit: cover;
@@ -411,11 +416,6 @@ h2 {
 }
 
 @media (max-width: 900px) {
-  .FeatureGridItemRow {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
   .FeatureGridItem video {
     width: 100%;
     height: auto;
