@@ -82,19 +82,13 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-}
-
-#start{
-    width: auto;
-    height: auto;
-    max-width: 42%;
-    max-height: 90%;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 #VanPhoto{
-    width: 15%;
+    width: auto;
+    height: auto;
+    max-width: min(82vw, 1100px);
+    max-height: 68vh;
     margin: auto;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
@@ -143,16 +137,7 @@ p{
 }
 
 #ReframePhoto{
-    display: block;
-    width: 42%;
-    margin: 0 auto 1.5rem;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
-}
-
-@media (max-width: 900px) {
-    #ReframePhoto {
-        width: 70%;
-    }
 }
 
 #PresentationPhoto{
@@ -243,8 +228,8 @@ p{
 
 #Name{
     width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .center{
@@ -765,337 +750,35 @@ body {
   min-height: 0 !important;
 }
 
-/* === Project Header Sizing === */
-.PinkTitle,
-.GreenTitle {
-  font-size: clamp(1.7rem, 3.4vw, 2.5rem);
-  line-height: 1.12;
+/* === SureThing Image Presentation === */
+.ProjectImage {
+  width: min(100%, 860px);
+  margin: 1rem auto;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#SurveyResults {
+  width: min(100%, 900px);
+}
+
+#PrototypePhoto,
+#AwardPhoto {
+  width: min(100%, 760px);
+}
+
+#ResoleGroupPhoto {
+  width: min(100%, 620px);
 }
 
 @media (max-width: 900px) {
-  .PinkTitle,
-  .GreenTitle {
-    font-size: clamp(1.55rem, 6vw, 2rem) !important;
-  }
-}
-
-@media (max-width: 480px) {
-  .PinkTitle,
-  .GreenTitle {
-    font-size: clamp(1.45rem, 7vw, 1.75rem) !important;
-  }
-}
-
-/* === Project Header Width === */
-.PinkTitle,
-.GreenTitle {
-  max-width: min(90%, 900px);
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* === Case Study Additions === */
-.Eyebrow {
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  font-size: 0.78rem;
-  margin: 0 0 0.6rem;
-  color: #036147;
-}
-
-.MetaList {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.4rem 2.4rem;
-  list-style: none;
-  margin: 1.5rem auto 0;
-  padding: 1.3rem 0 0;
-  border-top: 2px solid black;
-  width: min(92vw, 1000px);
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-bottom: 2.4rem;
-}
-
-.MetaList li {
-  text-align: center;
-}
-
-.MetaLabel {
-  display: block;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-size: 0.7rem;
-  font-family: "Rubik", sans-serif;
-  color: black;
-  opacity: 0.65;
-  margin-bottom: 0.3rem;
-}
-
-.MetaValue {
-  display: block;
-  font-size: 0.95rem;
-}
-
-.Persona {
-  border-left: 3px solid #036147;
-  padding-left: 1rem;
-  margin: 0 0 1.5rem;
-}
-
-.Persona p {
-  line-height: 1.5;
-}
-
-.WhiteText .Persona {
-  border-left-color: #f3cce7;
-}
-
-.GuidingQuestion {
-  font-size: 1rem;
-}
-
-.GreenBackground .GuidingQuestion {
-  color: #f5f3ee;
-}
-
-.Persona h3 {
-  color: #036147;
-  font-style: italic;
-  margin: 0 0 0.5rem;
-  font-size: 1.1rem;
-}
-
-.Persona.FeaturePersona {
-  border-left: none;
-  padding-left: 0;
-}
-
-.Persona.FeaturePersona p {
-  line-height: inherit;
-}
-
-.Persona.FeaturePersona h3 {
-  font-style: normal;
-  font-weight: 700;
-}
-
-.SubsectionTitle {
-  color: #036147;
-  text-align: left;
-  font-size: 1.25rem;
-  width: 60%;
-  margin: 2.5rem 20% 1rem;
-}
-
-.GreenBackground .SubsectionTitle {
-  color: #f3cce7;
-}
-
-
-.GreenBackground strong,
-.GreenBackground b {
-  color: #f3cce7;
-}
-
-.GreenBackground h3 {
-  color: #f3cce7;
-}
-
-h2 {
-  color: #036147;
-  text-align: center;
-  font-size: clamp(1.7rem, 3.4vw, 2.5rem);
-  margin: 0 auto 1.5rem;
-  max-width: min(94%, 950px);
-  line-height: 1.12;
-  text-wrap: balance;
-}
-
-@media (max-width: 900px) {
-  h2 {
-    font-size: 28px !important;
-    line-height: 1.15 !important;
-  }
-}
-
-@media (max-width: 480px) {
-  h2 {
-    font-size: 19px !important;
-    line-height: 1.15 !important;
-  }
-}
-
-@media (max-width: 400px) {
-  h2 {
-    font-size: 15px !important;
-  }
-}
-
-@media (max-width: 376px) {
-  h2 {
-    font-size: 14px !important;
-  }
-}
-
-@media (max-width: 340px) {
-  h2 {
-    font-size: 13px !important;
-  }
-}
-
-@media (max-width: 320px) {
-  h2 {
-    font-size: 12px !important;
-  }
-}
-
-.GreenBackground h2 {
-  color: #f3cce7;
-}
-
-.FeatureLabel {
-  display: block;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  font-size: 0.75rem;
-  margin: 0 0 0.3rem;
-  opacity: 0.75;
-}
-
-.FeatureBlock {
-  margin-bottom: 2rem;
-}
-
-.FeatureBlock:last-child {
-  margin-bottom: 0;
-}
-
-.FeatureGridItem > h3 {
-  color: #036147;
-  margin: 0 0 0.6rem;
-  font-size: 1.15rem;
-}
-
-.GreenBackground .FeatureGridItem > h3 {
-  color: #f3cce7;
-}
-
-#ClosingLink {
-  text-align: center;
-  padding: 2rem 1rem;
-  background-color: #036147;
-}
-
-#ClosingLink a {
-  color: #f3cce7;
-  text-decoration: underline;
-  font-size: 0.95rem;
-}
-
-@media (max-width: 900px) {
-  .MetaList {
-    gap: 1rem 1.6rem;
-    width: 100%;
-  }
-}
-
-.FeatureGrid {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  margin: 1rem 0 1.2rem;
-}
-
-.FeatureGridItem {
-  display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
-}
-
-.FeatureGridItemRow {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.FeatureGridItem video {
-  align-self: center;
-  width: 400px;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
-  flex-shrink: 0;
-  background-color: rgba(0, 0, 0, 0.15);
-}
-
-.FeatureGridItem .Persona.FeaturePersona {
-  margin-bottom: 0;
-}
-
-@media (max-width: 900px) {
-  .FeatureGridItem video {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 16 / 10;
-  }
-}
-
-.PivotImageRow {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  margin: 0 auto 1.5rem;
-}
-
-.PivotImageRow img {
-  width: 28%;
-  height: 220px;
-  object-fit: cover;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
-}
-
-@media (max-width: 900px) {
-  .PivotImageRow {
-    flex-direction: column;
-    gap: 1.2rem;
-  }
-
-  .PivotImageRow img {
-    width: 80%;
-    height: auto;
-  }
-}
-
-.QuoteGrid {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  gap: 1.2rem;
-  margin: 1.2rem 0;
-}
-
-.QuoteBox {
-  flex: 1 1 0;
-  padding: 1.2rem;
-  text-align: center;
-}
-
-.QuoteBox p {
-  margin: 0;
-  font-style: italic;
-  line-height: 1.5;
-}
-
-@media (max-width: 900px) {
-  .QuoteGrid {
-    flex-direction: column;
+  .ProjectImage,
+  #SurveyResults,
+  #PrototypePhoto,
+  #AwardPhoto,
+  #ResoleGroupPhoto {
+    width: min(92%, 620px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 }
 
