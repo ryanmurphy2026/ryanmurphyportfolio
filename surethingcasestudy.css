@@ -105,23 +105,25 @@ p{
 
 .PinkTitle{
     color:#f3cce7;
-    font-size: 48px;
     text-align: center;
 }
 
 .GreenTitle{
     color:#036147;
-    font-size: 48px;
     text-align: center;
 }
 
-#Name {
-    font-size: clamp(14px, 4.2vw, 48px) !important;
+.PinkTitle,
+.GreenTitle {
+  font-size: clamp(1.7rem, 3.4vw, 2.5rem);
+  line-height: 1.12;
+  max-width: min(90%, 900px);
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#Name .TitleLine {
-    display: inline-block;
-    white-space: nowrap;
+#Name {
+    font-size: clamp(1.7rem, 3.4vw, 2.5rem) !important;
 }
 
 h2 {
@@ -862,7 +864,7 @@ body {
 /* === SureThing Image Presentation === */
 .ProjectImage {
   width: min(100%, 860px);
-  margin: 1rem auto;
+  margin: 1.5rem auto;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 

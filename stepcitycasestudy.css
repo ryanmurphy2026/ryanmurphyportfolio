@@ -856,6 +856,7 @@ body {
 
 .GuidingQuestion {
   font-size: 1rem;
+  margin: 1.5rem 0;
 }
 
 .GreenBackground .GuidingQuestion {
@@ -893,6 +894,10 @@ body {
 
 .GreenBackground .SubsectionTitle {
   color: #f3cce7;
+}
+
+.SubsectionTitle.TightTop {
+  margin-top: 0.5rem;
 }
 
 
@@ -1007,13 +1012,13 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  margin: 1rem 0 1.2rem;
+  margin: 1.5rem 0 1.5rem;
 }
 
 .FeatureGridItem {
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
+  gap: 1rem;
 }
 
 .FeatureGridItemRow {
@@ -1078,7 +1083,7 @@ h2 {
   flex-wrap: nowrap;
   justify-content: center;
   gap: 1.2rem;
-  margin: 1.2rem 0;
+  margin: 1.5rem 0;
 }
 
 .QuoteBox {

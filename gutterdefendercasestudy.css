@@ -101,13 +101,11 @@ p{
 
 .PinkTitle{
     color:#f3cce7;
-    font-size: 48px;
     text-align: center;
 }
 
 .GreenTitle{
     color:#036147;
-    font-size: 48px;
     text-align: center;
 }
 
@@ -338,14 +336,21 @@ p{
 
 .PinkTitle{
     color:#f3cce7;
-    font-size: 48px;
     text-align: center;
 }
 
 .GreenTitle{
     color:#036147;
-    font-size: 48px;
     text-align: center;
+}
+
+.PinkTitle,
+.GreenTitle {
+  font-size: clamp(1.7rem, 3.4vw, 2.5rem);
+  line-height: 1.12;
+  max-width: min(90%, 900px);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .BlackText{

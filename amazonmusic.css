@@ -516,7 +516,7 @@ h2 {
 .Persona {
   border-left: 3px solid #036147;
   padding-left: 1rem;
-  margin: 0 0 1.5rem;
+  margin: 0 0 2.5rem;
 }
 
 .Persona h3 {
@@ -589,7 +589,7 @@ h2 {
 }
 
 .FeatureVideoLeft {
-  margin: 0;
+  margin: 0 0 1.5rem;
 }
 
 .FeatureGridItem video {
@@ -684,6 +684,10 @@ h2 {
 
 .GreenBackground .SubsectionTitle {
   color: var(--title-pink);
+}
+
+.SubsectionTitle.TightTop {
+  margin-top: 0.5rem;
 }
 
 p {
