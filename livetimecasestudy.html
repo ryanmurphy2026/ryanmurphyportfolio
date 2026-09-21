@@ -5,6 +5,7 @@
     <title>Live Time Rebrand — Case Study</title>
     <link rel="stylesheet" href="livetimecasestudy.css">
     <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="image-lightbox.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
     <script src="main.js" defer></script>
@@ -100,9 +101,9 @@
             <p>The existing Lynkr brand required modernization to better appeal to its Gen Z audience and drive user growth. Although the founder had already chosen the name Live Time, I was responsible for building a cohesive visual identity and user experience around it.</p>
             <p>Before:</p>
             <div class="BeforeRow">
-                <img src="Live Time Photos/LiveTime Old 1.webp">
-                <img src="Live Time Photos/LiveTime Old 2.webp">
-                <img src="Live Time Photos/LiveTime Old 3.webp">
+                <img data-lightbox src="Live Time Photos/LiveTime Old 1.webp" alt="Original Lynkr app screen before the Live Time rebrand, view 1">
+                <img data-lightbox src="Live Time Photos/LiveTime Old 2.webp" alt="Original Lynkr app screen before the Live Time rebrand, view 2">
+                <img data-lightbox src="Live Time Photos/LiveTime Old 3.webp" alt="Original Lynkr app screen before the Live Time rebrand, view 3">
             </div>
         </div>
     </div>
@@ -112,20 +113,20 @@
         <h2>Modernizing the Visual Identity for a More Inclusive User Experience </h2>
 
         <h3 class="SubsectionTitle SpaceBelow">Color Palette</h3>
-        <img id="primarycolors" src="Live Time Photos/Live Time Primary Colors.png">
+        <img data-lightbox id="primarycolors" src="Live Time Photos/Live Time Primary Colors.png" alt="Live Time primary color palette">
         <div class="WhiteText">
             <p>
                 Pink was Lynkr's primary brand color, used throughout the original app. However, user feedback revealed that the original shade made the app feel overly feminine, limiting its broader appeal.</p>
             <p>
                 Initially, I considered replacing Live Time’s primary color, pink, but realized it gave the brand a unique identity and helped it stand out from the competition. To address user concerns, I refined the pink into a more modern and inclusive shade, pairing it with black and white to establish Live Time’s primary color palette. The new shade preserves the product’s identity without limiting its broader appeal. I also tested the palette with accessibility checkers to ensure sufficient contrast and readability.</p>
         </div>
-        <img id="secondarycolors" src="Live Time Photos/Live Time Secondary Colors.png">
+        <img data-lightbox id="secondarycolors" src="Live Time Photos/Live Time Secondary Colors.png" alt="Live Time secondary color palette">
         <div class="WhiteText">
             <p>To add tonal variety, I introduced a lighter shade of pink and two complementary grays. After finalizing the primary palette, I developed five secondary colors and their lighter variations to provide greater flexibility across the app's design.</p>
         </div>
 
         <h3 class="SubsectionTitle SpaceBelow">Typography</h3>
-        <img id="fontshowcase" src="Live Time Photos/Live Time Fonts.webp">
+        <img data-lightbox id="fontshowcase" src="Live Time Photos/Live Time Fonts.webp" alt="Live Time typography showcase featuring Rockhill Sans and Hanken Grotesk">
         <div class="WhiteText">
             <p>The rebrand introduced two new fonts. Previously, all text used the same sans serif font, causing titles to blend in with body copy and making hierarchy hard to establish. To fix this, I introduced Rockhill Sans as a distinct display font. Its bolder, slightly stylized shape creates clear contrast from body text while keeping the brand feeling sleek and playful. This font is used for branding and display text throughout the app.</p>
 
@@ -133,7 +134,7 @@
         </div>
 
         <h3 class="SubsectionTitle SpaceBelow">Brand Logo</h3>
-        <img id="logocomparison" src="Live Time Photos/Logo Comparison.png">
+        <img data-lightbox id="logocomparison" src="Live Time Photos/Logo Comparison.png" alt="Comparison of the original and redesigned Live Time flamingo logo">
         <div class="WhiteText">
             <p>
                 The flamingo logo was retained but redesigned to align with the new modern look. The redesign, first sketched on paper and then refined in Adobe Illustrator, uses clean, simple lines to make the logo easier to recognize and even draw from memory. While the initial redesign retained the sunglasses, I found that they made the logo difficult to read at smaller sizes. The redesign is highly versatile, allowing the logo to be seamlessly incorporated into a text-based version.
@@ -151,9 +152,9 @@
             <p>With the new visual identity defined, I redesigned every screen in the app to bring the rebrand to life. The goal was to simplify the experience and deliver a clean, intuitive interface inspired by modern apps like Airbnb.</p>
         </div>
         <div class="LoFiRow">
-            <img src="Live Time Photos/Live Time LoFi Home.webp">
-            <img src="Live Time Photos/Live Time LoFi Event.webp">
-            <img src="Live Time Photos/Live Time LoFi Create Event.webp">
+            <img data-lightbox src="Live Time Photos/Live Time LoFi Home.webp" alt="Low-fidelity wireframe of the Live Time home screen">
+            <img data-lightbox src="Live Time Photos/Live Time LoFi Event.webp" alt="Low-fidelity wireframe of the Live Time event screen">
+            <img data-lightbox src="Live Time Photos/Live Time LoFi Create Event.webp" alt="Low-fidelity wireframe of the Live Time create event screen">
         </div>
         <div class="BlackText">
             <p>
@@ -169,7 +170,7 @@
             <div class="FeatureGrid">
                 <div class="FeatureGridItem">
                     <h3 class="FeatureTitle">Home Page</h3>
-                    <video autoplay loop muted playsinline>
+                    <video data-lightbox autoplay loop muted playsinline aria-label="Live Time home page walkthrough video">
                         <source src="Live Time Photos/Live TIme Videos/Live Time - Home Page.mp4" type="video/mp4">
                     </video>
                     <div class="Persona FeaturePersona">
@@ -180,7 +181,7 @@
                 </div>
                 <div class="FeatureGridItem">
                     <h3 class="FeatureTitle">Event Page</h3>
-                    <video autoplay loop muted playsinline>
+                    <video data-lightbox autoplay loop muted playsinline aria-label="Live Time event page walkthrough video">
                         <source src="Live Time Photos/Live TIme Videos/Live Time - Event Page.mp4" type="video/mp4">
                     </video>
                     <div class="Persona FeaturePersona">
@@ -191,7 +192,7 @@
                 </div>
                 <div class="FeatureGridItem">
                     <h3 class="FeatureTitle">Group Page</h3>
-                    <video autoplay loop muted playsinline>
+                    <video data-lightbox autoplay loop muted playsinline aria-label="Live Time group page walkthrough video">
                         <source src="Live Time Photos/Live TIme Videos/Live Time Group Page.mp4" type="video/mp4">
                     </video>
                     <div class="Persona FeaturePersona">
@@ -202,7 +203,7 @@
                 </div>
                 <div class="FeatureGridItem">
                     <h3 class="FeatureTitle">Create Event Page</h3>
-                    <video autoplay loop muted playsinline>
+                    <video data-lightbox autoplay loop muted playsinline aria-label="Live Time create event flow walkthrough video">
                         <source src="Live Time Photos/Live TIme Videos/Live Time - Create Event.mp4" type="video/mp4">
                     </video>
                     <div class="Persona FeaturePersona">
@@ -217,7 +218,7 @@
 
     <div class="GreenBackground" id="AppOverhaul">
         <h2>Launching the Rebranded App</h2>
-        <img class="AppStoreScreenshot" src="Live Time Photos/Live Time App Store Screenshot.webp">
+        <img data-lightbox class="AppStoreScreenshot" src="Live Time Photos/Live Time App Store Screenshot.webp" alt="Live Time app listing on the App Store">
         <div class="WhiteText">
             <p>The rebranded app was released on the App Store as Live Time in December 2025.</p>
         </div>
@@ -226,7 +227,7 @@
     <div class="WhiteBackground" id="Launch">
         <h2>Reflection</h2>
 
-        <img id="GroupPhoto" src="Live Time Photos/LiveTime Group Photo.webp">
+        <img data-lightbox id="GroupPhoto" src="Live Time Photos/LiveTime Group Photo.webp" alt="Photo of the Live Time team">
 
         <h3 class="SubsectionTitle">Key Takeaway</h3>
         <div class="BlackText">
@@ -249,6 +250,7 @@
     </div>
 
     <script src="main.js"></script>
+    <script src="image-lightbox.js" defer></script>
 
     </body>
 </html>

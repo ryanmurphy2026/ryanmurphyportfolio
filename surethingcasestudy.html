@@ -5,6 +5,7 @@
     <title></title>
     <link rel="stylesheet" href="surethingcasestudy.css">
     <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="image-lightbox.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
     <script src="main.js" defer></script>
@@ -97,7 +98,7 @@
         <h2>Learning About the Problem</h2>
         <div class="WhiteText">
             <p>The project began with a single survey response. One participant shared that providing a urine sample as a woman could be challenging, raising the question of whether this was an isolated experience or a broader issue. To investigate further, I designed and distributed a more comprehensive survey to college-aged women across the Northwestern community.</p>
-            <img class="ProjectImage" id="SurveyResults" src="SureThing Photos/Survey for SureThing.png" alt="SureThing survey results">
+            <img data-lightbox class="ProjectImage" id="SurveyResults" src="SureThing Photos/Survey for SureThing.png" alt="SureThing survey results">
             <p>Of the 54 women who responded, 73% answered "Yes" to the question:</p>
             <p><i>"Do you find the current process of providing a urine sample difficult or inconvenient in any way, such as being uncomfortable, messy, or unsanitary?"</i></p>
             <p>We also reached out to physicians at Northwestern University's Feinberg School of Medicine, where we learned that the standard urine collection cup is often ineffective at obtaining uncontaminated urine samples for UTI testing. Currently, the most common collection method used in clinical settings is the midstream clean-catch technique, which requires patients to discard the initial portion of the urine stream into the toilet before collecting the midstream sample in a cup.</p>
@@ -135,7 +136,7 @@
     <div class="GreenBackground" id="Research">
         <h2>Designing the Initial Prototype</h2>
         <div class="WhiteText">
-            <img class="ProjectImage" id="PrototypePhoto" src="SureThing Photos/Old Prototype.png" alt="Initial SureThing prototype">
+            <img data-lightbox class="ProjectImage" id="PrototypePhoto" src="SureThing Photos/Old Prototype.png" alt="Initial SureThing prototype">
             <p>Based on these insights, we developed the first prototype of SureThing, a handheld midstream urine separator that attaches to a standard urine collection cup. The device automatically separates the initial urine stream from the midstream sample while providing a more comfortable collection experience.</p>
             <p>Guided by user feedback, we incorporated a funnel to improve aiming and a handle to provide greater comfort and control during use.</p>
 
@@ -185,7 +186,7 @@
     <div class="WhiteBackground" id="Takeaways">
         <h2>Developing the SureThing Brand Identity</h2>
         <div class="BlackText">
-            <img class="ProjectImage" id="Packaging" src="SureThing Photos/SureThing Packaging.png" alt="SureThing branding packaging">
+            <img data-lightbox class="ProjectImage" id="Packaging" src="SureThing Photos/SureThing Packaging.png" alt="SureThing branding packaging">
             <p>To develop SureThing's brand identity, I benchmarked existing medical products, including Cologuard and Tampax, to understand how established brands use color, layout, and messaging to build trust and communicate clarity.</p>
             <p>To name the product, I facilitated a team brainstorming workshop, asking each member to generate words that captured the functional benefits, emotional impact, and desired user experience we wanted the product to convey. Using these themes, we generated and evaluated potential names before selecting <strong>SureThing</strong>. We chose <strong>SureThing</strong> because it reflects the product’s core value proposition: making it easier to collect an uncontaminated urine sample while conveying the sense of comfort and reassurance we wanted users to feel throughout the collection process.</p>
             <p>For the packaging, I selected a two-tone blue palette because blue is widely used in healthcare to communicate trust, safety, cleanliness, and reliability. We intentionally avoided stereotypically feminine colors and any colors that evoke urine to create a brand that felt clinical and professional.</p>
@@ -196,13 +197,14 @@
     <div class="GreenBackground" id="Solution">
         <h2>Presenting Our Work</h2>
         <div class="WhiteText">
-            <img class="ProjectImage" id="AwardPhoto" src="SureThing Photos/SureThing Group Award.jpg" alt="SureThing team receiving the Breaking Glass Award">
+            <img data-lightbox class="ProjectImage" id="AwardPhoto" src="SureThing Photos/SureThing Group Award.jpg" alt="SureThing team receiving the Breaking Glass Award">
             <p>
                 We presented our final product to faculty from Northwestern's Segal Design Institute, part of the McCormick School of Engineering & Applied Science, and fellow Northwestern students.
             </p>
             <p>
                 For our work, the team received the Breaking Glass Award, presented only twice in the past five years to the capstone that best exemplifies the design process. Looking ahead, we hope to license the design to a medical device company. 
             </p>
+            <p>The article “SureThing Solves a Messy Problem” is featured on Northwestern’s Segal Design Institute website. <a class="ArticleLink" href="https://design.northwestern.edu/news-events/articles/2026/surething-solves-a-messy-problem.html" target="_blank" rel="noopener noreferrer">Read the article here.</a></p>
         </div>  
     </div>
     <div class="WhiteBackground" id="Reflection">
@@ -211,8 +213,6 @@
         <div class="BlackText">
             <p>
                 This capstone project provided firsthand experience navigating the full product design process. I spent my senior year developing the project, contributing to every stage - from initial research and prototyping to testing, iteration, and patenting. Seeing the project evolve through each stage reinforced the importance of every step in bringing a concept to life. </p>
-                <p>The article “SureThing Solves a Messy Problem” is featured on Northwestern’s Segal Design Institute website.</p>
-                <p><a href="https://design.northwestern.edu/news-events/articles/2026/surething-solves-a-messy-problem.html" target="_blank" rel="noopener noreferrer">Read the article here.</a></p>
         </div>
     </div>
 
@@ -225,7 +225,8 @@
     </div>
 
     <script src="main.js"></script>
-    
+    <script src="image-lightbox.js" defer></script>
+
   </body>
 </html>
 

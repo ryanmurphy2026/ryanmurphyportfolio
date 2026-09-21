@@ -302,6 +302,7 @@ h2 {
 
 .Persona.FeaturePersona p {
   line-height: inherit;
+  margin: 0;
 }
 
 .GuidingQuestion {
@@ -407,8 +408,8 @@ h2 {
 .FeatureGrid {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  margin: 1.5rem 0 1.5rem;
+  gap: 2rem;
+  margin: 2rem 0 1.2rem;
 }
 
 .FeatureGridItem {
@@ -419,6 +420,7 @@ h2 {
 
 .FeatureGridItem h3 {
   color: #f3cce7;
+  margin: 0;
 }
 
 .FeatureGridItemRow {

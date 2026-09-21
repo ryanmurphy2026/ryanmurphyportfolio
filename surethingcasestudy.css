@@ -861,6 +861,11 @@ body {
   min-height: 0 !important;
 }
 
+.ArticleLink {
+  color: #f5f3ee;
+  text-decoration: underline;
+}
+
 /* === SureThing Image Presentation === */
 .ProjectImage {
   width: min(100%, 860px);

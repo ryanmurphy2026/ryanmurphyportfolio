@@ -5,6 +5,7 @@
     <title>Love Island USA — Case Study</title>
     <link rel="stylesheet" href="loveislandcasestudy.css">
     <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="image-lightbox.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
     <script src="main.js" defer></script>
@@ -80,10 +81,9 @@
             </p>
             <p>
                 The official app looks and functions poorly. It currently has a 1.9 star rating on the App Store, with reviews consistently echoing the same complaints. This is clearly a missed opportunity for Peacock. Given the app's high level of engagement, it could serve as a more effective platform for advertising, merchandise sales, and deeper audience interaction.  
-            </p>
-        <br>   
+            </p> 
         </div>
-            <img id="AppstoreScreenshot" src="Love Island Photos/Love Island USA Appstore Screenshot.webp">
+            <img data-lightbox id="AppstoreScreenshot" src="Love Island Photos/Love Island USA Appstore Screenshot.webp" alt="Love Island USA App Store listing showing its 1.9 star rating">
         </div>
 
         <h3 class="SubsectionTitle">Challenge</h3>
@@ -95,9 +95,9 @@
                 Current Version:
             </p>
             <div class="BeforeRow">
-            <img src="Love Island Photos/Love Island Old 1.webp">
-            <img src="Love Island Photos/Love Island Old 2.webp">
-            <img src="Love Island Photos/Love Island Old 3.webp">
+            <img data-lightbox src="Love Island Photos/Love Island Old 1.webp" alt="Current Love Island USA app screen, view 1">
+            <img data-lightbox src="Love Island Photos/Love Island Old 2.webp" alt="Current Love Island USA app screen, view 2">
+            <img data-lightbox src="Love Island Photos/Love Island Old 3.webp" alt="Current Love Island USA app screen, view 3">
         </div>
     </div>
 
@@ -178,9 +178,9 @@
 
         <h3 class="SubsectionTitle">Wireframes</h3>
         <div class="LoFiRow">
-            <img src="Love Island Photos/Love Island LoFi Home Page.webp">
-            <img src="Love Island Photos/Love Island LoFi Islanders.webp">
-            <img src="Love Island Photos/Love Island LoFi Shop.webp">
+            <img data-lightbox src="Love Island Photos/Love Island LoFi Home Page.webp" alt="Low-fidelity wireframe of the Love Island USA home screen">
+            <img data-lightbox src="Love Island Photos/Love Island LoFi Islanders.webp" alt="Low-fidelity wireframe of the Love Island USA Islanders screen">
+            <img data-lightbox src="Love Island Photos/Love Island LoFi Shop.webp" alt="Low-fidelity wireframe of the Love Island USA shop screen">
         </div>
         <div class="BlackText">
             <p>
@@ -196,13 +196,13 @@
     </div>
 
     <div class="GreenBackground" id="Features">
-        <h2>Redesigning the <i>Love Island USA</i> Experience</h2>
+        <h2>Redesigning the <i>Love Island USA</i><br>Experience</h2>
         <div class="WhiteText">
             <div class="FeatureGrid">
                 <div class="FeatureGridItem">
                     <h3>Feature #1: Home Screen</h3>
                     <div class="FeatureGridItemRow">
-                        <video autoplay loop muted playsinline>
+                        <video data-lightbox autoplay loop muted playsinline aria-label="Love Island USA home screen walkthrough video">
                             <source src="Love Island Photos/Love Island Videos/Love Island - Home Page.mp4" type="video/mp4">
                         </video>
                         <div class="Persona FeaturePersona">
@@ -213,7 +213,7 @@
                 <div class="FeatureGridItem">
                     <h3>Feature #2: Islanders Tab</h3>
                     <div class="FeatureGridItemRow">
-                        <video autoplay loop muted playsinline>
+                        <video data-lightbox autoplay loop muted playsinline aria-label="Love Island USA Islanders tab walkthrough video">
                             <source src="Love Island Photos/Love Island Videos/Love Island - Islanders Page.mp4" type="video/mp4">
                         </video>
                         <div class="Persona FeaturePersona">
@@ -224,7 +224,7 @@
                 <div class="FeatureGridItem">
                     <h3>Feature #3: Voting</h3>
                     <div class="FeatureGridItemRow">
-                        <video autoplay loop muted playsinline>
+                        <video data-lightbox autoplay loop muted playsinline aria-label="Love Island USA voting walkthrough video">
                             <source src="Love Island Photos/Love Island Videos/Love Island - Voting Page.mp4" type="video/mp4">
                         </video>
                         <div class="Persona FeaturePersona">
@@ -235,7 +235,7 @@
                 <div class="FeatureGridItem">
                     <h3>Feature #4: Shop Page</h3>
                     <div class="FeatureGridItemRow">
-                        <video autoplay loop muted playsinline>
+                        <video data-lightbox autoplay loop muted playsinline aria-label="Love Island USA shop page walkthrough video">
                             <source src="Love Island Photos/Love Island Videos/Love Island - Shop Page.mp4" type="video/mp4">
                         </video>
                         <div class="Persona FeaturePersona">
@@ -247,7 +247,7 @@
                 <div class="FeatureGridItem">
                     <h3>Feature #5: Extras Page</h3>
                     <div class="FeatureGridItemRow">
-                        <video autoplay loop muted playsinline>
+                        <video data-lightbox autoplay loop muted playsinline aria-label="Love Island USA extras page walkthrough video">
                             <source src="Love Island Photos/Love Island Videos/Love Island - Extra Page.mp4" type="video/mp4">
                         </video>
                         <div class="Persona FeaturePersona">
@@ -279,6 +279,7 @@
     </div>
 
     <script src="main.js"></script>
+    <script src="image-lightbox.js" defer></script>
 
   </body>
 </html>

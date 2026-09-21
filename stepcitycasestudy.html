@@ -5,6 +5,7 @@
     <title>Step City — Case Study</title>
     <link rel="stylesheet" href="stepcitycasestudy.css">
     <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="image-lightbox.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
     <script src="main.js" defer></script>
@@ -128,8 +129,8 @@
     <div class="WhiteBackground" id="Pivot">
         <h2>Using Research to Move from Hill Commuting to Broader Fitness Motivation</h2>
         <div class="PivotImageRow">
-            <img src="Step City Photos/Ideation.webp">
-            <img src="Step City Photos/Step City Whiteboard.webp">
+            <img data-lightbox src="Step City Photos/Ideation.webp" alt="Early ideation sketches for Step City">
+            <img data-lightbox src="Step City Photos/Step City Whiteboard.webp" alt="Step City team whiteboarding session">
         </div>
         <div class="BlackText">
             <p>
@@ -173,7 +174,7 @@
                 <div class="FeatureGridItem">
                     <h3>Feature #1: Step Stations</h3>
                     <div class="FeatureGridItemRow">
-                        <video autoplay loop muted playsinline>
+                        <video data-lightbox autoplay loop muted playsinline aria-label="Step City step stations walkthrough video">
                             <source src="Step City Photos/Step City Videos/Step City - Step Stations.mp4" type="video/mp4">
                         </video>
                         <div class="Persona FeaturePersona">
@@ -184,7 +185,7 @@
                 <div class="FeatureGridItem">
                     <h3>Feature #2: Quest-Based Rewards</h3>
                     <div class="FeatureGridItemRow">
-                        <video autoplay loop muted playsinline>
+                        <video data-lightbox autoplay loop muted playsinline aria-label="Step City quest-based rewards walkthrough video">
                             <source src="Step City Photos/Step City Videos/Step City - Quest.mp4" type="video/mp4">
                         </video>
                         <div class="Persona FeaturePersona">
@@ -195,7 +196,7 @@
                 <div class="FeatureGridItem">
                     <h3>Feature #3: City Building</h3>
                     <div class="FeatureGridItemRow">
-                        <video autoplay loop muted playsinline>
+                        <video data-lightbox autoplay loop muted playsinline aria-label="Step City city building walkthrough video">
                             <source src="Step City Photos/Step City Videos/Step City - Build.mp4" type="video/mp4">
                         </video>
                         <div class="Persona FeaturePersona">
@@ -206,7 +207,7 @@
                 <div class="FeatureGridItem">
                     <h3>Feature #4: Progress Milestone</h3>
                     <div class="FeatureGridItemRow">
-                        <video autoplay loop muted playsinline>
+                        <video data-lightbox autoplay loop muted playsinline aria-label="Step City progress milestone walkthrough video">
                             <source src="Step City Photos/Step City Videos/Step City - Check Rock.mp4" type="video/mp4">
                         </video>
                         <div class="Persona FeaturePersona">
@@ -217,7 +218,7 @@
                 <div class="FeatureGridItem">
                     <h3>Feature #5: Social Interaction</h3>
                     <div class="FeatureGridItemRow">
-                        <video autoplay loop muted playsinline>
+                        <video data-lightbox autoplay loop muted playsinline aria-label="Step City social interaction walkthrough video">
                             <source src="Step City Photos/Step City Videos/Step City - Friends.mp4" type="video/mp4">
                         </video>
                         <div class="Persona FeaturePersona">
@@ -232,7 +233,7 @@
 
     <div class="WhiteBackground" id="Reframing">
         <h2>Presenting Our Work</h2>
-        <img id="ReframePhoto" src="Step City Photos/Step City Presenting.webp">
+        <img data-lightbox id="ReframePhoto" src="Step City Photos/Step City Presenting.webp" alt="Photo of the team presenting Step City to faculty and industry designers">
         <div class="BlackText">
             <p>
                 We presented our concept to faculty from Northwestern's Segal Design Institute, professional designers from Atlassian and New Computer, and fellow Northwestern students.
@@ -267,6 +268,7 @@
     </div>
 
     <script src="main.js"></script>
+    <script src="image-lightbox.js" defer></script>
 
   </body>
 </html>
