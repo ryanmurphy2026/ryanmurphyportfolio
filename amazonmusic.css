@@ -732,3 +732,19 @@ p {
   line-height: 1.5;
 }
 
+
+/* Hero: sized to its content with the same padding at every screen width */
+#StartingImage {
+  height: auto !important;
+  min-height: 0 !important;
+  padding: clamp(16px, 4vw, 48px) 16px !important;
+  box-sizing: border-box;
+}
+
+#GroupPhoto {
+  width: auto !important;
+  height: auto !important;
+  min-width: 0 !important;
+  max-width: min(92%, 960px) !important;
+  max-height: 75vh !important;
+}

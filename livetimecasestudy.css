@@ -80,7 +80,8 @@ p{
 #StartingImage{
     background-color: #036147;
     width: 100%;
-    height: 80vh;
+    padding: clamp(16px, 4vw, 48px) 16px;
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -148,8 +149,8 @@ p{
 #start{
     width: auto;
     height: auto;
-    max-width: 42%;
-    max-height: 90%;
+    max-width: min(92%, 960px);
+    max-height: 75vh;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
 
@@ -224,7 +225,8 @@ p{
 #StartingImage{
     background-color: #036147;
     width: 100%;
-    height: 80vh;
+    padding: clamp(16px, 4vw, 48px) 16px;
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -288,8 +290,8 @@ p{
 #start{
     width: auto;
     height: auto;
-    max-width: 42%;
-    max-height: 90%;
+    max-width: min(92%, 960px);
+    max-height: 75vh;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
 
@@ -430,18 +432,6 @@ p{
     padding: 6px 8px;
   }
 
-  /* Starting hero image: make it bigger and avoid overflow */
-  #StartingImage {
-    height: auto;
-    padding: 28px 16px;
-    width: auto;
-  }
-
-  #start {
-    width: 92%;
-    max-width: 520px;
-    height: auto;
-  }
 
   /* Make your content images fit cleanly */
   img {
@@ -554,12 +544,6 @@ img {
   .nav-links a {
     font-size: 13px !important;
     padding: 6px 10px !important;
-  }
-
-  #StartingImage {
-    height: auto !important;
-    min-height: 58vh;
-    padding: 16px 12px;
   }
 
   .WhiteBackground,
