@@ -282,6 +282,12 @@ a {
   background-color: var(--bg-dark);
 }
 
+/* Overlap stacked sections by 1px so fractional-pixel boundaries
+   (browser zoom, display scaling) can't show the page background as a hairline */
+main > section + section {
+  margin-top: -1px;
+}
+
 #ProjectContents,
 #ArtContents {
   width: min(760px, 100%);
@@ -599,6 +605,44 @@ a {
 
   .engineer-footer {
     padding: 3rem max(2rem, calc((100vw - var(--max-content)) / 2)) 3rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .cards-grid {
+    width: min(1320px, 100%);
+    gap: 1.5rem;
+  }
+
+  .icons {
+    max-width: 300px;
+  }
+
+  .ProjectNames {
+    font-size: 1.35rem;
+  }
+
+  .ProjectCaption {
+    font-size: 1.05rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .cards-grid {
+    width: min(1640px, 100%);
+    gap: 2rem;
+  }
+
+  .icons {
+    max-width: 380px;
+  }
+
+  .ProjectNames {
+    font-size: 1.5rem;
+  }
+
+  .ProjectCaption {
+    font-size: 1.15rem;
   }
 }
 

@@ -480,14 +480,6 @@ p{
 }
 
 @media (max-width: 768px) {
-  .BlackText,
-  .WhiteText {
-    text-align: justify;
-    text-justify: inter-word;
-  }
-}
-
-@media (max-width: 768px) {
 
   #ImageSectionDivider {
     height: 100px;          /* adjust this to make it taller */

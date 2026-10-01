@@ -748,3 +748,68 @@ p {
   max-width: min(92%, 960px) !important;
   max-height: 75vh !important;
 }
+
+/* === Mobile Layout: keep rows, videos, and quotes inside the viewport === */
+@media (max-width: 900px) {
+  .BrainstormRow {
+    gap: 0.8rem;
+  }
+
+  .BrainstormRow img {
+    flex: 1 1 0;
+    width: auto;
+    min-width: 0;
+    height: clamp(180px, 55vw, 300px);
+  }
+
+  .LoFiRow {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.8rem;
+  }
+
+  .LoFiRow img {
+    width: 100%;
+    height: auto;
+  }
+
+  .QuoteGrid {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .QuoteBox {
+    padding: 0.8rem 0.4rem;
+  }
+
+  .Persona {
+    padding-left: 0.8rem;
+  }
+
+  .FeatureGridItem {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.8rem;
+  }
+
+  .FeatureGridItem p,
+  .FeatureGridText {
+    max-width: none;
+  }
+
+  .BrainstormImage,
+  .PresentingImage {
+    width: min(92%, 520px);
+  }
+
+  .TeamPhoto {
+    width: 100%;
+  }
+}
+
+/* Overlap the closing link onto the section above to hide the subpixel seam */
+#ClosingLink {
+  position: relative;
+  margin-top: -1px;
+  padding-top: calc(2rem + 1px);
+}

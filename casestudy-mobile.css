@@ -1,0 +1,74 @@
+/* === Case Study Mobile Layout ===
+   Shared by every case study page and loaded after the page's own stylesheet,
+   so all case studies use the same column, type sizes, and image sizing on phones. */
+
+@media (max-width: 900px) {
+  .WhiteBackground,
+  .GreenBackground {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  /* One text column: body copy and subsection titles share the same edges */
+  .BlackText,
+  .WhiteText,
+  .SubsectionTitle {
+    width: min(92%, 760px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .BlackText,
+  .WhiteText {
+    text-align: left;
+  }
+
+  .BlackText p:not(.Eyebrow),
+  .WhiteText p:not(.Eyebrow) {
+    font-size: 1rem;
+    line-height: 1.9;
+  }
+
+  .SubsectionTitle {
+    font-size: 1.25rem;
+  }
+
+  /* Wireframe rows: three across instead of stacking full height */
+  .LoFiRow {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: center;
+    gap: 0.8rem;
+    width: min(92%, 760px) !important;
+    padding: 0;
+    margin: 0 auto 1.5rem;
+  }
+
+  .LoFiRow img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  }
+
+  /* Feature videos: full width at the recordings' 4:3 shape, never cropped */
+  .FeatureGridItem video,
+  .FeatureVideo {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: contain;
+  }
+
+  /* Single showcase images that are a small percentage width on desktop */
+  .AppStoreScreenshot {
+    width: min(92%, 520px);
+  }
+}
+
+/* Section headings: stay larger than body text on small phones */
+@media (max-width: 480px) {
+  h2 {
+    font-size: clamp(1.3rem, 6vw, 1.6rem) !important;
+    line-height: 1.2 !important;
+  }
+}
